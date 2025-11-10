@@ -1,24 +1,4 @@
 #!/usr/bin/env python3
-"""
-Edu Web Scanner v2 - Improved & Fixed
-
-Changes made:
-- Fixed truncated HTML writer and other bugs.
-- Simpler, robust BFS crawler (single-threaded) to avoid race conditions during crawl.
-- Concurrency used for path enumeration and request-heavy checks.
-- Detailed vulnerability recording (type, page/url, evidence snippet).
-- Added PDF report generation using reportlab.
-- Better state save/load and output directory support.
-- Improved logging and CLI options.
-
-Ethics reminder: Only scan systems you own or have explicit permission to test.
-
-Dependencies: requests, beautifulsoup4, reportlab
-Install: pip install requests beautifulsoup4 reportlab
-
-Author: Assistant (improved version)
-"""
-
 import argparse
 import csv
 import json
@@ -40,15 +20,9 @@ from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak
-from html import escape
-# PDF generation
-from reportlab.lib.pagesizes import A4
-from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
-from reportlab.lib import colors
 
 # --- Configuration ---
-USER_AGENT = "edu-web-scanner/0.3 (educational)"
+USER_AGENT = "edu-web-scanner/0.4 (educational)"
 HEADERS = {"User-Agent": USER_AGENT}
 REQUEST_DELAY = 0.5  # seconds
 MAX_PAGES = 200
@@ -95,6 +69,43 @@ def is_same_domain(base, url):
         return urlparse(base).netloc == urlparse(url).netloc
     except Exception:
         return False
+
+
+def dom_diff_score(html1, html2):
+    """Rough similarity check between DOM trees (1.0 = identical-ish)."""
+    try:
+        soup1 = BeautifulSoup(html1 or "", "html.parser")
+        soup2 = BeautifulSoup(html2 or "", "html.parser")
+        tags1 = [t.name for t in soup1.find_all()]
+        tags2 = [t.name for t in soup2.find_all()]
+        overlap = len(set(tags1) & set(tags2))
+        total = len(set(tags1) | set(tags2))
+        if total == 0:
+            return 1.0
+        return overlap / total
+    except Exception:
+        return 1.0
+
+
+def _snippet(text, marker, ctx=120):
+    try:
+        txt = text or ""
+        idx = txt.lower().find(marker.lower())
+        if idx == -1:
+            return escape(txt[:ctx])
+        start = max(0, idx - ctx // 2)
+        return escape(txt[start:start + ctx].replace('\n', ' '))
+    except Exception:
+        return ''
+
+
+def load_payloads(file_path, fallback):
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            return [line.strip() for line in f if line.strip()]
+    except Exception as e:
+        logging.warning(f"Could not load payloads from {file_path}: {e} -- using fallback")
+        return fallback
 
 
 # --- Feature implementations ---
@@ -200,12 +211,31 @@ def check_insecure_forms(session, urls, delay=REQUEST_DELAY, rp=None):
 
 
 def check_sql_injection(session, url, delay=REQUEST_DELAY, rp=None):
+    """
+    Enhanced SQL Injection check:
+    - Tests multiple payloads
+    - Logs parameter name, payload, and triggering evidence
+    - Detects SQL error patterns and abnormal response length and DOM diff
+    """
     parsed = urlparse(url)
     qs = dict(parse_qsl(parsed.query))
     if not qs:
         return []
+
     findings = []
-    payloads = ["'", "' OR '1'='1", '"', '" OR "1"="1']
+
+    payloads = [
+        "'",
+        "' OR '1'='1",
+        '"',
+        '" OR "1"="1',
+        "`",
+        "')--",
+        "' UNION SELECT NULL--",
+        "' OR 1=1--",
+        "\" OR 1=1--",
+    ]
+
     baseline = safe_get(session, url, delay=delay, rp=rp)
     baseline_text = baseline.text if baseline else ''
     baseline_len = len(baseline_text)
@@ -213,51 +243,169 @@ def check_sql_injection(session, url, delay=REQUEST_DELAY, rp=None):
     for name in qs.keys():
         for p in payloads:
             qs_copy = qs.copy()
-            qs_copy[name] = qs_copy[name] + p
+            original_value = qs_copy[name] if qs_copy.get(name) else ''
+            qs_copy[name] = original_value + p
             new_qs = urlencode(qs_copy)
             test_url = parsed._replace(query=new_qs).geturl()
+
             r = safe_get(session, test_url, delay=delay, rp=rp)
             if not r:
                 continue
+
             body = r.text.lower()
-            evidence = ''
+
+            # Detect classic SQL error patterns
             for pattern in SQL_ERROR_PATTERNS:
                 if re.search(pattern, body):
-                    evidence = pattern
-                    findings.append({'url': test_url, 'type': 'sql_error_pattern', 'pattern': pattern, 'evidence_snippet': _snippet(r.text, pattern)})
+                    findings.append({
+                        'url': test_url,
+                        'param': name,
+                        'payload': p,
+                        'type': 'sql_error_pattern',
+                        'pattern': pattern,
+                        'evidence_snippet': _snippet(r.text, pattern)
+                    })
+                    logging.info(f"[SQLi] {name}={p} -> {pattern} @ {test_url}")
+
+            # Detect large differences in response length
             if abs(len(r.text) - baseline_len) > 200:
-                findings.append({'url': test_url, 'type': 'response_length_difference', 'len': len(r.text), 'baseline': baseline_len})
+                findings.append({
+                    'url': test_url,
+                    'param': name,
+                    'payload': p,
+                    'type': 'response_length_difference',
+                    'len': len(r.text),
+                    'baseline': baseline_len
+                })
+                logging.info(f"[SQLi-LEN] {name}={p} caused response size delta at {test_url}")
+
+            # DOM diff check
+            diff_score = dom_diff_score(baseline_text, r.text)
+            if diff_score < 0.7:
+                findings.append({
+                    'url': test_url,
+                    'param': name,
+                    'payload': p,
+                    'type': 'dom_difference',
+                    'score': diff_score
+                })
+                logging.info(f"[SQLi-DOM] {name}={p} caused DOM diff score {diff_score} @ {test_url}")
+
     return findings
 
 
 def check_reflected_xss(session, url, delay=REQUEST_DELAY, rp=None):
+    """
+    Test query-parameter reflection for XSS.
+    - Uses payloads/xss.txt if load_payloads() is available, otherwise uses a default list.
+    - Returns findings with param, payload and evidence_snippet.
+    """
     parsed = urlparse(url)
     qs = dict(parse_qsl(parsed.query))
     findings = []
     if not qs:
         return findings
+
+    # Try to load a payload list if helper exists; otherwise use one important default
+    try:
+        payloads = load_payloads('payloads/xss.txt', [XSS_TEST_PAYLOAD])
+    except NameError:
+        # load_payloads not defined in this file — fall back
+        payloads = [XSS_TEST_PAYLOAD, '\"><script>alert(1)</script>', "'\"><img src=x onerror=alert(1)>"]
+
     for name in qs.keys():
-        qs_copy = qs.copy()
-        qs_copy[name] = qs_copy[name] + XSS_TEST_PAYLOAD
-        new_qs = urlencode(qs_copy)
-        test_url = parsed._replace(query=new_qs).geturl()
-        r = safe_get(session, test_url, delay=delay, rp=rp)
-        if not r:
-            continue
-        if XSS_TEST_PAYLOAD in r.text:
-            findings.append({'url': test_url, 'type': 'reflected_xss_marker', 'evidence_snippet': _snippet(r.text, XSS_TEST_PAYLOAD)})
+        for p in payloads:
+            qs_copy = qs.copy()
+            original = qs_copy.get(name) or ""
+            qs_copy[name] = original + p
+            new_qs = urlencode(qs_copy, doseq=True)
+            test_url = parsed._replace(query=new_qs).geturl()
+            r = safe_get(session, test_url, delay=delay, rp=rp)
+            if not r:
+                continue
+            body = r.text or ""
+            if p.lower() in body.lower():
+                findings.append({
+                    'url': test_url,
+                    'param': name,
+                    'payload': p,
+                    'type': 'reflected_xss_marker',
+                    'evidence_snippet': _snippet(r.text, p)
+                })
+                logging.info(f"[XSS-REFLECT] param={name} payload={p} @ {test_url}")
     return findings
 
 
-def _snippet(text, marker, ctx=120):
-    try:
-        idx = text.lower().find(marker.lower())
-        if idx == -1:
-            return escape(text[:ctx])
-        start = max(0, idx - ctx // 2)
-        return escape(text[start:start + ctx].replace('\n', ' '))
-    except Exception:
-        return ''
+def check_stored_xss(session, urls, payload=XSS_TEST_PAYLOAD, delay=REQUEST_DELAY, rp=None):
+    """
+    Stored XSS detection:
+    1) Attempt to inject payload into forms (POST/GET)
+    2) Re-check pages for presence of payload (persistence)
+    NOTE: This modifies site state. Run only with permission.
+    """
+    injected_actions = []
+    findings = []
+
+    # Step 1: Inject payloads into forms
+    for u in urls:
+        r = safe_get(session, u, delay=delay, rp=rp)
+        if not r:
+            continue
+        soup = BeautifulSoup(r.text, "html.parser")
+        forms = soup.find_all("form")
+        for form in forms:
+            action = urljoin(u, form.get("action") or u)
+            method = (form.get("method") or "get").lower()
+            inputs = form.find_all(["input", "textarea", "select"])
+            data = {}
+            for inp in inputs:
+                name = inp.get("name")
+                if not name:
+                    continue
+                typ = (inp.get("type") or "").lower()
+                # Fill text-like inputs with our payload; keep hidden/default values otherwise
+                if typ in ("text", "search", "email", "tel") or inp.name == "textarea":
+                    data[name] = payload
+                else:
+                    data[name] = inp.get("value", "")
+            try:
+                if method == "post":
+                    res = session.post(action, data=data, timeout=15)
+                else:
+                    res = session.get(action, params=data, timeout=15)
+                injected_actions.append({'action': action, 'method': method, 'data': data})
+                logging.info(f"[Stored-XSS] Injected payload into {action} (method={method})")
+                time.sleep(delay)
+            except Exception as e:
+                logging.warning(f"[Stored-XSS] Injection failed at {action}: {e}")
+
+    # Step 2: Re-check pages for payload presence (simple approach)
+    # Re-crawl pages (or re-check known pages) to look for payload occurrence
+    for base in urls:
+        r = safe_get(session, base, delay=delay, rp=rp)
+        if not r:
+            continue
+        if payload.lower() in r.text.lower():
+            findings.append({
+                'url': base,
+                'type': 'stored_xss',
+                'payload': payload,
+                'evidence_snippet': _snippet(r.text, payload)
+            })
+            logging.info(f"[Stored-XSS] Detected persisted payload at {base}")
+
+    # Optionally include injected_actions in findings for debug
+    if injected_actions:
+        for act in injected_actions:
+            findings.append({
+                'url': act['action'],
+                'type': 'injection_attempt',
+                'method': act['method'],
+                'sample_data': act['data']
+            })
+
+    return findings
+
 
 # --- Reporting ---
 
@@ -357,21 +505,27 @@ def generate_reports(report, target, output_dir='.', format='all'):
             if report.get('sqli'):
                 hf.write('<ul>\n')
                 for s in report.get('sqli'):
-                    hf.write(f"<li>{s.get('type')} @ {s.get('url')} - evidence: {s.get('evidence_snippet','(none)')}</li>\n")
+                    hf.write(f"<li><b>{s.get('param','(n/a)')}</b> = {escape(str(s.get('payload','')))} → {s.get('type')} @ {s.get('url')}<br/>Evidence: {s.get('evidence_snippet','(none)')}</li>\n")
                 hf.write('</ul>\n')
             else:
                 hf.write('<div class="muted">No SQLi-like findings.</div>\n')
             hf.write('</div>\n')
 
             hf.write('<div class="card">\n')
-            hf.write('<h2>Potential Reflected XSS Findings</h2>\n')
+            hf.write('<h2>Potential XSS Findings</h2>\n')
             if report.get('xss'):
                 hf.write('<ul>\n')
                 for x in report.get('xss'):
-                    hf.write(f"<li>{x.get('type')} @ {x.get('url')} - snippet: {x.get('evidence_snippet','(none)')}</li>\n")
+                    # stored_xss entries may not have 'param'
+                    if x.get('type') == 'stored_xss':
+                        hf.write(f"<li><b>STORED XSS</b> @ {x.get('url')} - payload: {escape(str(x.get('payload','')))}<br/>Evidence: {x.get('evidence_snippet','(none)')}</li>\n")
+                    elif x.get('type') == 'injection_attempt':
+                        hf.write(f"<li><b>Injection Attempt</b> @ {x.get('url')} - method: {x.get('method')} - sample_data: {escape(json.dumps(x.get('sample_data',{})))}</li>\n")
+                    else:
+                        hf.write(f"<li>{x.get('type')} @ {x.get('url')} - param: {escape(str(x.get('param','')))} - payload: {escape(str(x.get('payload','')))}<br/>Evidence: {x.get('evidence_snippet','(none)')}</li>\n")
                 hf.write('</ul>\n')
             else:
-                hf.write('<div class="muted">No reflected XSS detected.</div>\n')
+                hf.write('<div class="muted">No XSS detected.</div>\n')
             hf.write('</div>\n')
 
             # detailed pages section
@@ -393,17 +547,10 @@ def generate_reports(report, target, output_dir='.', format='all'):
     return paths
 
 
-from reportlab.lib import colors
-from reportlab.lib.pagesizes import A4
-from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak
-from html import escape
-
 def _make_pdf(report, target, pdf_path):
     """Generate a styled, well-formatted PDF report for scan results."""
     doc = SimpleDocTemplate(pdf_path, pagesize=A4)
     styles = getSampleStyleSheet()
-    # Custom style names to avoid conflicts
     styles.add(ParagraphStyle(name='MyHeading1', fontSize=18, spaceAfter=12, leading=22, textColor=colors.darkblue))
     styles.add(ParagraphStyle(name='MyHeading2', fontSize=14, spaceAfter=8, leading=18, textColor=colors.darkgreen))
     styles.add(ParagraphStyle(name='MyCode', fontName='Courier', fontSize=9, leading=10, textColor=colors.darkred))
@@ -414,7 +561,6 @@ def _make_pdf(report, target, pdf_path):
     story.append(Paragraph(f"Generated: {report.get('timestamp', '(unknown)')}", styles['MySmall']))
     story.append(Spacer(1, 10))
 
-    # --- Summary ---
     story.append(Paragraph("Summary", styles['MyHeading2']))
     summary_data = [
         ['Pages Crawled', len(report.get('pages_crawled', []))],
@@ -433,7 +579,6 @@ def _make_pdf(report, target, pdf_path):
     story.append(summary_table)
     story.append(Spacer(1, 12))
 
-    # --- SQL Injection Findings ---
     if report.get('sqli'):
         story.append(PageBreak())
         story.append(Paragraph("Potential SQL Injection Findings", styles['MyHeading2']))
@@ -443,17 +588,15 @@ def _make_pdf(report, target, pdf_path):
             story.append(Paragraph(f"<b>Evidence:</b><br/><font face='Courier'>{snippet}</font>", styles['MyCode']))
             story.append(Spacer(1, 8))
 
-    # --- XSS Findings ---
     if report.get('xss'):
         story.append(PageBreak())
-        story.append(Paragraph("Potential Reflected XSS Findings", styles['MyHeading2']))
+        story.append(Paragraph("Potential XSS Findings", styles['MyHeading2']))
         for x in report['xss']:
             story.append(Paragraph(f"Type: {x.get('type')} | URL: {escape(x.get('url', ''))}", styles['MySmall']))
             snippet = escape(x.get('evidence_snippet', '(none)'))
             story.append(Paragraph(f"<b>Evidence:</b><br/><font face='Courier'>{snippet}</font>", styles['MyCode']))
             story.append(Spacer(1, 8))
 
-    # --- Form Issues ---
     if report.get('form_issues'):
         story.append(PageBreak())
         story.append(Paragraph("Form Security Issues", styles['MyHeading2']))
@@ -463,6 +606,7 @@ def _make_pdf(report, target, pdf_path):
             story.append(Spacer(1, 8))
 
     doc.build(story)
+
 
 def report_summary_lines(report):
     return [
@@ -583,11 +727,17 @@ class EduScannerCLI:
                 continue
             logging.info(f"Testing parameters at: {p}")
             sqli = check_sql_injection(self.session, p, delay=delay, rp=rp)
-            xss = check_reflected_xss(self.session, p, delay=delay, rp=rp)
+            xss_ref = check_reflected_xss(self.session, p, delay=delay, rp=rp)
             if sqli:
                 sqli_findings.extend(sqli)
-            if xss:
-                xss_findings.extend(xss)
+            if xss_ref:
+                xss_findings.extend(xss_ref)
+
+        # Stored XSS checks (form-based persistence)
+        logging.info("Starting stored-XSS checks (this will submit data to forms). Run only with permission.")
+        stored = check_stored_xss(self.session, pages, payload=XSS_TEST_PAYLOAD, delay=delay, rp=rp)
+        if stored:
+            xss_findings.extend(stored)
 
         # Save state for resume
         state_out = {'crawled': pages, 'found_paths': found_paths}
@@ -601,7 +751,8 @@ class EduScannerCLI:
             'form_issues': form_issues,
             'sqli': sqli_findings,
             'xss': xss_findings,
-            'pages_crawled': pages
+            'pages_crawled': pages,
+            'timestamp': datetime.utcnow().isoformat() + 'Z'
         }
 
         paths = generate_reports(report, target, output_dir=output_dir, format=report_format)
