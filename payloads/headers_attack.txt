@@ -1,0 +1,8 @@
+X-Forwarded-For: 127.0.0.1
+X-Forwarded-Host: evil.com
+X-Originating-IP: 127.0.0.1
+X-Client-IP: 127.0.0.1
+X-Remote-IP: 127.0.0.1
+X-Remote-Addr: 127.0.0.1
+X-Original-URL: /admin
+X-Custom-IP-Authorization: 127.0.0.1

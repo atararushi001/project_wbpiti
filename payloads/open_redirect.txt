@@ -1,0 +1,9 @@
+https://google.com
+https://evil.com
+//evil.com
+//google.com
+////evil.com
+/\/evil.com
+javascript:alert(1)
+%2F%2Fevil.com
+http://evil.com/%2f..%2f

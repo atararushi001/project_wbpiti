@@ -106,6 +106,40 @@ def load_payloads(file_path, fallback):
     except Exception as e:
         logging.warning(f"Could not load payloads from {file_path}: {e} -- using fallback")
         return fallback
+def load_payload_folder(folder_path="payloads"):
+    """
+    Auto-load all payload files inside payloads/ directory.
+    Returns a dictionary:
+    {
+        'xss': [...],
+        'sqli': [...],
+        'lfi': [...],
+        'custom': [...],
+        ...
+    }
+    """
+    payloads = {}
+
+    if not os.path.isdir(folder_path):
+        logging.warning(f"Payload folder not found: {folder_path}")
+        return payloads
+
+    for fname in os.listdir(folder_path):
+        if not fname.endswith(".txt"):
+            continue
+
+        key = fname.replace(".txt", "").lower()
+        fpath = os.path.join(folder_path, fname)
+
+        try:
+            with open(fpath, "r", encoding="utf-8") as f:
+                items = [line.strip() for line in f if line.strip()]
+                payloads[key] = items
+                logging.info(f"Loaded {len(items)} payloads from {fname}")
+        except Exception as e:
+            logging.warning(f"Failed to load {fname}: {e}")
+
+    return payloads
 
 
 # --- Feature implementations ---
@@ -210,7 +244,8 @@ def check_insecure_forms(session, urls, delay=REQUEST_DELAY, rp=None):
     return issues
 
 
-def check_sql_injection(session, url, delay=REQUEST_DELAY, rp=None):
+def check_sql_injection(cli, session, url, delay=REQUEST_DELAY, rp=None):
+
     """
     Enhanced SQL Injection check:
     - Tests multiple payloads
@@ -224,17 +259,15 @@ def check_sql_injection(session, url, delay=REQUEST_DELAY, rp=None):
 
     findings = []
 
-    payloads = [
+ # AUTO-LOAD from payloads/sqli.txt, fallback to default list
+    payloads = cli.payloads.get("sqli", [
         "'",
         "' OR '1'='1",
-        '"',
-        '" OR "1"="1',
-        "`",
         "')--",
         "' UNION SELECT NULL--",
+        '" OR "1"="1',
         "' OR 1=1--",
-        "\" OR 1=1--",
-    ]
+    ])
 
     baseline = safe_get(session, url, delay=delay, rp=rp)
     baseline_text = baseline.text if baseline else ''
@@ -293,50 +326,155 @@ def check_sql_injection(session, url, delay=REQUEST_DELAY, rp=None):
 
     return findings
 
+def test_post_sql(cli, session, page_url, form):
+    """
+    POST-based SQL Injection testing for forms.
+    Injects SQL payloads into POST form fields and checks:
+    - SQL error patterns
+    - Response length anomalies
+    - DOM differences
+    """
+    findings = []
 
-def check_reflected_xss(session, url, delay=REQUEST_DELAY, rp=None):
+    # Load SQL payloads from payloads/sqli.txt OR fallback
+    payloads = cli.payloads.get("sqli", [
+        "' OR 1=1--",
+        "\" OR 1=1--",
+        "' UNION SELECT NULL--"
+    ])
+
+    # Build baseline request
+    baseline_data = {}
+    for inp in form["inputs"]:
+        name = inp.get("name")
+        if not name:
+            continue
+        baseline_data[name] = inp.get("value", "")
+
+    try:
+        baseline_res = session.post(form["action"], data=baseline_data, timeout=10)
+        baseline_text = baseline_res.text
+        baseline_len = len(baseline_text)
+    except:
+        baseline_text = ""
+        baseline_len = 0
+
+    # Try each payload
+    for pl in payloads:
+        data = {}
+        for inp in form["inputs"]:
+            name = inp.get("name")
+            if not name:
+                continue
+            data[name] = (inp.get("value") or "") + pl
+
+        try:
+            r = session.post(form["action"], data=data, timeout=10)
+            body = r.text.lower()
+        except:
+            continue
+
+        # SQL error checks
+        for pattern in SQL_ERROR_PATTERNS:
+            if pattern in body:
+                findings.append({
+                    "url": form["action"],
+                    "type": "post_sql_error",
+                    "payload": pl,
+                    "pattern": pattern,
+                    "evidence_snippet": _snippet(r.text, pattern)
+                })
+
+        # Response length anomaly
+        if abs(len(r.text) - baseline_len) > 200:
+            findings.append({
+                "url": form["action"],
+                "type": "post_sql_length_diff",
+                "payload": pl,
+                "len": len(r.text),
+                "baseline": baseline_len
+            })
+
+        # DOM diff
+        score = dom_diff_score(baseline_text, r.text)
+        if score < 0.7:
+            findings.append({
+                "url": form["action"],
+                "type": "post_sql_dom_diff",
+                "payload": pl,
+                "score": score
+            })
+
+    return findings
+
+def check_reflected_xss(cli, session, url, delay=REQUEST_DELAY, rp=None):
     """
-    Test query-parameter reflection for XSS.
-    - Uses payloads/xss.txt if load_payloads() is available, otherwise uses a default list.
-    - Returns findings with param, payload and evidence_snippet.
+    Improved reflected XSS detection:
+    - HTML-unescape response body
+    - Partial payload matching (resistant to encoding)
+    - Stronger evidence extraction
     """
+    import html
+
     parsed = urlparse(url)
     qs = dict(parse_qsl(parsed.query))
     findings = []
+
     if not qs:
         return findings
 
-    # Try to load a payload list if helper exists; otherwise use one important default
-    try:
-        payloads = load_payloads('payloads/xss.txt', [XSS_TEST_PAYLOAD])
-    except NameError:
-        # load_payloads not defined in this file — fall back
-        payloads = [XSS_TEST_PAYLOAD, '\"><script>alert(1)</script>', "'\"><img src=x onerror=alert(1)>"]
+    # load payloads
+    payloads = cli.payloads.get("xss", [XSS_TEST_PAYLOAD])
 
-    for name in qs.keys():
-        for p in payloads:
+    for param in qs.keys():
+        for payload in payloads:
+
             qs_copy = qs.copy()
-            original = qs_copy.get(name) or ""
-            qs_copy[name] = original + p
+            original = qs_copy.get(param) or ""
+            qs_copy[param] = original + payload
+
             new_qs = urlencode(qs_copy, doseq=True)
             test_url = parsed._replace(query=new_qs).geturl()
+
             r = safe_get(session, test_url, delay=delay, rp=rp)
             if not r:
                 continue
-            body = r.text or ""
-            if p.lower() in body.lower():
+
+            # normalize body (html-unescape)
+            raw_body = r.text or ""
+            body = html.unescape(raw_body).lower()
+
+            # pick stable substring of payload
+            marker = payload[0:10].lower()  # first 10 chars
+            marker2 = payload[-10:].lower()  # last 10 chars
+
+            reflected = False
+
+            # check partial reflection
+            if marker in body or marker2 in body:
+                reflected = True
+
+            # fallback: remove <script> tags when checking
+            cleaned_body = re.sub(r"<script.*?>", "", body)
+            if payload.replace("<script>", "").lower() in cleaned_body:
+                reflected = True
+
+            if reflected:
                 findings.append({
-                    'url': test_url,
-                    'param': name,
-                    'payload': p,
-                    'type': 'reflected_xss_marker',
-                    'evidence_snippet': _snippet(r.text, p)
+                    "url": test_url,
+                    "param": param,
+                    "payload": payload,
+                    "type": "reflected_xss_marker",
+                    "evidence_snippet": _snippet(raw_body, marker)
                 })
-                logging.info(f"[XSS-REFLECT] param={name} payload={p} @ {test_url}")
+
+                logging.info(f"[XSS-REFLECT] {param}={payload} @ {test_url}")
+
     return findings
 
+def check_stored_xss(cli, session, urls, delay=REQUEST_DELAY, rp=None):
+    payload = cli.payloads.get("xss", [XSS_TEST_PAYLOAD])[0]
 
-def check_stored_xss(session, urls, payload=XSS_TEST_PAYLOAD, delay=REQUEST_DELAY, rp=None):
     """
     Stored XSS detection:
     1) Attempt to inject payload into forms (POST/GET)
@@ -622,10 +760,30 @@ def report_summary_lines(report):
 
 
 class EduScannerCLI:
-    def __init__(self):
+    def __init__(self, proxy=None):
         self.session = requests.Session()
         self.session.headers.update(HEADERS)
         self.state_file = STATE_FILE
+        # Auto-load payload sets
+        self.payloads = load_payload_folder()
+
+        # If proxy provided, set session.proxies so all requests use it.
+        # Accepts full proxy URL, with optional credentials: http://user:pass@host:port or socks5://host:port
+        if proxy:
+            # requests expects proxies dict where same proxy used for http and https
+            self.session.proxies = {'http': proxy, 'https': proxy}
+            logging.info(f"Using proxy: {proxy}")
+
+            # quick connectivity test for the proxy (best-effort)
+            try:
+                # httpbin returns the origin IP; won't work for socks5 unless requests[socks] installed.
+                resp = self.session.get('https://httpbin.org/ip', timeout=8)
+                if resp.status_code == 200:
+                    logging.info(f"Proxy check OK: {resp.text.strip()}")
+                else:
+                    logging.warning(f"Proxy check returned status {resp.status_code}")
+            except Exception as e:
+                logging.warning(f"Proxy check failed: {e}\n(If you're using a SOCKS proxy, make sure 'requests[socks]' is installed.)")
 
     def load_wordlist(self, path):
         try:
@@ -680,11 +838,13 @@ class EduScannerCLI:
                 return json.load(sf)
         except Exception:
             return {}
+    def run_scan(self, target, wordlist_path=None, max_workers=4, delay=REQUEST_DELAY,
+                respect_robots_flag=True, resume=False, output_dir='reports', report_format='all'):
 
-    def run_scan(self, target, wordlist_path=None, max_workers=4, delay=REQUEST_DELAY, respect_robots_flag=True, resume=False, output_dir='reports', report_format='all'):
         rp = None
         if respect_robots_flag:
             rp = self.respect_robots(target)
+
         pages = []
         found_paths = []
         header_issues = []
@@ -692,57 +852,104 @@ class EduScannerCLI:
         sqli_findings = []
         xss_findings = []
 
+        # Wordlist
         wordlist = SMALL_WORDLIST
         if wordlist_path:
             wordlist = self.load_wordlist(wordlist_path)
 
+        # Resume state
         state = self.load_state() if resume else {}
         crawled = set(state.get('crawled', [])) if resume else set()
 
-        # Crawl
+        # -----------------------
+        # 1. Crawl the target
+        # -----------------------
         pages = crawl(self.session, target, max_pages=MAX_PAGES, delay=delay, rp=rp)
 
-        # Header analysis
+        # -----------------------
+        # 2. Analyze server headers
+        # -----------------------
         hdrs, hdr_issues = analyze_headers(self.session, target, delay=delay, rp=rp)
         header_issues.extend(hdr_issues)
 
-        # Path enumeration (concurrent)
-        found_paths = enumerate_paths(self.session, target, wordlist, delay=delay, rp=rp, max_workers=max_workers)
+        # -----------------------
+        # 3. Directory / file enumeration
+        # -----------------------
+        found_paths = enumerate_paths(self.session, target, wordlist,
+                                    delay=delay, rp=rp, max_workers=max_workers)
 
-        # Form analysis (per page)
+        # -----------------------
+        # 4. Form security analysis
+        # -----------------------
         for u in pages:
             forms = extract_forms(self.session, u, delay=delay, rp=rp)
             for f in forms:
                 names = [i.get('name') or '' for i in f['inputs']]
                 csrf_like = any('csrf' in n.lower() or 'token' in n.lower() for n in names)
-                parsed_action = urlparse(f['action'] or u)
-                if parsed_action.scheme != 'https' and parsed_action.scheme != '':
-                    form_issues.append({'url': u, 'action': f['action'], 'method': f['method'], 'note': 'Form action not HTTPS'})
-                if not csrf_like:
-                    form_issues.append({'url': u, 'action': f['action'], 'method': f['method'], 'note': 'No CSRF-like field (heuristic)'})
 
-        # Parameter-based active checks (sequential to limit noisy traffic)
+                parsed_action = urlparse(f['action'] or u)
+                if parsed_action.scheme not in ('https', ''):
+                    form_issues.append({
+                        'url': u,
+                        'action': f['action'],
+                        'method': f['method'],
+                        'note': 'Form action not HTTPS'
+                    })
+
+                if not csrf_like:
+                    form_issues.append({
+                        'url': u,
+                        'action': f['action'],
+                        'method': f['method'],
+                        'note': 'No CSRF-like field (heuristic)'
+                    })
+
+        # -----------------------
+        # 5. Active GET-based SQLi and XSS
+        # -----------------------
         for p in pages:
             if '?' not in p:
                 continue
+
             logging.info(f"Testing parameters at: {p}")
-            sqli = check_sql_injection(self.session, p, delay=delay, rp=rp)
-            xss_ref = check_reflected_xss(self.session, p, delay=delay, rp=rp)
+
+            # GET SQL Injection
+            sqli = check_sql_injection(self, self.session, p, delay=delay, rp=rp)
             if sqli:
                 sqli_findings.extend(sqli)
+
+            # Reflected GET XSS
+            xss_ref = check_reflected_xss(self, self.session, p, delay=delay, rp=rp)
             if xss_ref:
                 xss_findings.extend(xss_ref)
 
-        # Stored XSS checks (form-based persistence)
+            # -----------------------
+            # 6. POST-based SQL Injection (NEW)
+            # -----------------------
+            forms = extract_forms(self.session, p, delay=delay, rp=rp)
+            for f in forms:
+                if f["method"] == "post":
+                    post_sqli = test_post_sql(self, self.session, p, f)
+                    if post_sqli:
+                        sqli_findings.extend(post_sqli)
+
+        # -----------------------
+        # 7. Stored XSS
+        # -----------------------
         logging.info("Starting stored-XSS checks (this will submit data to forms). Run only with permission.")
-        stored = check_stored_xss(self.session, pages, payload=XSS_TEST_PAYLOAD, delay=delay, rp=rp)
+        stored = check_stored_xss(self, self.session, pages, delay=delay, rp=rp)
         if stored:
             xss_findings.extend(stored)
 
-        # Save state for resume
+        # -----------------------
+        # Save scan state (resume)
+        # -----------------------
         state_out = {'crawled': pages, 'found_paths': found_paths}
         self.save_state(state_out)
 
+        # -----------------------
+        # Final report
+        # -----------------------
         report = {
             'target': target,
             'headers': hdrs,
@@ -757,47 +964,54 @@ class EduScannerCLI:
 
         paths = generate_reports(report, target, output_dir=output_dir, format=report_format)
         logging.info(f"Reports generated: {paths}")
+
         return report, paths
 
     def interactive_menu(self):
-        print('\n=== Edu Web Scanner - Interactive CLI ===')
-        print('1) Quick scan (default settings)')
-        print('2) Scan with options (wordlist, workers, delay)')
-        print('3) Login & scan (authenticated)')
-        print('4) Resume last scan state')
-        print('5) Exit')
-        choice = input('Choose an option: ').strip()
-        if choice == '1':
-            target = input('Target (include http:// or https://): ').strip()
-            report, paths = self.run_scan(target)
-            print('Done. Reports:', paths)
-        elif choice == '2':
-            target = input('Target: ').strip()
-            wl = input('Wordlist file (leave blank to use builtin): ').strip() or None
-            workers = int(input('Max workers (default 4): ').strip() or 4)
-            delay = float(input('Delay between requests in seconds (default 0.5): ').strip() or 0.5)
-            out = input('Output directory (default reports): ').strip() or 'reports'
-            report, paths = self.run_scan(target, wordlist_path=wl, max_workers=workers, delay=delay, output_dir=out)
-            print('Done. Reports:', paths)
-        elif choice == '3':
-            target = input('Target: ').strip()
-            login_url = input('Login URL (form action): ').strip()
-            uname = input('Username: ').strip()
-            pwd = input('Password: ').strip()
-            if self.login_flow(login_url, username_field='username', password_field='password', username=uname, password=pwd):
-                print('Login succeeded (cookies stored). Starting scan...')
+            print('\n=== Edu Web Scanner - Interactive CLI ===')
+            print('1) Quick scan (default settings)')
+            print('2) Scan with options (wordlist, workers, delay)')
+            print('3) Login & scan (authenticated)')
+            print('4) Resume last scan state')
+            print('5) Exit')
+            
+            choice = input('Choose an option: ').strip()
+            
+            if choice == '1':
+                target = input('Target (include http:// or https://): ').strip()
                 report, paths = self.run_scan(target)
                 print('Done. Reports:', paths)
+
+            elif choice == '2':
+                target = input('Target: ').strip()
+                wl = input('Wordlist file (leave blank to use builtin): ').strip() or None
+                workers = int(input('Max workers (default 4): ').strip() or 4)
+                delay = float(input('Delay between requests (default 0.5): ').strip() or 0.5)
+                out = input('Output folder (default reports): ').strip() or 'reports'
+                report, paths = self.run_scan(target, wordlist_path=wl, max_workers=workers, delay=delay, output_dir=out)
+                print('Done. Reports:', paths)
+
+            elif choice == '3':
+                target = input('Target: ').strip()
+                login_url = input('Login URL: ').strip()
+                uname = input('Username: ').strip()
+                pwd = input('Password: ').strip()
+                
+                if self.login_flow(login_url, username=uname, password=pwd):
+                    print('Login OK. Running scan...')
+                    report, paths = self.run_scan(target)
+                    print('Done. Reports:', paths)
+                else:
+                    print('Login failed.')
+
+            elif choice == '4':
+                print('Loaded state:', self.load_state())
+                target = input('Target to continue scanning: ').strip()
+                report, paths = self.run_scan(target, resume=True)
+                print('Done. Reports:', paths)
+
             else:
-                print('Login failed. Aborting.')
-        elif choice == '4':
-            state = self.load_state()
-            print('Loaded state:', state)
-            target = input('Target to continue scanning: ').strip()
-            report, paths = self.run_scan(target, resume=True)
-            print('Done. Reports:', paths)
-        else:
-            print('Bye.')
+                print('Bye.')
 
 
 # --- Entry point ---
@@ -816,10 +1030,13 @@ if __name__ == '__main__':
     parser.add_argument('--resume', action='store_true', help='Resume from last saved state')
     parser.add_argument('--outdir', default='reports', help='Output directory for reports')
     parser.add_argument('--format', default='all', help='Output format (json,csv,html,pdf,all)')
+    parser.add_argument('--proxy', help='Proxy URL to use (e.g. http://127.0.0.1:8080 or socks5://127.0.0.1:9050)')
 
     args = parser.parse_args()
 
-    cli = EduScannerCLI()
+    # Create CLI with optional proxy
+    cli = EduScannerCLI(proxy=args.proxy)
+
     if args.interactive:
         cli.interactive_menu()
         sys.exit(0)

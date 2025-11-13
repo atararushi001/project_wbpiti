@@ -1556,3 +1556,746 @@
 2025-11-10 11:23:54,518 WARNING: [Stored-XSS] Injection failed at http://testphp.vulnweb.com/search.php?test=query: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Read timed out. (read timeout=15)
 2025-11-10 11:23:56,781 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251110T055354Z.json', 'csv': 'reports\\edu_scan_report_20251110T055354Z.csv', 'html': 'reports\\edu_scan_report_20251110T055354Z.html', 'pdf': 'reports\\edu_scan_report_20251110T055354Z.pdf'}
 2025-11-11 00:01:28,842 ERROR: Login error: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-11-12 12:43:13,083 INFO: Starting scan: https://testphp.vulnweb.com
+2025-11-12 13:00:15,718 INFO: Starting stored-XSS checks (this will submit data to forms). Run only with permission.
+2025-11-12 13:00:15,731 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251112T073015Z.json', 'csv': 'reports\\edu_scan_report_20251112T073015Z.csv', 'html': 'reports\\edu_scan_report_20251112T073015Z.html', 'pdf': 'reports\\edu_scan_report_20251112T073015Z.pdf'}
+2025-11-12 13:00:40,379 INFO: Using proxy: http://127.0.0.1:8080
+2025-11-12 13:00:42,412 WARNING: Proxy check failed: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /ip (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001BDF061C070>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))
+(If you're using a SOCKS proxy, make sure 'requests[socks]' is installed.)
+2025-11-12 13:02:40,800 INFO: Using proxy: http://103.58.77.10:8081
+2025-11-12 13:02:48,812 WARNING: Proxy check failed: HTTPSConnectionPool(host='httpbin.org', port=443): Max retries exceeded with url: /ip (Caused by ProxyError('Unable to connect to proxy', ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002D4236FC070>, 'Connection to 103.58.77.10 timed out. (connect timeout=8)')))
+(If you're using a SOCKS proxy, make sure 'requests[socks]' is installed.)
+2025-11-13 21:17:16,461 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 1)
+2025-11-13 21:17:19,103 INFO: Starting stored-XSS checks (this will submit data to forms). Run only with permission.
+2025-11-13 21:17:19,641 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/login.php (method=post)
+2025-11-13 21:17:20,731 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T154720Z.json', 'csv': 'reports\\edu_scan_report_20251113T154720Z.csv', 'html': 'reports\\edu_scan_report_20251113T154720Z.html', 'pdf': 'reports\\edu_scan_report_20251113T154720Z.pdf'}
+2025-11-13 21:17:51,792 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 1)
+2025-11-13 21:17:54,387 INFO: Starting stored-XSS checks (this will submit data to forms). Run only with permission.
+2025-11-13 21:17:54,931 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/login.php (method=post)
+2025-11-13 21:17:56,021 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T154755Z.json', 'csv': 'reports\\edu_scan_report_20251113T154755Z.csv', 'html': 'reports\\edu_scan_report_20251113T154755Z.html', 'pdf': 'reports\\edu_scan_report_20251113T154755Z.pdf'}
+2025-11-13 21:18:48,395 INFO: Crawled: http://localhost/testwebsite/vulnauth (total 1)
+2025-11-13 21:18:48,930 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=N;O=D (total 2)
+2025-11-13 21:18:49,463 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=M;O=A (total 3)
+2025-11-13 21:18:49,990 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=S;O=A (total 4)
+2025-11-13 21:18:50,535 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=D;O=A (total 5)
+2025-11-13 21:18:51,101 INFO: Crawled: http://localhost/testwebsite/ (total 6)
+2025-11-13 21:18:53,665 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=N;O=A (total 7)
+2025-11-13 21:18:54,195 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=M;O=D (total 8)
+2025-11-13 21:18:54,731 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=S;O=D (total 9)
+2025-11-13 21:18:55,266 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=D;O=D (total 10)
+2025-11-13 21:18:55,812 INFO: Crawled: http://localhost/testwebsite/?C=N;O=D (total 11)
+2025-11-13 21:18:56,357 INFO: Crawled: http://localhost/testwebsite/?C=M;O=A (total 12)
+2025-11-13 21:18:56,910 INFO: Crawled: http://localhost/testwebsite/?C=S;O=A (total 13)
+2025-11-13 21:18:57,470 INFO: Crawled: http://localhost/testwebsite/?C=D;O=A (total 14)
+2025-11-13 21:18:58,011 INFO: Crawled: http://localhost/ (total 15)
+2025-11-13 21:18:58,705 INFO: Crawled: http://localhost/testwebsite/auth_user.sql (total 16)
+2025-11-13 21:18:59,242 INFO: Crawled: http://localhost/testwebsite/authv2/ (total 17)
+2025-11-13 21:18:59,765 INFO: Crawled: http://localhost/testwebsite/vulnauth/ (total 18)
+2025-11-13 21:19:00,334 INFO: Crawled: http://localhost/testwebsite/?C=N;O=A (total 19)
+2025-11-13 21:19:00,884 INFO: Crawled: http://localhost/testwebsite/?C=M;O=D (total 20)
+2025-11-13 21:19:01,430 INFO: Crawled: http://localhost/testwebsite/?C=S;O=D (total 21)
+2025-11-13 21:19:01,992 INFO: Crawled: http://localhost/testwebsite/?C=D;O=D (total 22)
+2025-11-13 21:19:02,533 INFO: Crawled: http://localhost/dashboard/index.html (total 23)
+2025-11-13 21:19:03,102 INFO: Crawled: http://localhost/dashboard/faq.html (total 24)
+2025-11-13 21:19:03,631 INFO: Crawled: http://localhost/dashboard/howto.html (total 25)
+2025-11-13 21:19:04,290 INFO: Crawled: http://localhost/dashboard/phpinfo.php (total 26)
+2025-11-13 21:19:05,533 INFO: Crawled: http://localhost/phpmyadmin/ (total 27)
+2025-11-13 21:19:06,554 INFO: Crawled: http://localhost/dashboard/stylesheets/normalize.css (total 28)
+2025-11-13 21:19:07,076 INFO: Crawled: http://localhost/dashboard/stylesheets/all.css (total 29)
+2025-11-13 21:19:07,647 INFO: Crawled: http://localhost/dashboard/images/favicon.png (total 30)
+2025-11-13 21:19:08,181 INFO: Crawled: http://localhost/testwebsite/authv2/?C=N;O=D (total 31)
+2025-11-13 21:19:08,713 INFO: Crawled: http://localhost/testwebsite/authv2/?C=M;O=A (total 32)
+2025-11-13 21:19:09,256 INFO: Crawled: http://localhost/testwebsite/authv2/?C=S;O=A (total 33)
+2025-11-13 21:19:09,791 INFO: Crawled: http://localhost/testwebsite/authv2/?C=D;O=A (total 34)
+2025-11-13 21:19:10,321 INFO: Crawled: http://localhost/testwebsite/authv2/config.php (total 35)
+2025-11-13 21:19:10,837 INFO: Crawled: http://localhost/testwebsite/authv2/login.php (total 36)
+2025-11-13 21:19:11,354 INFO: Crawled: http://localhost/testwebsite/authv2/logout.php (total 37)
+2025-11-13 21:19:11,896 INFO: Crawled: http://localhost/testwebsite/authv2/register.php (total 38)
+2025-11-13 21:19:12,436 INFO: Crawled: http://localhost/testwebsite/authv2/welcome.php (total 39)
+2025-11-13 21:19:12,952 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=N;O=D (total 40)
+2025-11-13 21:19:13,482 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=M;O=A (total 41)
+2025-11-13 21:19:14,013 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=S;O=A (total 42)
+2025-11-13 21:19:14,571 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=D;O=A (total 43)
+2025-11-13 21:19:15,098 INFO: Crawled: http://localhost/testwebsite/vulnauth/config.php (total 44)
+2025-11-13 21:19:15,607 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 45)
+2025-11-13 21:19:16,122 INFO: Crawled: http://localhost/testwebsite/vulnauth/register.php (total 46)
+2025-11-13 21:19:16,686 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 47)
+2025-11-13 21:19:17,197 INFO: Crawled: http://localhost/dashboard/docs/backup-restore-mysql.html (total 48)
+2025-11-13 21:19:17,711 INFO: Crawled: http://localhost/dashboard/docs/transfer-files-ftp.html (total 49)
+2025-11-13 21:19:18,227 INFO: Crawled: http://localhost/dashboard/docs/configure-vhosts.html (total 50)
+2025-11-13 21:19:18,745 INFO: Crawled: http://localhost/dashboard/docs/configure-wildcard-subdomains.html (total 51)
+2025-11-13 21:19:19,266 INFO: Crawled: http://localhost/dashboard/docs/deploy-git-app.html (total 52)
+2025-11-13 21:19:19,785 INFO: Crawled: http://localhost/dashboard/docs/reset-mysql-password.html (total 53)
+2025-11-13 21:19:20,313 INFO: Crawled: http://localhost/dashboard/docs/send-mail.html (total 54)
+2025-11-13 21:19:20,823 INFO: Crawled: http://localhost/dashboard/docs/use-sqlite.html (total 55)
+2025-11-13 21:19:21,349 INFO: Crawled: http://localhost/dashboard/docs/activate-use-xdebug.html (total 56)
+2025-11-13 21:19:21,871 INFO: Crawled: http://localhost/dashboard/docs/create-framework-project-zf1.html (total 57)
+2025-11-13 21:19:22,390 INFO: Crawled: http://localhost/dashboard/docs/create-framework-project-zf2.html (total 58)
+2025-11-13 21:19:22,910 INFO: Crawled: http://localhost/dashboard/docs/troubleshoot-apache.html (total 59)
+2025-11-13 21:19:23,432 INFO: Crawled: http://localhost/dashboard/docs/change-mysql-temp-dir.html (total 60)
+2025-11-13 21:19:23,949 INFO: Crawled: http://localhost/dashboard/docs/increase-php-file-upload-limit.html (total 61)
+2025-11-13 21:19:24,465 INFO: Crawled: http://localhost/dashboard/docs/access-phpmyadmin-remotely.html (total 62)
+2025-11-13 21:19:24,970 INFO: Crawled: http://localhost/dashboard/docs/auto-start-xampp.html (total 63)
+2025-11-13 21:19:25,483 INFO: Crawled: http://localhost/dashboard/docs/use-different-php-version.html (total 64)
+2025-11-13 21:19:26,002 INFO: Crawled: http://localhost/dashboard/docs/use-php-fcgi.html (total 65)
+2025-11-13 21:19:26,523 INFO: Crawled: http://localhost/dashboard/docs/configure-use-tomcat.html (total 66)
+2025-11-13 21:19:27,520 INFO: Crawled: http://localhost/phpmyadmin/index.php?lang=en_GB (total 67)
+2025-11-13 21:19:28,534 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/&lang=en_GB (total 68)
+2025-11-13 21:19:30,000 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/logout&lang=en_GB (total 69)
+2025-11-13 21:19:30,522 INFO: Crawled: http://localhost/phpmyadmin/doc/html/index.html (total 70)
+2025-11-13 21:19:31,269 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fmariadb.com%2Fkb%2Fen%2Fdocumentation%2F (total 71)
+2025-11-13 21:19:32,351 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/databases&lang=en_GB (total 72)
+2025-11-13 21:19:33,501 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=auth_user&lang=en_GB (total 73)
+2025-11-13 21:19:34,651 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=auth_user&lang=en_GB (total 74)
+2025-11-13 21:19:35,811 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=information_schema&lang=en_GB (total 75)
+2025-11-13 21:19:37,333 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=information_schema&lang=en_GB (total 76)
+2025-11-13 21:19:38,401 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=mysql&lang=en_GB (total 77)
+2025-11-13 21:19:39,793 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=mysql&lang=en_GB (total 78)
+2025-11-13 21:19:40,892 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=performance_schema&lang=en_GB (total 79)
+2025-11-13 21:19:42,280 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=performance_schema&lang=en_GB (total 80)
+2025-11-13 21:19:43,350 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=phpmyadmin&lang=en_GB (total 81)
+2025-11-13 21:19:44,643 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=phpmyadmin&lang=en_GB (total 82)
+2025-11-13 21:19:45,731 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=test&lang=en_GB (total 83)
+2025-11-13 21:19:46,743 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=test&lang=en_GB (total 84)
+2025-11-13 21:19:47,481 INFO: Crawled: http://localhost/phpmyadmin/doc/html/config.html (total 85)
+2025-11-13 21:19:48,531 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/sql&lang=en_GB (total 86)
+2025-11-13 21:19:49,714 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/status&lang=en_GB (total 87)
+2025-11-13 21:19:50,897 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/privileges&viewing_mode=server&lang=en_GB (total 88)
+2025-11-13 21:19:52,250 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/export&lang=en_GB (total 89)
+2025-11-13 21:19:53,400 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/import&lang=en_GB (total 90)
+2025-11-13 21:19:54,439 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/preferences/manage&lang=en_GB (total 91)
+2025-11-13 21:19:55,523 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/replication&lang=en_GB (total 92)
+2025-11-13 21:19:56,830 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/variables&lang=en_GB (total 93)
+2025-11-13 21:19:57,980 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/collations&lang=en_GB (total 94)
+2025-11-13 21:19:59,020 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/engines&lang=en_GB (total 95)
+2025-11-13 21:20:00,143 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/plugins&lang=en_GB (total 96)
+2025-11-13 21:20:01,807 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F8.0%2Fen%2Fcharset-connection.html (total 97)
+2025-11-13 21:20:02,393 INFO: Crawled: http://localhost/phpmyadmin/doc/html/faq.html (total 98)
+2025-11-13 21:20:03,012 INFO: Crawled: http://localhost/phpmyadmin/doc/html/setup.html (total 99)
+2025-11-13 21:20:03,740 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fbook.mysqli.php (total 100)
+2025-11-13 21:20:04,456 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fbook.curl.php (total 101)
+2025-11-13 21:20:05,158 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fbook.mbstring.php (total 102)
+2025-11-13 21:20:05,857 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2F (total 103)
+2025-11-13 21:20:06,546 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2Fcontribute%2F (total 104)
+2025-11-13 21:20:07,239 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2Fsupport%2F (total 105)
+2025-11-13 21:20:08,204 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/changelog&lang=en_GB (total 106)
+2025-11-13 21:20:09,073 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/license&lang=en_GB (total 107)
+2025-11-13 21:20:09,828 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2Fthemes%2F (total 108)
+2025-11-13 21:20:10,906 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=%2F&server=1&lang=en_GB (total 109)
+2025-11-13 21:20:13,321 INFO: Crawled: http://localhost/phpmyadmin/favicon.ico (total 110)
+2025-11-13 21:20:13,831 INFO: Crawled: http://localhost/phpmyadmin/themes/pmahomme/jquery/jquery-ui.css (total 111)
+2025-11-13 21:20:14,345 INFO: Crawled: http://localhost/phpmyadmin/js/vendor/codemirror/lib/codemirror.css?v=5.2.1 (total 112)
+2025-11-13 21:20:14,852 INFO: Crawled: http://localhost/phpmyadmin/js/vendor/codemirror/addon/hint/show-hint.css?v=5.2.1 (total 113)
+2025-11-13 21:20:15,369 INFO: Crawled: http://localhost/phpmyadmin/js/vendor/codemirror/addon/lint/lint.css?v=5.2.1 (total 114)
+2025-11-13 21:20:15,886 INFO: Crawled: http://localhost/phpmyadmin/themes/pmahomme/css/theme.css?v=5.2.1 (total 115)
+2025-11-13 21:20:16,438 INFO: Crawled: http://localhost/testwebsite/authv2/?C=N;O=A (total 116)
+2025-11-13 21:20:16,964 INFO: Crawled: http://localhost/testwebsite/authv2/?C=M;O=D (total 117)
+2025-11-13 21:20:17,496 INFO: Crawled: http://localhost/testwebsite/authv2/?C=S;O=D (total 118)
+2025-11-13 21:20:18,031 INFO: Crawled: http://localhost/testwebsite/authv2/?C=D;O=D (total 119)
+2025-11-13 21:20:18,562 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=N;O=A (total 120)
+2025-11-13 21:20:19,094 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=M;O=D (total 121)
+2025-11-13 21:20:19,631 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=S;O=D (total 122)
+2025-11-13 21:20:20,162 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=D;O=D (total 123)
+2025-11-13 21:20:20,751 INFO: Crawled: http://localhost/dashboard/docs/backup-restore-mysql.pdf (total 124)
+2025-11-13 21:20:21,801 INFO: Crawled: http://localhost/dashboard/docs/transfer-files-ftp.pdf (total 125)
+2025-11-13 21:20:22,853 INFO: Crawled: http://localhost/dashboard/docs/configure-vhosts.pdf (total 126)
+2025-11-13 21:20:23,911 INFO: Crawled: http://localhost/dashboard/docs/configure-wildcard-subdomains.pdf (total 127)
+2025-11-13 21:20:24,446 INFO: Crawled: http://localhost/dashboard/docs/deploy-git-app.pdf (total 128)
+2025-11-13 21:20:25,480 INFO: Crawled: http://localhost/dashboard/docs/reset-mysql-password.pdf (total 129)
+2025-11-13 21:20:26,000 INFO: Crawled: http://localhost/dashboard/docs/send-mail.pdf (total 130)
+2025-11-13 21:20:27,543 INFO: Crawled: http://localhost/dashboard/docs/use-sqlite.pdf (total 131)
+2025-11-13 21:20:28,601 INFO: Crawled: http://localhost/dashboard/docs/activate-use-xdebug.pdf (total 132)
+2025-11-13 21:20:29,637 INFO: Crawled: http://localhost/dashboard/docs/create-framework-project-zf1.pdf (total 133)
+2025-11-13 21:20:31,192 INFO: Crawled: http://localhost/dashboard/docs/create-framework-project-zf2.pdf (total 134)
+2025-11-13 21:20:31,771 INFO: Crawled: http://localhost/dashboard/docs/troubleshoot-apache.pdf (total 135)
+2025-11-13 21:20:32,291 INFO: Crawled: http://localhost (total 136)
+2025-11-13 21:20:32,877 INFO: Crawled: http://localhost/dashboard/docs/change-mysql-temp-dir.pdf (total 137)
+2025-11-13 21:20:33,411 INFO: Crawled: http://localhost/dashboard/docs/increase-php-file-upload-limit.pdf (total 138)
+2025-11-13 21:20:33,936 INFO: Crawled: http://localhost/dashboard/docs/access-phpmyadmin-remotely.pdf (total 139)
+2025-11-13 21:20:34,471 INFO: Crawled: http://localhost/dashboard/docs/auto-start-xampp.pdf (total 140)
+2025-11-13 21:20:35,025 INFO: Crawled: http://localhost/dashboard/docs/use-different-php-version.pdf (total 141)
+2025-11-13 21:20:35,578 INFO: Crawled: http://localhost/dashboard/docs/use-php-fcgi.pdf (total 142)
+2025-11-13 21:20:36,142 INFO: Crawled: http://localhost/dashboard/docs/configure-use-tomcat.pdf (total 143)
+2025-11-13 21:20:37,210 INFO: Crawled: http://localhost/phpmyadmin/index.php (total 144)
+2025-11-13 21:20:38,231 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/ (total 145)
+2025-11-13 21:20:39,797 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/logout (total 146)
+2025-11-13 21:20:40,940 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/databases (total 147)
+2025-11-13 21:20:42,407 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=auth_user (total 148)
+2025-11-13 21:20:44,201 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=auth_user (total 149)
+2025-11-13 21:20:45,356 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=information_schema (total 150)
+2025-11-13 21:20:47,227 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=information_schema (total 151)
+2025-11-13 21:20:48,556 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=mysql (total 152)
+2025-11-13 21:20:50,131 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=mysql (total 153)
+2025-11-13 21:20:51,241 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=performance_schema (total 154)
+2025-11-13 21:20:52,714 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=performance_schema (total 155)
+2025-11-13 21:20:53,871 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=phpmyadmin (total 156)
+2025-11-13 21:20:55,164 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=phpmyadmin (total 157)
+2025-11-13 21:20:56,288 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=test (total 158)
+2025-11-13 21:20:57,382 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=test (total 159)
+2025-11-13 21:20:58,422 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/sql (total 160)
+2025-11-13 21:20:59,444 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/status (total 161)
+2025-11-13 21:21:00,601 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/privileges&viewing_mode=server (total 162)
+2025-11-13 21:21:01,989 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/export (total 163)
+2025-11-13 21:21:03,071 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/import (total 164)
+2025-11-13 21:21:04,046 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/preferences/manage (total 165)
+2025-11-13 21:21:05,071 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/replication (total 166)
+2025-11-13 21:21:06,700 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/variables (total 167)
+2025-11-13 21:21:07,944 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/collations (total 168)
+2025-11-13 21:21:08,989 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/engines (total 169)
+2025-11-13 21:21:10,316 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/plugins (total 170)
+2025-11-13 21:21:12,626 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/changelog (total 171)
+2025-11-13 21:21:14,270 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/license (total 172)
+2025-11-13 21:21:15,708 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=%2F&server=1 (total 173)
+2025-11-13 21:21:18,926 INFO: Crawled: http://localhost/phpmyadmin/doc/html/genindex.html (total 174)
+2025-11-13 21:21:19,456 INFO: Crawled: http://localhost/phpmyadmin/doc/html/intro.html (total 175)
+2025-11-13 21:21:19,983 INFO: Crawled: http://localhost/phpmyadmin/doc/html/require.html (total 176)
+2025-11-13 21:21:20,552 INFO: Crawled: http://localhost/phpmyadmin/doc/html/user.html (total 177)
+2025-11-13 21:21:21,066 INFO: Crawled: http://localhost/phpmyadmin/doc/html/settings.html (total 178)
+2025-11-13 21:21:21,605 INFO: Crawled: http://localhost/phpmyadmin/doc/html/two_factor.html (total 179)
+2025-11-13 21:21:22,141 INFO: Crawled: http://localhost/phpmyadmin/doc/html/transformations.html (total 180)
+2025-11-13 21:21:22,663 INFO: Crawled: http://localhost/phpmyadmin/doc/html/bookmarks.html (total 181)
+2025-11-13 21:21:23,197 INFO: Crawled: http://localhost/phpmyadmin/doc/html/privileges.html (total 182)
+2025-11-13 21:21:23,813 INFO: Crawled: http://localhost/phpmyadmin/doc/html/relations.html (total 183)
+2025-11-13 21:21:24,361 INFO: Crawled: http://localhost/phpmyadmin/doc/html/charts.html (total 184)
+2025-11-13 21:21:24,911 INFO: Crawled: http://localhost/phpmyadmin/doc/html/import_export.html (total 185)
+2025-11-13 21:21:25,442 INFO: Crawled: http://localhost/phpmyadmin/doc/html/themes.html (total 186)
+2025-11-13 21:21:25,960 INFO: Crawled: http://localhost/phpmyadmin/doc/html/other.html (total 187)
+2025-11-13 21:21:26,472 INFO: Crawled: http://localhost/phpmyadmin/doc/html/developers.html (total 188)
+2025-11-13 21:21:27,008 INFO: Crawled: http://localhost/phpmyadmin/doc/html/security.html (total 189)
+2025-11-13 21:21:27,537 INFO: Crawled: http://localhost/phpmyadmin/doc/html/vendors.html (total 190)
+2025-11-13 21:21:28,061 INFO: Crawled: http://localhost/phpmyadmin/doc/html/copyright.html (total 191)
+2025-11-13 21:21:28,665 INFO: Crawled: http://localhost/phpmyadmin/doc/html/credits.html (total 192)
+2025-11-13 21:21:29,236 INFO: Crawled: http://localhost/phpmyadmin/doc/html/glossary.html (total 193)
+2025-11-13 21:21:29,758 INFO: Crawled: http://localhost/phpmyadmin/doc/html/search.html (total 194)
+2025-11-13 21:21:30,272 INFO: Crawled: http://localhost/phpmyadmin/doc/html/_sources/index.rst.txt (total 195)
+2025-11-13 21:21:30,781 INFO: Crawled: http://localhost/phpmyadmin/doc/html/_static/pygments.css (total 196)
+2025-11-13 21:21:31,291 INFO: Crawled: http://localhost/phpmyadmin/doc/html/_static/classic.css (total 197)
+2025-11-13 21:21:32,010 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F8.0%2Fen%2Fcreate-database.html (total 198)
+2025-11-13 21:21:33,022 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/databases&statistics=0&pos=0&sort_by=SCHEMA_NAME&sort_order=desc (total 199)
+2025-11-13 21:21:34,140 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/databases&statistics=0&pos=0&sort_by=DEFAULT_COLLATION_NAME&sort_order=asc (total 200)
+2025-11-13 21:24:01,551 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=N;O=D
+2025-11-13 21:24:06,913 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:24:07,444 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=M;O=A
+2025-11-13 21:24:12,791 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:24:13,325 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=S;O=A
+2025-11-13 21:24:18,661 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:24:19,187 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=D;O=A
+2025-11-13 21:24:24,497 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:24:25,024 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=N;O=A
+2025-11-13 21:24:30,311 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:24:30,839 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=M;O=D
+2025-11-13 21:24:36,174 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:24:36,696 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=S;O=D
+2025-11-13 21:24:42,039 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:24:42,574 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=D;O=D
+2025-11-13 21:24:47,906 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:24:48,430 INFO: Testing parameters at: http://localhost/testwebsite/?C=N;O=D
+2025-11-13 21:24:53,976 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:24:54,520 INFO: Testing parameters at: http://localhost/testwebsite/?C=M;O=A
+2025-11-13 21:25:00,018 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:25:00,566 INFO: Testing parameters at: http://localhost/testwebsite/?C=S;O=A
+2025-11-13 21:25:06,155 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:25:06,721 INFO: Testing parameters at: http://localhost/testwebsite/?C=D;O=A
+2025-11-13 21:25:12,292 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:25:12,842 INFO: Testing parameters at: http://localhost/testwebsite/?C=N;O=A
+2025-11-13 21:25:18,335 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:25:18,884 INFO: Testing parameters at: http://localhost/testwebsite/?C=M;O=D
+2025-11-13 21:25:24,438 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:25:24,979 INFO: Testing parameters at: http://localhost/testwebsite/?C=S;O=D
+2025-11-13 21:25:30,471 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:25:31,012 INFO: Testing parameters at: http://localhost/testwebsite/?C=D;O=D
+2025-11-13 21:25:36,760 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:25:37,318 INFO: Testing parameters at: http://localhost/testwebsite/authv2/?C=N;O=D
+2025-11-13 21:25:42,641 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:25:43,178 INFO: Testing parameters at: http://localhost/testwebsite/authv2/?C=M;O=A
+2025-11-13 21:25:48,491 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:25:49,078 INFO: Testing parameters at: http://localhost/testwebsite/authv2/?C=S;O=A
+2025-11-13 21:25:54,421 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:25:54,942 INFO: Testing parameters at: http://localhost/testwebsite/authv2/?C=D;O=A
+2025-11-13 21:26:00,277 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:26:00,797 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth/?C=N;O=D
+2025-11-13 21:26:06,141 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:26:06,671 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth/?C=M;O=A
+2025-11-13 21:26:12,221 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:26:12,752 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth/?C=S;O=A
+2025-11-13 21:26:18,109 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:26:18,639 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth/?C=D;O=A
+2025-11-13 21:26:24,161 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:26:24,692 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?lang=en_GB
+2025-11-13 21:26:36,636 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:26:37,615 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/&lang=en_GB
+2025-11-13 21:26:58,361 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:27:00,322 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/logout&lang=en_GB
+2025-11-13 21:27:25,530 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:27:27,904 INFO: Testing parameters at: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fmariadb.com%2Fkb%2Fen%2Fdocumentation%2F
+2025-11-13 21:27:35,160 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:27:35,892 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/server/databases&lang=en_GB
+2025-11-13 21:27:56,231 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:27:58,149 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/database/operations&db=auth_user&lang=en_GB
+2025-11-13 21:28:34,567 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:28:38,263 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/database/structure&db=auth_user&lang=en_GB
+2025-11-13 21:28:49,956 INFO: [SQLi-LEN] db=' caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27&lang=en_GB
+2025-11-13 21:28:51,403 INFO: [SQLi-LEN] db=' OR '1'='1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27+OR+%271%27%3D%271&lang=en_GB
+2025-11-13 21:28:52,901 INFO: [SQLi-LEN] db=" caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%22&lang=en_GB
+2025-11-13 21:28:54,374 INFO: [SQLi-LEN] db=" OR "1"="1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%22+OR+%221%22%3D%221&lang=en_GB
+2025-11-13 21:28:55,921 INFO: [SQLi-LEN] db=` caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%60&lang=en_GB
+2025-11-13 21:28:57,545 INFO: [SQLi-LEN] db=')-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27%29--&lang=en_GB
+2025-11-13 21:28:59,155 INFO: [SQLi-LEN] db=' UNION SELECT NULL-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27+UNION+SELECT+NULL--&lang=en_GB
+2025-11-13 21:29:00,773 INFO: [SQLi-LEN] db=' OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27+OR+1%3D1--&lang=en_GB
+2025-11-13 21:29:02,361 INFO: [SQLi-LEN] db=" OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%22+OR+1%3D1--&lang=en_GB
+2025-11-13 21:29:12,485 WARNING: Could not load payloads from payloads/xss.txt: [Errno 2] No such file or directory: 'payloads/xss.txt' -- using fallback
+2025-11-13 21:29:16,131 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/database/operations&db=information_schema&lang=en_GB
+2025-11-13 21:29:27,918 INFO: [SQLi-LEN] db=' caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%27&lang=en_GB
+2025-11-13 21:29:29,402 INFO: [SQLi-LEN] db=' OR '1'='1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%27+OR+%271%27%3D%271&lang=en_GB
+2025-11-13 21:29:31,082 INFO: [SQLi-LEN] db=" caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%22&lang=en_GB
+2025-11-13 21:29:32,733 INFO: [SQLi-LEN] db=" OR "1"="1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%22+OR+%221%22%3D%221&lang=en_GB
+2025-11-13 21:29:34,444 INFO: [SQLi-LEN] db=` caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%60&lang=en_GB
+2025-11-13 21:29:36,041 INFO: [SQLi-LEN] db=')-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%27%29--&lang=en_GB
+2025-11-13 21:29:37,728 INFO: [SQLi-LEN] db=' UNION SELECT NULL-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%27+UNION+SELECT+NULL--&lang=en_GB
+2025-11-13 21:29:39,464 INFO: [SQLi-LEN] db=' OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%27+OR+1%3D1--&lang=en_GB
+2025-11-13 21:29:41,127 INFO: [SQLi-LEN] db=" OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%22+OR+1%3D1--&lang=en_GB
+2025-11-13 21:30:10,777 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/database/structure&db=information_schema&lang=en_GB
+2025-11-13 21:30:22,980 INFO: [SQLi-LEN] db=' caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=information_schema%27&lang=en_GB
+2025-11-13 21:30:24,722 INFO: [SQLi-LEN] db=' OR '1'='1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=information_schema%27+OR+%271%27%3D%271&lang=en_GB
+2025-11-13 21:30:26,913 INFO: [SQLi-LEN] db=" caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=information_schema%22&lang=en_GB
+2025-11-13 21:30:28,921 INFO: [SQLi-LEN] db=" OR "1"="1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=information_schema%22+OR+%221%22%3D%221&lang=en_GB
+2025-11-13 21:30:31,088 INFO: [SQLi-LEN] db=` caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=information_schema%60&lang=en_GB
+2025-11-13 21:30:32,741 INFO: [SQLi-LEN] db=')-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=information_schema%27%29--&lang=en_GB
+2025-11-13 21:30:34,454 INFO: [SQLi-LEN] db=' UNION SELECT NULL-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=information_schema%27+UNION+SELECT+NULL--&lang=en_GB
+2025-11-13 21:30:36,491 INFO: [SQLi-LEN] db=' OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=information_schema%27+OR+1%3D1--&lang=en_GB
+2025-11-13 21:30:38,414 INFO: [SQLi-LEN] db=" OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=information_schema%22+OR+1%3D1--&lang=en_GB
+2025-11-13 21:31:16,869 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/database/operations&db=mysql&lang=en_GB
+2025-11-13 21:31:28,477 INFO: [SQLi-LEN] db=' caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=mysql%27&lang=en_GB
+2025-11-13 21:31:30,234 INFO: [SQLi-LEN] db=' OR '1'='1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=mysql%27+OR+%271%27%3D%271&lang=en_GB
+2025-11-13 21:31:31,751 INFO: [SQLi-LEN] db=" caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=mysql%22&lang=en_GB
+2025-11-13 21:31:33,420 INFO: [SQLi-LEN] db=" OR "1"="1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=mysql%22+OR+%221%22%3D%221&lang=en_GB
+2025-11-13 21:31:35,205 INFO: [SQLi-LEN] db=` caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=mysql%60&lang=en_GB
+2025-11-13 21:31:36,884 INFO: [SQLi-LEN] db=')-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=mysql%27%29--&lang=en_GB
+2025-11-13 21:31:38,361 INFO: [SQLi-LEN] db=' UNION SELECT NULL-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=mysql%27+UNION+SELECT+NULL--&lang=en_GB
+2025-11-13 21:31:40,171 INFO: [SQLi-LEN] db=' OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=mysql%27+OR+1%3D1--&lang=en_GB
+2025-11-13 21:31:41,713 INFO: [SQLi-LEN] db=" OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=mysql%22+OR+1%3D1--&lang=en_GB
+2025-11-13 21:32:58,982 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/database/structure&db=mysql&lang=en_GB
+2025-11-13 21:33:10,759 INFO: [SQLi-LEN] db=' caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=mysql%27&lang=en_GB
+2025-11-13 21:33:12,591 INFO: [SQLi-LEN] db=' OR '1'='1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=mysql%27+OR+%271%27%3D%271&lang=en_GB
+2025-11-13 21:33:14,371 INFO: [SQLi-LEN] db=" caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=mysql%22&lang=en_GB
+2025-11-13 21:33:16,353 INFO: [SQLi-LEN] db=" OR "1"="1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=mysql%22+OR+%221%22%3D%221&lang=en_GB
+2025-11-13 21:33:18,213 INFO: [SQLi-LEN] db=` caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=mysql%60&lang=en_GB
+2025-11-13 21:33:20,057 INFO: [SQLi-LEN] db=')-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=mysql%27%29--&lang=en_GB
+2025-11-13 21:33:21,851 INFO: [SQLi-LEN] db=' UNION SELECT NULL-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=mysql%27+UNION+SELECT+NULL--&lang=en_GB
+2025-11-13 21:33:23,695 INFO: [SQLi-LEN] db=' OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=mysql%27+OR+1%3D1--&lang=en_GB
+2025-11-13 21:33:25,491 INFO: [SQLi-LEN] db=" OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=mysql%22+OR+1%3D1--&lang=en_GB
+2025-11-13 21:34:50,261 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/database/operations&db=performance_schema&lang=en_GB
+2025-11-13 21:35:01,665 INFO: [SQLi-LEN] db=' caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=performance_schema%27&lang=en_GB
+2025-11-13 21:35:03,505 INFO: [SQLi-LEN] db=' OR '1'='1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=performance_schema%27+OR+%271%27%3D%271&lang=en_GB
+2025-11-13 21:35:05,195 INFO: [SQLi-LEN] db=" caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=performance_schema%22&lang=en_GB
+2025-11-13 21:35:06,831 INFO: [SQLi-LEN] db=" OR "1"="1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=performance_schema%22+OR+%221%22%3D%221&lang=en_GB
+2025-11-13 21:35:08,491 INFO: [SQLi-LEN] db=` caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=performance_schema%60&lang=en_GB
+2025-11-13 21:35:10,196 INFO: [SQLi-LEN] db=')-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=performance_schema%27%29--&lang=en_GB
+2025-11-13 21:35:12,002 INFO: [SQLi-LEN] db=' UNION SELECT NULL-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=performance_schema%27+UNION+SELECT+NULL--&lang=en_GB
+2025-11-13 21:35:13,588 INFO: [SQLi-LEN] db=' OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=performance_schema%27+OR+1%3D1--&lang=en_GB
+2025-11-13 21:35:15,181 INFO: [SQLi-LEN] db=" OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=performance_schema%22+OR+1%3D1--&lang=en_GB
+2025-11-13 21:36:32,942 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/database/structure&db=performance_schema&lang=en_GB
+2025-11-13 21:36:44,509 INFO: [SQLi-LEN] db=' caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=performance_schema%27&lang=en_GB
+2025-11-13 21:36:46,008 INFO: [SQLi-LEN] db=' OR '1'='1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=performance_schema%27+OR+%271%27%3D%271&lang=en_GB
+2025-11-13 21:36:47,543 INFO: [SQLi-LEN] db=" caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=performance_schema%22&lang=en_GB
+2025-11-13 21:36:49,159 INFO: [SQLi-LEN] db=" OR "1"="1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=performance_schema%22+OR+%221%22%3D%221&lang=en_GB
+2025-11-13 21:36:50,723 INFO: [SQLi-LEN] db=` caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=performance_schema%60&lang=en_GB
+2025-11-13 21:36:52,236 INFO: [SQLi-LEN] db=')-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=performance_schema%27%29--&lang=en_GB
+2025-11-13 21:36:53,817 INFO: [SQLi-LEN] db=' UNION SELECT NULL-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=performance_schema%27+UNION+SELECT+NULL--&lang=en_GB
+2025-11-13 21:36:55,441 INFO: [SQLi-LEN] db=' OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=performance_schema%27+OR+1%3D1--&lang=en_GB
+2025-11-13 21:36:57,074 INFO: [SQLi-LEN] db=" OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=performance_schema%22+OR+1%3D1--&lang=en_GB
+2025-11-13 21:38:24,522 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/database/operations&db=phpmyadmin&lang=en_GB
+2025-11-13 21:40:09,136 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/database/structure&db=phpmyadmin&lang=en_GB
+2025-11-13 21:40:20,756 INFO: [SQLi-LEN] db=' caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=phpmyadmin%27&lang=en_GB
+2025-11-13 21:40:22,426 INFO: [SQLi-LEN] db=' OR '1'='1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=phpmyadmin%27+OR+%271%27%3D%271&lang=en_GB
+2025-11-13 21:40:24,151 INFO: [SQLi-LEN] db=" caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=phpmyadmin%22&lang=en_GB
+2025-11-13 21:40:25,801 INFO: [SQLi-LEN] db=" OR "1"="1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=phpmyadmin%22+OR+%221%22%3D%221&lang=en_GB
+2025-11-13 21:40:27,561 INFO: [SQLi-LEN] db=` caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=phpmyadmin%60&lang=en_GB
+2025-11-13 21:40:29,262 INFO: [SQLi-LEN] db=')-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=phpmyadmin%27%29--&lang=en_GB
+2025-11-13 21:40:31,021 INFO: [SQLi-LEN] db=' UNION SELECT NULL-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=phpmyadmin%27+UNION+SELECT+NULL--&lang=en_GB
+2025-11-13 21:40:32,742 INFO: [SQLi-LEN] db=' OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=phpmyadmin%27+OR+1%3D1--&lang=en_GB
+2025-11-13 21:40:34,511 INFO: [SQLi-LEN] db=" OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=phpmyadmin%22+OR+1%3D1--&lang=en_GB
+2025-11-13 21:41:58,266 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/database/operations&db=test&lang=en_GB
+2025-11-13 21:42:09,839 INFO: [SQLi-LEN] db=' caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=test%27&lang=en_GB
+2025-11-13 21:42:11,587 INFO: [SQLi-LEN] db=' OR '1'='1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=test%27+OR+%271%27%3D%271&lang=en_GB
+2025-11-13 21:42:13,111 INFO: [SQLi-LEN] db=" caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=test%22&lang=en_GB
+2025-11-13 21:42:15,021 INFO: [SQLi-LEN] db=" OR "1"="1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=test%22+OR+%221%22%3D%221&lang=en_GB
+2025-11-13 21:42:16,733 INFO: [SQLi-LEN] db=` caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=test%60&lang=en_GB
+2025-11-13 21:42:18,455 INFO: [SQLi-LEN] db=')-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=test%27%29--&lang=en_GB
+2025-11-13 21:42:20,146 INFO: [SQLi-LEN] db=' UNION SELECT NULL-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=test%27+UNION+SELECT+NULL--&lang=en_GB
+2025-11-13 21:42:21,916 INFO: [SQLi-LEN] db=' OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=test%27+OR+1%3D1--&lang=en_GB
+2025-11-13 21:42:23,593 INFO: [SQLi-LEN] db=" OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=test%22+OR+1%3D1--&lang=en_GB
+2025-11-13 21:43:34,265 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 21:43:34,265 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 21:43:34,265 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 21:43:34,265 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 21:43:34,265 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 21:43:34,271 INFO: Loaded 21 payloads from sqli.txt
+2025-11-13 21:43:34,271 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 21:43:34,271 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 21:43:46,262 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 1)
+2025-11-13 21:43:46,791 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 2)
+2025-11-13 21:43:49,965 INFO: Starting stored-XSS checks (this will submit data to forms). Run only with permission.
+2025-11-13 21:43:50,546 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=get)
+2025-11-13 21:43:51,197 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=get)
+2025-11-13 21:43:51,728 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=post)
+2025-11-13 21:43:52,757 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/login.php (method=post)
+2025-11-13 21:43:54,321 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T161354Z.json', 'csv': 'reports\\edu_scan_report_20251113T161354Z.csv', 'html': 'reports\\edu_scan_report_20251113T161354Z.html', 'pdf': 'reports\\edu_scan_report_20251113T161354Z.pdf'}
+2025-11-13 21:44:22,208 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 21:44:22,208 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 21:44:22,208 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 21:44:22,208 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 21:44:22,208 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 21:44:22,211 INFO: Loaded 21 payloads from sqli.txt
+2025-11-13 21:44:22,211 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 21:44:22,211 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 21:44:46,374 INFO: Crawled: http://localhost/testwebsite/vulnauth (total 1)
+2025-11-13 21:44:46,905 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=N;O=D (total 2)
+2025-11-13 21:44:47,458 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=M;O=A (total 3)
+2025-11-13 21:44:47,991 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=S;O=A (total 4)
+2025-11-13 21:44:48,518 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=D;O=A (total 5)
+2025-11-13 21:44:49,072 INFO: Crawled: http://localhost/testwebsite/ (total 6)
+2025-11-13 21:44:51,675 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=N;O=A (total 7)
+2025-11-13 21:44:52,211 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=M;O=D (total 8)
+2025-11-13 21:44:52,758 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=S;O=D (total 9)
+2025-11-13 21:44:53,291 INFO: Crawled: http://localhost/testwebsite/vulnauth?C=D;O=D (total 10)
+2025-11-13 21:44:53,845 INFO: Crawled: http://localhost/testwebsite/?C=N;O=D (total 11)
+2025-11-13 21:44:54,394 INFO: Crawled: http://localhost/testwebsite/?C=M;O=A (total 12)
+2025-11-13 21:44:54,959 INFO: Crawled: http://localhost/testwebsite/?C=S;O=A (total 13)
+2025-11-13 21:44:55,514 INFO: Crawled: http://localhost/testwebsite/?C=D;O=A (total 14)
+2025-11-13 21:44:56,047 INFO: Crawled: http://localhost/ (total 15)
+2025-11-13 21:44:56,677 INFO: Crawled: http://localhost/testwebsite/auth_user.sql (total 16)
+2025-11-13 21:44:57,201 INFO: Crawled: http://localhost/testwebsite/authv2/ (total 17)
+2025-11-13 21:44:57,737 INFO: Crawled: http://localhost/testwebsite/vulnauth/ (total 18)
+2025-11-13 21:44:58,306 INFO: Crawled: http://localhost/testwebsite/?C=N;O=A (total 19)
+2025-11-13 21:44:58,851 INFO: Crawled: http://localhost/testwebsite/?C=M;O=D (total 20)
+2025-11-13 21:44:59,403 INFO: Crawled: http://localhost/testwebsite/?C=S;O=D (total 21)
+2025-11-13 21:44:59,955 INFO: Crawled: http://localhost/testwebsite/?C=D;O=D (total 22)
+2025-11-13 21:45:00,473 INFO: Crawled: http://localhost/dashboard/index.html (total 23)
+2025-11-13 21:45:01,005 INFO: Crawled: http://localhost/dashboard/faq.html (total 24)
+2025-11-13 21:45:01,521 INFO: Crawled: http://localhost/dashboard/howto.html (total 25)
+2025-11-13 21:45:02,091 INFO: Crawled: http://localhost/dashboard/phpinfo.php (total 26)
+2025-11-13 21:45:03,213 INFO: Crawled: http://localhost/phpmyadmin/ (total 27)
+2025-11-13 21:45:04,215 INFO: Crawled: http://localhost/dashboard/stylesheets/normalize.css (total 28)
+2025-11-13 21:45:04,737 INFO: Crawled: http://localhost/dashboard/stylesheets/all.css (total 29)
+2025-11-13 21:45:05,261 INFO: Crawled: http://localhost/dashboard/images/favicon.png (total 30)
+2025-11-13 21:45:05,786 INFO: Crawled: http://localhost/testwebsite/authv2/?C=N;O=D (total 31)
+2025-11-13 21:45:06,312 INFO: Crawled: http://localhost/testwebsite/authv2/?C=M;O=A (total 32)
+2025-11-13 21:45:06,850 INFO: Crawled: http://localhost/testwebsite/authv2/?C=S;O=A (total 33)
+2025-11-13 21:45:07,381 INFO: Crawled: http://localhost/testwebsite/authv2/?C=D;O=A (total 34)
+2025-11-13 21:45:07,900 INFO: Crawled: http://localhost/testwebsite/authv2/config.php (total 35)
+2025-11-13 21:45:08,436 INFO: Crawled: http://localhost/testwebsite/authv2/login.php (total 36)
+2025-11-13 21:45:08,985 INFO: Crawled: http://localhost/testwebsite/authv2/logout.php (total 37)
+2025-11-13 21:45:09,506 INFO: Crawled: http://localhost/testwebsite/authv2/register.php (total 38)
+2025-11-13 21:45:10,049 INFO: Crawled: http://localhost/testwebsite/authv2/welcome.php (total 39)
+2025-11-13 21:45:10,581 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=N;O=D (total 40)
+2025-11-13 21:45:11,115 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=M;O=A (total 41)
+2025-11-13 21:45:11,647 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=S;O=A (total 42)
+2025-11-13 21:45:12,171 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=D;O=A (total 43)
+2025-11-13 21:45:12,695 INFO: Crawled: http://localhost/testwebsite/vulnauth/config.php (total 44)
+2025-11-13 21:45:13,279 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 45)
+2025-11-13 21:45:13,798 INFO: Crawled: http://localhost/testwebsite/vulnauth/register.php (total 46)
+2025-11-13 21:45:14,391 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 47)
+2025-11-13 21:45:14,903 INFO: Crawled: http://localhost/dashboard/docs/backup-restore-mysql.html (total 48)
+2025-11-13 21:45:15,427 INFO: Crawled: http://localhost/dashboard/docs/transfer-files-ftp.html (total 49)
+2025-11-13 21:45:15,941 INFO: Crawled: http://localhost/dashboard/docs/configure-vhosts.html (total 50)
+2025-11-13 21:45:16,461 INFO: Crawled: http://localhost/dashboard/docs/configure-wildcard-subdomains.html (total 51)
+2025-11-13 21:45:16,971 INFO: Crawled: http://localhost/dashboard/docs/deploy-git-app.html (total 52)
+2025-11-13 21:45:17,491 INFO: Crawled: http://localhost/dashboard/docs/reset-mysql-password.html (total 53)
+2025-11-13 21:45:18,008 INFO: Crawled: http://localhost/dashboard/docs/send-mail.html (total 54)
+2025-11-13 21:45:18,541 INFO: Crawled: http://localhost/dashboard/docs/use-sqlite.html (total 55)
+2025-11-13 21:45:19,060 INFO: Crawled: http://localhost/dashboard/docs/activate-use-xdebug.html (total 56)
+2025-11-13 21:45:19,571 INFO: Crawled: http://localhost/dashboard/docs/create-framework-project-zf1.html (total 57)
+2025-11-13 21:45:20,093 INFO: Crawled: http://localhost/dashboard/docs/create-framework-project-zf2.html (total 58)
+2025-11-13 21:45:20,613 INFO: Crawled: http://localhost/dashboard/docs/troubleshoot-apache.html (total 59)
+2025-11-13 21:45:21,123 INFO: Crawled: http://localhost/dashboard/docs/change-mysql-temp-dir.html (total 60)
+2025-11-13 21:45:21,633 INFO: Crawled: http://localhost/dashboard/docs/increase-php-file-upload-limit.html (total 61)
+2025-11-13 21:45:22,154 INFO: Crawled: http://localhost/dashboard/docs/access-phpmyadmin-remotely.html (total 62)
+2025-11-13 21:45:22,668 INFO: Crawled: http://localhost/dashboard/docs/auto-start-xampp.html (total 63)
+2025-11-13 21:45:23,185 INFO: Crawled: http://localhost/dashboard/docs/use-different-php-version.html (total 64)
+2025-11-13 21:45:23,696 INFO: Crawled: http://localhost/dashboard/docs/use-php-fcgi.html (total 65)
+2025-11-13 21:45:24,225 INFO: Crawled: http://localhost/dashboard/docs/configure-use-tomcat.html (total 66)
+2025-11-13 21:45:25,238 INFO: Crawled: http://localhost/phpmyadmin/index.php?lang=en_GB (total 67)
+2025-11-13 21:45:26,276 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/&lang=en_GB (total 68)
+2025-11-13 21:45:27,661 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/logout&lang=en_GB (total 69)
+2025-11-13 21:45:28,194 INFO: Crawled: http://localhost/phpmyadmin/doc/html/index.html (total 70)
+2025-11-13 21:45:28,894 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fmariadb.com%2Fkb%2Fen%2Fdocumentation%2F (total 71)
+2025-11-13 21:45:29,921 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/databases&lang=en_GB (total 72)
+2025-11-13 21:45:30,994 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=auth_user&lang=en_GB (total 73)
+2025-11-13 21:45:32,082 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=auth_user&lang=en_GB (total 74)
+2025-11-13 21:45:33,161 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=information_schema&lang=en_GB (total 75)
+2025-11-13 21:45:34,769 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=information_schema&lang=en_GB (total 76)
+2025-11-13 21:45:35,803 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=mysql&lang=en_GB (total 77)
+2025-11-13 21:45:37,071 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=mysql&lang=en_GB (total 78)
+2025-11-13 21:45:38,057 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=performance_schema&lang=en_GB (total 79)
+2025-11-13 21:45:39,405 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=performance_schema&lang=en_GB (total 80)
+2025-11-13 21:45:40,541 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=phpmyadmin&lang=en_GB (total 81)
+2025-11-13 21:45:41,751 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=phpmyadmin&lang=en_GB (total 82)
+2025-11-13 21:45:42,831 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=test&lang=en_GB (total 83)
+2025-11-13 21:45:43,896 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=test&lang=en_GB (total 84)
+2025-11-13 21:45:44,591 INFO: Crawled: http://localhost/phpmyadmin/doc/html/config.html (total 85)
+2025-11-13 21:45:45,591 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/sql&lang=en_GB (total 86)
+2025-11-13 21:45:46,601 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/status&lang=en_GB (total 87)
+2025-11-13 21:45:47,646 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/privileges&viewing_mode=server&lang=en_GB (total 88)
+2025-11-13 21:45:48,857 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/export&lang=en_GB (total 89)
+2025-11-13 21:45:49,863 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/import&lang=en_GB (total 90)
+2025-11-13 21:45:50,801 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/preferences/manage&lang=en_GB (total 91)
+2025-11-13 21:45:51,741 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/replication&lang=en_GB (total 92)
+2025-11-13 21:45:52,989 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/variables&lang=en_GB (total 93)
+2025-11-13 21:45:54,031 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/collations&lang=en_GB (total 94)
+2025-11-13 21:45:55,015 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/engines&lang=en_GB (total 95)
+2025-11-13 21:45:55,983 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/plugins&lang=en_GB (total 96)
+2025-11-13 21:45:57,514 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F8.0%2Fen%2Fcharset-connection.html (total 97)
+2025-11-13 21:45:58,109 INFO: Crawled: http://localhost/phpmyadmin/doc/html/faq.html (total 98)
+2025-11-13 21:45:58,737 INFO: Crawled: http://localhost/phpmyadmin/doc/html/setup.html (total 99)
+2025-11-13 21:45:59,441 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fbook.mysqli.php (total 100)
+2025-11-13 21:46:00,136 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fbook.curl.php (total 101)
+2025-11-13 21:46:00,821 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fbook.mbstring.php (total 102)
+2025-11-13 21:46:01,524 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2F (total 103)
+2025-11-13 21:46:02,222 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2Fcontribute%2F (total 104)
+2025-11-13 21:46:02,936 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2Fsupport%2F (total 105)
+2025-11-13 21:46:03,841 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/changelog&lang=en_GB (total 106)
+2025-11-13 21:46:04,642 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/license&lang=en_GB (total 107)
+2025-11-13 21:46:05,341 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2Fthemes%2F (total 108)
+2025-11-13 21:46:06,315 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=%2F&server=1&lang=en_GB (total 109)
+2025-11-13 21:46:08,704 INFO: Crawled: http://localhost/phpmyadmin/favicon.ico (total 110)
+2025-11-13 21:46:09,211 INFO: Crawled: http://localhost/phpmyadmin/themes/pmahomme/jquery/jquery-ui.css (total 111)
+2025-11-13 21:46:09,719 INFO: Crawled: http://localhost/phpmyadmin/js/vendor/codemirror/lib/codemirror.css?v=5.2.1 (total 112)
+2025-11-13 21:46:10,237 INFO: Crawled: http://localhost/phpmyadmin/js/vendor/codemirror/addon/hint/show-hint.css?v=5.2.1 (total 113)
+2025-11-13 21:46:10,751 INFO: Crawled: http://localhost/phpmyadmin/js/vendor/codemirror/addon/lint/lint.css?v=5.2.1 (total 114)
+2025-11-13 21:46:11,263 INFO: Crawled: http://localhost/phpmyadmin/themes/pmahomme/css/theme.css?v=5.2.1 (total 115)
+2025-11-13 21:46:11,790 INFO: Crawled: http://localhost/testwebsite/authv2/?C=N;O=A (total 116)
+2025-11-13 21:46:12,321 INFO: Crawled: http://localhost/testwebsite/authv2/?C=M;O=D (total 117)
+2025-11-13 21:46:12,861 INFO: Crawled: http://localhost/testwebsite/authv2/?C=S;O=D (total 118)
+2025-11-13 21:46:13,396 INFO: Crawled: http://localhost/testwebsite/authv2/?C=D;O=D (total 119)
+2025-11-13 21:46:13,926 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=N;O=A (total 120)
+2025-11-13 21:46:14,451 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=M;O=D (total 121)
+2025-11-13 21:46:14,979 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=S;O=D (total 122)
+2025-11-13 21:46:15,512 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=D;O=D (total 123)
+2025-11-13 21:46:16,081 INFO: Crawled: http://localhost/dashboard/docs/backup-restore-mysql.pdf (total 124)
+2025-11-13 21:46:17,126 INFO: Crawled: http://localhost/dashboard/docs/transfer-files-ftp.pdf (total 125)
+2025-11-13 21:46:18,181 INFO: Crawled: http://localhost/dashboard/docs/configure-vhosts.pdf (total 126)
+2025-11-13 21:46:19,226 INFO: Crawled: http://localhost/dashboard/docs/configure-wildcard-subdomains.pdf (total 127)
+2025-11-13 21:46:19,769 INFO: Crawled: http://localhost/dashboard/docs/deploy-git-app.pdf (total 128)
+2025-11-13 21:46:20,808 INFO: Crawled: http://localhost/dashboard/docs/reset-mysql-password.pdf (total 129)
+2025-11-13 21:46:21,342 INFO: Crawled: http://localhost/dashboard/docs/send-mail.pdf (total 130)
+2025-11-13 21:46:22,901 INFO: Crawled: http://localhost/dashboard/docs/use-sqlite.pdf (total 131)
+2025-11-13 21:46:23,942 INFO: Crawled: http://localhost/dashboard/docs/activate-use-xdebug.pdf (total 132)
+2025-11-13 21:46:24,992 INFO: Crawled: http://localhost/dashboard/docs/create-framework-project-zf1.pdf (total 133)
+2025-11-13 21:46:26,543 INFO: Crawled: http://localhost/dashboard/docs/create-framework-project-zf2.pdf (total 134)
+2025-11-13 21:46:27,121 INFO: Crawled: http://localhost/dashboard/docs/troubleshoot-apache.pdf (total 135)
+2025-11-13 21:46:27,643 INFO: Crawled: http://localhost (total 136)
+2025-11-13 21:46:28,192 INFO: Crawled: http://localhost/dashboard/docs/change-mysql-temp-dir.pdf (total 137)
+2025-11-13 21:46:28,733 INFO: Crawled: http://localhost/dashboard/docs/increase-php-file-upload-limit.pdf (total 138)
+2025-11-13 21:46:29,258 INFO: Crawled: http://localhost/dashboard/docs/access-phpmyadmin-remotely.pdf (total 139)
+2025-11-13 21:46:29,787 INFO: Crawled: http://localhost/dashboard/docs/auto-start-xampp.pdf (total 140)
+2025-11-13 21:46:30,319 INFO: Crawled: http://localhost/dashboard/docs/use-different-php-version.pdf (total 141)
+2025-11-13 21:46:30,851 INFO: Crawled: http://localhost/dashboard/docs/use-php-fcgi.pdf (total 142)
+2025-11-13 21:46:31,390 INFO: Crawled: http://localhost/dashboard/docs/configure-use-tomcat.pdf (total 143)
+2025-11-13 21:46:32,525 INFO: Crawled: http://localhost/phpmyadmin/index.php (total 144)
+2025-11-13 21:46:33,469 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/ (total 145)
+2025-11-13 21:46:34,865 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/logout (total 146)
+2025-11-13 21:46:35,875 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/databases (total 147)
+2025-11-13 21:46:36,901 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=auth_user (total 148)
+2025-11-13 21:46:37,991 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=auth_user (total 149)
+2025-11-13 21:46:39,057 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=information_schema (total 150)
+2025-11-13 21:46:40,576 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=information_schema (total 151)
+2025-11-13 21:46:41,681 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=mysql (total 152)
+2025-11-13 21:46:42,973 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=mysql (total 153)
+2025-11-13 21:46:44,011 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=performance_schema (total 154)
+2025-11-13 21:46:45,331 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=performance_schema (total 155)
+2025-11-13 21:46:46,411 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=phpmyadmin (total 156)
+2025-11-13 21:46:47,651 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=phpmyadmin (total 157)
+2025-11-13 21:46:48,672 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=test (total 158)
+2025-11-13 21:46:49,669 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=test (total 159)
+2025-11-13 21:46:50,685 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/sql (total 160)
+2025-11-13 21:46:51,681 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/status (total 161)
+2025-11-13 21:46:52,804 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/privileges&viewing_mode=server (total 162)
+2025-11-13 21:46:54,029 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/export (total 163)
+2025-11-13 21:46:55,122 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/import (total 164)
+2025-11-13 21:46:56,073 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/preferences/manage (total 165)
+2025-11-13 21:46:57,025 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/replication (total 166)
+2025-11-13 21:46:59,063 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/variables (total 167)
+2025-11-13 21:47:00,484 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/collations (total 168)
+2025-11-13 21:47:01,501 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/engines (total 169)
+2025-11-13 21:47:02,520 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/plugins (total 170)
+2025-11-13 21:47:04,321 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/changelog (total 171)
+2025-11-13 21:47:05,133 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/license (total 172)
+2025-11-13 21:47:06,265 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=%2F&server=1 (total 173)
+2025-11-13 21:47:08,711 INFO: Crawled: http://localhost/phpmyadmin/doc/html/genindex.html (total 174)
+2025-11-13 21:47:09,245 INFO: Crawled: http://localhost/phpmyadmin/doc/html/intro.html (total 175)
+2025-11-13 21:47:09,772 INFO: Crawled: http://localhost/phpmyadmin/doc/html/require.html (total 176)
+2025-11-13 21:47:10,288 INFO: Crawled: http://localhost/phpmyadmin/doc/html/user.html (total 177)
+2025-11-13 21:47:10,801 INFO: Crawled: http://localhost/phpmyadmin/doc/html/settings.html (total 178)
+2025-11-13 21:47:11,326 INFO: Crawled: http://localhost/phpmyadmin/doc/html/two_factor.html (total 179)
+2025-11-13 21:47:11,853 INFO: Crawled: http://localhost/phpmyadmin/doc/html/transformations.html (total 180)
+2025-11-13 21:47:12,367 INFO: Crawled: http://localhost/phpmyadmin/doc/html/bookmarks.html (total 181)
+2025-11-13 21:47:12,887 INFO: Crawled: http://localhost/phpmyadmin/doc/html/privileges.html (total 182)
+2025-11-13 21:47:13,403 INFO: Crawled: http://localhost/phpmyadmin/doc/html/relations.html (total 183)
+2025-11-13 21:47:13,921 INFO: Crawled: http://localhost/phpmyadmin/doc/html/charts.html (total 184)
+2025-11-13 21:47:14,461 INFO: Crawled: http://localhost/phpmyadmin/doc/html/import_export.html (total 185)
+2025-11-13 21:47:14,975 INFO: Crawled: http://localhost/phpmyadmin/doc/html/themes.html (total 186)
+2025-11-13 21:47:15,500 INFO: Crawled: http://localhost/phpmyadmin/doc/html/other.html (total 187)
+2025-11-13 21:47:16,037 INFO: Crawled: http://localhost/phpmyadmin/doc/html/developers.html (total 188)
+2025-11-13 21:47:16,561 INFO: Crawled: http://localhost/phpmyadmin/doc/html/security.html (total 189)
+2025-11-13 21:47:17,076 INFO: Crawled: http://localhost/phpmyadmin/doc/html/vendors.html (total 190)
+2025-11-13 21:47:17,600 INFO: Crawled: http://localhost/phpmyadmin/doc/html/copyright.html (total 191)
+2025-11-13 21:47:18,148 INFO: Crawled: http://localhost/phpmyadmin/doc/html/credits.html (total 192)
+2025-11-13 21:47:18,676 INFO: Crawled: http://localhost/phpmyadmin/doc/html/glossary.html (total 193)
+2025-11-13 21:47:19,213 INFO: Crawled: http://localhost/phpmyadmin/doc/html/search.html (total 194)
+2025-11-13 21:47:19,738 INFO: Crawled: http://localhost/phpmyadmin/doc/html/_sources/index.rst.txt (total 195)
+2025-11-13 21:47:20,249 INFO: Crawled: http://localhost/phpmyadmin/doc/html/_static/pygments.css (total 196)
+2025-11-13 21:47:20,771 INFO: Crawled: http://localhost/phpmyadmin/doc/html/_static/classic.css (total 197)
+2025-11-13 21:47:21,467 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F8.0%2Fen%2Fcreate-database.html (total 198)
+2025-11-13 21:47:22,441 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/databases&statistics=0&pos=0&sort_by=SCHEMA_NAME&sort_order=desc (total 199)
+2025-11-13 21:47:23,422 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/databases&statistics=0&pos=0&sort_by=DEFAULT_COLLATION_NAME&sort_order=asc (total 200)
+2025-11-13 21:49:53,297 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=N;O=D
+2025-11-13 21:50:15,039 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=M;O=A
+2025-11-13 21:50:37,065 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=S;O=A
+2025-11-13 21:50:59,087 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=D;O=A
+2025-11-13 21:51:21,051 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=N;O=A
+2025-11-13 21:51:43,094 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=M;O=D
+2025-11-13 21:52:05,113 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=S;O=D
+2025-11-13 21:52:27,407 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth?C=D;O=D
+2025-11-13 21:52:49,858 INFO: Testing parameters at: http://localhost/testwebsite/?C=N;O=D
+2025-11-13 21:53:14,464 INFO: Testing parameters at: http://localhost/testwebsite/?C=M;O=A
+2025-11-13 21:53:38,781 INFO: Testing parameters at: http://localhost/testwebsite/?C=S;O=A
+2025-11-13 21:54:02,731 INFO: Testing parameters at: http://localhost/testwebsite/?C=D;O=A
+2025-11-13 21:54:27,095 INFO: Testing parameters at: http://localhost/testwebsite/?C=N;O=A
+2025-11-13 21:54:51,336 INFO: Testing parameters at: http://localhost/testwebsite/?C=M;O=D
+2025-11-13 21:55:15,723 INFO: Testing parameters at: http://localhost/testwebsite/?C=S;O=D
+2025-11-13 21:55:40,046 INFO: Testing parameters at: http://localhost/testwebsite/?C=D;O=D
+2025-11-13 21:56:04,009 INFO: Testing parameters at: http://localhost/testwebsite/authv2/?C=N;O=D
+2025-11-13 21:56:25,808 INFO: Testing parameters at: http://localhost/testwebsite/authv2/?C=M;O=A
+2025-11-13 21:56:48,133 INFO: Testing parameters at: http://localhost/testwebsite/authv2/?C=S;O=A
+2025-11-13 21:57:10,856 INFO: Testing parameters at: http://localhost/testwebsite/authv2/?C=D;O=A
+2025-11-13 21:57:33,557 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth/?C=N;O=D
+2025-11-13 21:57:55,863 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth/?C=M;O=A
+2025-11-13 21:58:18,245 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth/?C=S;O=A
+2025-11-13 21:58:40,751 INFO: Testing parameters at: http://localhost/testwebsite/vulnauth/?C=D;O=A
+2025-11-13 21:59:03,253 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?lang=en_GB
+2025-11-13 21:59:58,856 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/&lang=en_GB
+2025-11-13 22:01:37,797 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/logout&lang=en_GB
+2025-11-13 22:03:41,277 INFO: Testing parameters at: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fmariadb.com%2Fkb%2Fen%2Fdocumentation%2F
+2025-11-13 22:04:16,051 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/server/databases&lang=en_GB
+2025-11-13 22:05:55,462 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/database/operations&db=auth_user&lang=en_GB
+2025-11-13 22:09:05,881 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/database/structure&db=auth_user&lang=en_GB
+2025-11-13 22:09:35,503 INFO: [SQLi-LEN] db=' caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27&lang=en_GB
+2025-11-13 22:09:38,011 INFO: [SQLi-LEN] db='' caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27%27&lang=en_GB
+2025-11-13 22:09:40,731 INFO: [SQLi-LEN] db=' OR '1'='1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27+OR+%271%27%3D%271&lang=en_GB
+2025-11-13 22:09:43,247 INFO: [SQLi-LEN] db=" OR "1"="1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%22+OR+%221%22%3D%221&lang=en_GB
+2025-11-13 22:09:45,687 INFO: [SQLi-LEN] db=1 OR 1=1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user1+OR+1%3D1&lang=en_GB
+2025-11-13 22:09:48,087 INFO: [SQLi-LEN] db=1' OR '1'='1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user1%27+OR+%271%27%3D%271&lang=en_GB
+2025-11-13 22:09:50,481 INFO: [SQLi-LEN] db=1" OR "1"="1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user1%22+OR+%221%22%3D%221&lang=en_GB
+2025-11-13 22:09:52,991 INFO: [SQLi-LEN] db=1 OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user1+OR+1%3D1--&lang=en_GB
+2025-11-13 22:09:55,322 INFO: [SQLi-LEN] db=1' OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user1%27+OR+1%3D1--&lang=en_GB
+2025-11-13 22:09:57,704 INFO: [SQLi-LEN] db=1" OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user1%22+OR+1%3D1--&lang=en_GB
+2025-11-13 22:10:00,030 INFO: [SQLi-LEN] db=')-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27%29--&lang=en_GB
+2025-11-13 22:10:02,388 INFO: [SQLi-LEN] db=" )-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%22+%29--&lang=en_GB
+2025-11-13 22:10:04,777 INFO: [SQLi-LEN] db=' ORDER BY 1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27+ORDER+BY+1--&lang=en_GB
+2025-11-13 22:10:06,712 INFO: [SQLi-LEN] db=' ORDER BY 2-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27+ORDER+BY+2--&lang=en_GB
+2025-11-13 22:10:08,542 INFO: [SQLi-LEN] db=' UNION SELECT NULL-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27+UNION+SELECT+NULL--&lang=en_GB
+2025-11-13 22:10:10,426 INFO: [SQLi-LEN] db=' UNION SELECT 1,2-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27+UNION+SELECT+1%2C2--&lang=en_GB
+2025-11-13 22:10:12,444 INFO: [SQLi-LEN] db=' UNION SELECT 1,2,3-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27+UNION+SELECT+1%2C2%2C3--&lang=en_GB
+2025-11-13 22:10:14,559 INFO: [SQLi-LEN] db='; WAITFOR DELAY '0:0:3'-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27%3B+WAITFOR+DELAY+%270%3A0%3A3%27--&lang=en_GB
+2025-11-13 22:10:16,753 INFO: [SQLi-LEN] db=admin'-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_useradmin%27--&lang=en_GB
+2025-11-13 22:10:18,796 INFO: [SQLi-LEN] db=' OR SLEEP(3)-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%27+OR+SLEEP%283%29--&lang=en_GB
+2025-11-13 22:10:20,381 INFO: [SQLi-LEN] db=" OR SLEEP(3)-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fstructure&db=auth_user%22+OR+SLEEP%283%29--&lang=en_GB
+2025-11-13 22:12:16,675 INFO: Testing parameters at: http://localhost/phpmyadmin/index.php?route=/database/operations&db=information_schema&lang=en_GB
+2025-11-13 22:12:45,342 INFO: [SQLi-LEN] db=' caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%27&lang=en_GB
+2025-11-13 22:12:47,410 INFO: [SQLi-LEN] db='' caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%27%27&lang=en_GB
+2025-11-13 22:12:49,427 INFO: [SQLi-LEN] db=' OR '1'='1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%27+OR+%271%27%3D%271&lang=en_GB
+2025-11-13 22:12:51,419 INFO: [SQLi-LEN] db=" OR "1"="1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%22+OR+%221%22%3D%221&lang=en_GB
+2025-11-13 22:12:53,554 INFO: [SQLi-LEN] db=1 OR 1=1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema1+OR+1%3D1&lang=en_GB
+2025-11-13 22:12:55,657 INFO: [SQLi-LEN] db=1' OR '1'='1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema1%27+OR+%271%27%3D%271&lang=en_GB
+2025-11-13 22:12:57,681 INFO: [SQLi-LEN] db=1" OR "1"="1 caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema1%22+OR+%221%22%3D%221&lang=en_GB
+2025-11-13 22:12:59,650 INFO: [SQLi-LEN] db=1 OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema1+OR+1%3D1--&lang=en_GB
+2025-11-13 22:13:01,666 INFO: [SQLi-LEN] db=1' OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema1%27+OR+1%3D1--&lang=en_GB
+2025-11-13 22:13:03,666 INFO: [SQLi-LEN] db=1" OR 1=1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema1%22+OR+1%3D1--&lang=en_GB
+2025-11-13 22:13:05,624 INFO: [SQLi-LEN] db=')-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%27%29--&lang=en_GB
+2025-11-13 22:13:07,633 INFO: [SQLi-LEN] db=" )-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%22+%29--&lang=en_GB
+2025-11-13 22:13:09,586 INFO: [SQLi-LEN] db=' ORDER BY 1-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%27+ORDER+BY+1--&lang=en_GB
+2025-11-13 22:13:11,597 INFO: [SQLi-LEN] db=' ORDER BY 2-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%27+ORDER+BY+2--&lang=en_GB
+2025-11-13 22:13:13,733 INFO: [SQLi-LEN] db=' UNION SELECT NULL-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%27+UNION+SELECT+NULL--&lang=en_GB
+2025-11-13 22:13:15,686 INFO: [SQLi-LEN] db=' UNION SELECT 1,2-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%27+UNION+SELECT+1%2C2--&lang=en_GB
+2025-11-13 22:13:17,757 INFO: [SQLi-LEN] db=' UNION SELECT 1,2,3-- caused response size delta at http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Foperations&db=information_schema%27+UNION+SELECT+1%2C2%2C3--&lang=en_GB
+2025-11-13 22:20:33,515 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 22:20:33,515 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 22:20:33,515 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 22:20:33,515 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 22:20:33,515 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 22:20:33,515 INFO: Loaded 21 payloads from sqli.txt
+2025-11-13 22:20:33,515 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 22:20:33,515 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 22:21:29,637 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 1)
+2025-11-13 22:21:29,878 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 2)
+2025-11-13 22:21:30,830 INFO: Starting stored-XSS checks (this will submit data to forms). Run only with permission.
+2025-11-13 22:21:31,125 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=get)
+2025-11-13 22:21:31,472 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=get)
+2025-11-13 22:21:31,693 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=post)
+2025-11-13 22:21:32,138 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/login.php (method=post)
+2025-11-13 22:21:32,809 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T165132Z.json', 'csv': 'reports\\edu_scan_report_20251113T165132Z.csv', 'html': 'reports\\edu_scan_report_20251113T165132Z.html', 'pdf': 'reports\\edu_scan_report_20251113T165132Z.pdf'}
+2025-11-13 22:27:23,259 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 22:27:23,259 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 22:27:23,259 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 22:27:23,259 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 22:27:23,259 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 22:27:23,259 INFO: Loaded 21 payloads from sqli.txt
+2025-11-13 22:27:23,259 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 22:27:23,259 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 22:29:49,977 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 22:29:49,977 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 22:29:49,977 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 22:29:49,977 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 22:29:49,977 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 22:29:49,977 INFO: Loaded 21 payloads from sqli.txt
+2025-11-13 22:29:49,977 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 22:29:49,977 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 22:30:05,507 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 22:30:05,507 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 22:30:05,507 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 22:30:05,507 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 22:30:05,507 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 22:30:05,507 INFO: Loaded 21 payloads from sqli.txt
+2025-11-13 22:30:05,507 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 22:30:05,507 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 22:30:19,960 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 1)
+2025-11-13 22:30:22,590 INFO: Starting stored-XSS checks (this will submit data to forms). Run only with permission.
+2025-11-13 22:30:23,122 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/login.php (method=post)
+2025-11-13 22:30:24,192 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T170024Z.json', 'csv': 'reports\\edu_scan_report_20251113T170024Z.csv', 'html': 'reports\\edu_scan_report_20251113T170024Z.html', 'pdf': 'reports\\edu_scan_report_20251113T170024Z.pdf'}
+2025-11-13 22:32:29,898 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 22:32:29,898 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 22:32:29,898 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 22:32:29,898 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 22:32:29,898 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 22:32:29,898 INFO: Loaded 21 payloads from sqli.txt
+2025-11-13 22:32:29,898 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 22:32:29,898 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 22:32:40,787 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 22:32:40,787 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 22:32:40,787 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 22:32:40,787 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 22:32:40,796 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 22:32:40,796 INFO: Loaded 21 payloads from sqli.txt
+2025-11-13 22:32:40,796 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 22:32:40,796 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 22:32:47,331 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 1)
+2025-11-13 22:32:49,918 INFO: Starting stored-XSS checks (this will submit data to forms). Run only with permission.
+2025-11-13 22:32:50,482 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/login.php (method=post)
+2025-11-13 22:32:51,507 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T170251Z.json', 'csv': 'reports\\edu_scan_report_20251113T170251Z.csv', 'html': 'reports\\edu_scan_report_20251113T170251Z.html', 'pdf': 'reports\\edu_scan_report_20251113T170251Z.pdf'}
+2025-11-13 22:33:11,046 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 22:33:11,046 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 22:33:11,046 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 22:33:11,046 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 22:33:11,046 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 22:33:11,046 INFO: Loaded 21 payloads from sqli.txt
+2025-11-13 22:33:11,046 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 22:33:11,056 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 22:33:18,206 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 1)
+2025-11-13 22:33:18,731 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 2)
+2025-11-13 22:33:21,848 INFO: Starting stored-XSS checks (this will submit data to forms). Run only with permission.
+2025-11-13 22:33:22,439 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=get)
+2025-11-13 22:33:23,115 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=get)
+2025-11-13 22:33:23,639 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=post)
+2025-11-13 22:33:24,683 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/login.php (method=post)
+2025-11-13 22:33:26,223 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T170326Z.json', 'csv': 'reports\\edu_scan_report_20251113T170326Z.csv', 'html': 'reports\\edu_scan_report_20251113T170326Z.html', 'pdf': 'reports\\edu_scan_report_20251113T170326Z.pdf'}

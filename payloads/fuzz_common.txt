@@ -1,0 +1,14 @@
+
+<test>
+";test
+';test
+<svg/onload=test>
+%00
+%0a%0d
+../../../
+AAAAA
+BBBBBBBB
+CCCCCCCCCCCCCCCC
+'";!--"=
+"'><script>alert(1)</script>
+😀😀😀😀😀

