@@ -475,16 +475,10 @@ def check_reflected_xss(cli, session, url, delay=REQUEST_DELAY, rp=None):
 def check_stored_xss(cli, session, urls, delay=REQUEST_DELAY, rp=None):
     payload = cli.payloads.get("xss", [XSS_TEST_PAYLOAD])[0]
 
-    """
-    Stored XSS detection:
-    1) Attempt to inject payload into forms (POST/GET)
-    2) Re-check pages for presence of payload (persistence)
-    NOTE: This modifies site state. Run only with permission.
-    """
-    injected_actions = []
     findings = []
+    injected_actions = []
 
-    # Step 1: Inject payloads into forms
+    # Step 1: Inject payload
     for u in urls:
         r = safe_get(session, u, delay=delay, rp=rp)
         if not r:
@@ -495,52 +489,48 @@ def check_stored_xss(cli, session, urls, delay=REQUEST_DELAY, rp=None):
             action = urljoin(u, form.get("action") or u)
             method = (form.get("method") or "get").lower()
             inputs = form.find_all(["input", "textarea", "select"])
+
             data = {}
             for inp in inputs:
                 name = inp.get("name")
                 if not name:
                     continue
                 typ = (inp.get("type") or "").lower()
-                # Fill text-like inputs with our payload; keep hidden/default values otherwise
                 if typ in ("text", "search", "email", "tel") or inp.name == "textarea":
                     data[name] = payload
                 else:
                     data[name] = inp.get("value", "")
+
             try:
                 if method == "post":
-                    res = session.post(action, data=data, timeout=15)
+                    session.post(action, data=data, timeout=15)
                 else:
-                    res = session.get(action, params=data, timeout=15)
-                injected_actions.append({'action': action, 'method': method, 'data': data})
-                logging.info(f"[Stored-XSS] Injected payload into {action} (method={method})")
-                time.sleep(delay)
-            except Exception as e:
-                logging.warning(f"[Stored-XSS] Injection failed at {action}: {e}")
+                    session.get(action, params=data, timeout=15)
 
-    # Step 2: Re-check pages for payload presence (simple approach)
-    # Re-crawl pages (or re-check known pages) to look for payload occurrence
-    for base in urls:
-        r = safe_get(session, base, delay=delay, rp=rp)
+                injected_actions.append({
+                    'action': action,
+                    'method': method,
+                    'data': data
+                })
+            except:
+                pass
+
+    # Step 2: Check if payload appears on any page
+    for page in urls:
+        r = safe_get(session, page, delay=delay, rp=rp)
         if not r:
             continue
+
         if payload.lower() in r.text.lower():
             findings.append({
-                'url': base,
-                'type': 'stored_xss',
-                'payload': payload,
-                'evidence_snippet': _snippet(r.text, payload)
+                "url": page,
+                "type": "stored_xss",
+                "payload": payload,
+                "evidence_snippet": _snippet(r.text, payload)
             })
-            logging.info(f"[Stored-XSS] Detected persisted payload at {base}")
 
-    # Optionally include injected_actions in findings for debug
-    if injected_actions:
-        for act in injected_actions:
-            findings.append({
-                'url': act['action'],
-                'type': 'injection_attempt',
-                'method': act['method'],
-                'sample_data': act['data']
-            })
+    # REMOVE DEBUG NOISE
+    findings = [f for f in findings if f.get("type") != "injection_attempt"]
 
     return findings
 
@@ -873,13 +863,13 @@ class EduScannerCLI:
         header_issues.extend(hdr_issues)
 
         # -----------------------
-        # 3. Directory / file enumeration
+        # 3. Directory enumeration
         # -----------------------
         found_paths = enumerate_paths(self.session, target, wordlist,
                                     delay=delay, rp=rp, max_workers=max_workers)
 
         # -----------------------
-        # 4. Form security analysis
+        # 4. Form security issues
         # -----------------------
         for u in pages:
             forms = extract_forms(self.session, u, delay=delay, rp=rp)
@@ -905,13 +895,13 @@ class EduScannerCLI:
                     })
 
         # -----------------------
-        # 5. Active GET-based SQLi and XSS
+        # 5. GET-based SQLi + XSS on URLs WITH parameters
         # -----------------------
         for p in pages:
             if '?' not in p:
                 continue
 
-            logging.info(f"Testing parameters at: {p}")
+            logging.info(f"Testing GET parameters at: {p}")
 
             # GET SQL Injection
             sqli = check_sql_injection(self, self.session, p, delay=delay, rp=rp)
@@ -923,26 +913,52 @@ class EduScannerCLI:
             if xss_ref:
                 xss_findings.extend(xss_ref)
 
-            # -----------------------
-            # 6. POST-based SQL Injection (NEW)
-            # -----------------------
-            forms = extract_forms(self.session, p, delay=delay, rp=rp)
+        # -----------------------
+        # 6. AUTO-XSS for pages WITHOUT parameters (NEW)
+        # -----------------------
+        logging.info("Testing reflected XSS on pages without parameters...")
+        for page in pages:
+            if '?' in page:
+                continue
+
+            for payload in self.payloads.get("xss", [XSS_TEST_PAYLOAD]):
+                test_url = page + "?x=" + payload
+                r = safe_get(self.session, test_url, delay=delay, rp=rp)
+                if not r:
+                    continue
+
+                if payload.lower() in r.text.lower():
+                    xss_findings.append({
+                        "url": test_url,
+                        "param": "x",
+                        "payload": payload,
+                        "type": "reflected_xss_auto",
+                        "evidence_snippet": _snippet(r.text, payload)
+                    })
+                    logging.info(f"[XSS-REFLECT-AUTO] payload reflected @ {test_url}")
+
+        # -----------------------
+        # 7. POST-based SQL Injection (always)
+        # -----------------------
+        logging.info("Testing POST-based SQL injection across ALL pages...")
+        for page in pages:
+            forms = extract_forms(self.session, page, delay=delay, rp=rp)
             for f in forms:
                 if f["method"] == "post":
-                    post_sqli = test_post_sql(self, self.session, p, f)
+                    post_sqli = test_post_sql(self, self.session, page, f)
                     if post_sqli:
                         sqli_findings.extend(post_sqli)
 
         # -----------------------
-        # 7. Stored XSS
+        # 8. Stored XSS
         # -----------------------
-        logging.info("Starting stored-XSS checks (this will submit data to forms). Run only with permission.")
+        logging.info("Starting stored-XSS checks (this will submit data to forms).")
         stored = check_stored_xss(self, self.session, pages, delay=delay, rp=rp)
         if stored:
             xss_findings.extend(stored)
 
         # -----------------------
-        # Save scan state (resume)
+        # Save scan state
         # -----------------------
         state_out = {'crawled': pages, 'found_paths': found_paths}
         self.save_state(state_out)
@@ -968,50 +984,50 @@ class EduScannerCLI:
         return report, paths
 
     def interactive_menu(self):
-            print('\n=== Edu Web Scanner - Interactive CLI ===')
-            print('1) Quick scan (default settings)')
-            print('2) Scan with options (wordlist, workers, delay)')
-            print('3) Login & scan (authenticated)')
-            print('4) Resume last scan state')
-            print('5) Exit')
-            
-            choice = input('Choose an option: ').strip()
-            
-            if choice == '1':
-                target = input('Target (include http:// or https://): ').strip()
+        print('\n=== Edu Web Scanner - Interactive CLI ===')
+        print('1) Quick scan (default settings)')
+        print('2) Scan with options (wordlist, workers, delay)')
+        print('3) Login & scan (authenticated)')
+        print('4) Resume last scan state')
+        print('5) Exit')
+
+        choice = input('Choose an option: ').strip()
+
+        if choice == '1':
+            target = input('Target (include http:// or https://): ').strip()
+            report, paths = self.run_scan(target)
+            print('Done. Reports:', paths)
+
+        elif choice == '2':
+            target = input('Target: ').strip()
+            wl = input('Wordlist file (leave blank to use builtin): ').strip() or None
+            workers = int(input('Max workers (default 4): ').strip() or 4)
+            delay = float(input('Delay between requests (default 0.5): ').strip() or 0.5)
+            out = input('Output folder (default reports): ').strip() or 'reports'
+            report, paths = self.run_scan(target, wordlist_path=wl, max_workers=workers, delay=delay, output_dir=out)
+            print('Done. Reports:', paths)
+
+        elif choice == '3':
+            target = input('Target: ').strip()
+            login_url = input('Login URL: ').strip()
+            uname = input('Username: ').strip()
+            pwd = input('Password: ').strip()
+
+            if self.login_flow(login_url, username=uname, password=pwd):
+                print('Login OK. Running scan...')
                 report, paths = self.run_scan(target)
                 print('Done. Reports:', paths)
-
-            elif choice == '2':
-                target = input('Target: ').strip()
-                wl = input('Wordlist file (leave blank to use builtin): ').strip() or None
-                workers = int(input('Max workers (default 4): ').strip() or 4)
-                delay = float(input('Delay between requests (default 0.5): ').strip() or 0.5)
-                out = input('Output folder (default reports): ').strip() or 'reports'
-                report, paths = self.run_scan(target, wordlist_path=wl, max_workers=workers, delay=delay, output_dir=out)
-                print('Done. Reports:', paths)
-
-            elif choice == '3':
-                target = input('Target: ').strip()
-                login_url = input('Login URL: ').strip()
-                uname = input('Username: ').strip()
-                pwd = input('Password: ').strip()
-                
-                if self.login_flow(login_url, username=uname, password=pwd):
-                    print('Login OK. Running scan...')
-                    report, paths = self.run_scan(target)
-                    print('Done. Reports:', paths)
-                else:
-                    print('Login failed.')
-
-            elif choice == '4':
-                print('Loaded state:', self.load_state())
-                target = input('Target to continue scanning: ').strip()
-                report, paths = self.run_scan(target, resume=True)
-                print('Done. Reports:', paths)
-
             else:
-                print('Bye.')
+                print('Login failed.')
+
+        elif choice == '4':
+            print('Loaded state:', self.load_state())
+            target = input('Target to continue scanning: ').strip()
+            report, paths = self.run_scan(target, resume=True)
+            print('Done. Reports:', paths)
+
+        else:
+            print('Bye.')
 
 
 # --- Entry point ---

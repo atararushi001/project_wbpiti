@@ -1,1 +1,1 @@
-{"crawled": ["http://localhost/testwebsite/vulnauth/welcome.php", "http://localhost/testwebsite/vulnauth/login.php"], "found_paths": []}
+{"crawled": ["http://localhost/testwebsite/vulnauth/login.php"], "found_paths": []}

