@@ -22,7 +22,7 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak
 
 # --- Configuration ---
-USER_AGENT = "edu-web-scanner/0.4 (educational)"
+USER_AGENT = "web-scanner/0.4 "
 HEADERS = {"User-Agent": USER_AGENT}
 REQUEST_DELAY = 0.5  # seconds
 MAX_PAGES = 200
@@ -35,8 +35,8 @@ SQL_ERROR_PATTERNS = [
     r"sqlstate",
 ]
 XSS_TEST_PAYLOAD = "<script>alert('xss')</script>"
-STATE_FILE = 'edu_scan_state.json'
-LOG_FILE = 'edu_scanner.log'
+STATE_FILE = 'scan_state.json'
+LOG_FILE = 'scanner.log'
 
 # --- Utilities ---
 
@@ -541,7 +541,7 @@ def check_stored_xss(cli, session, urls, delay=REQUEST_DELAY, rp=None):
 def generate_reports(report, target, output_dir='.', format='all'):
     """Generate JSON, CSV, HTML and PDF reports."""
     ts = datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
-    base = os.path.join(output_dir, f"edu_scan_report_{ts}")
+    base = os.path.join(output_dir, f"scan_report_{ts}")
     os.makedirs(output_dir, exist_ok=True)
     paths = {}
 
@@ -576,7 +576,7 @@ def generate_reports(report, target, output_dir='.', format='all'):
             hf.write('<html lang="en">\n')
             hf.write('<head>\n')
             hf.write('  <meta charset="utf-8">\n')
-            hf.write(f'  <title>Edu Scan Report - {target}</title>\n')
+            hf.write(f'  <title> Scan Report - {target}</title>\n')
             hf.write('  <meta name="viewport" content="width=device-width,initial-scale=1">\n')
             hf.write('  <style>\n')
             hf.write("    body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;margin:20px;color:#111}\n")
@@ -588,7 +588,7 @@ def generate_reports(report, target, output_dir='.', format='all'):
             hf.write('</head>\n')
             hf.write('<body>\n')
 
-            hf.write(f'<h1>Edu Scan Report</h1>\n')
+            hf.write(f'<h1>Scan Report</h1>\n')
             hf.write(f'<div class="muted">Target: {target} — Generated: {ts} UTC</div>\n')
 
             hf.write('<div class="card">\n')
@@ -685,7 +685,7 @@ def _make_pdf(report, target, pdf_path):
     styles.add(ParagraphStyle(name='MySmall', fontSize=10, spaceAfter=6))
 
     story = []
-    story.append(Paragraph(f"Edu Web Scanner Report - {target}", styles['MyHeading1']))
+    story.append(Paragraph(f" Web Scanner Report - {target}", styles['MyHeading1']))
     story.append(Paragraph(f"Generated: {report.get('timestamp', '(unknown)')}", styles['MySmall']))
     story.append(Spacer(1, 10))
 
@@ -984,7 +984,7 @@ class EduScannerCLI:
         return report, paths
 
     def interactive_menu(self):
-        print('\n=== Edu Web Scanner - Interactive CLI ===')
+        print('\n=== Web Scanner - Interactive CLI ===')
         print('1) Quick scan (default settings)')
         print('2) Scan with options (wordlist, workers, delay)')
         print('3) Login & scan (authenticated)')
@@ -1033,7 +1033,7 @@ class EduScannerCLI:
 # --- Entry point ---
 if __name__ == '__main__':
     setup_logging()
-    parser = argparse.ArgumentParser(description='Educational web scanner (improved)')
+    parser = argparse.ArgumentParser(description=' web scanner (improved)')
     parser.add_argument('--target', help='Target URL (include http:// or https://)')
     parser.add_argument('--wordlist', help='Path to wordlist file')
     parser.add_argument('--workers', type=int, default=4, help='Max concurrent workers')

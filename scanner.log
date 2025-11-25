@@ -2536,3 +2536,379 @@
 2025-11-13 23:36:43,035 INFO: Loaded 25 payloads from sqli.txt
 2025-11-13 23:36:43,035 INFO: Loaded 11 payloads from ssti.txt
 2025-11-13 23:36:43,035 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:46:59,292 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:46:59,292 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:46:59,292 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:46:59,292 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:46:59,292 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:46:59,292 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:46:59,292 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:46:59,292 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:47:03,721 INFO: Crawled: http://localhost/testwebsite/vulnauth/ (total 1)
+2025-11-13 23:47:04,252 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=N;O=D (total 2)
+2025-11-13 23:47:04,797 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=M;O=A (total 3)
+2025-11-13 23:47:05,338 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=S;O=A (total 4)
+2025-11-13 23:47:05,866 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=D;O=A (total 5)
+2025-11-13 23:47:06,448 INFO: Crawled: http://localhost/testwebsite/ (total 6)
+2025-11-13 23:47:06,980 INFO: Crawled: http://localhost/testwebsite/vulnauth/config.php (total 7)
+2025-11-13 23:47:07,513 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 8)
+2025-11-13 23:47:08,014 INFO: Crawled: http://localhost/testwebsite/vulnauth/register.php (total 9)
+2025-11-13 23:47:08,565 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 10)
+2025-11-13 23:47:09,097 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=N;O=A (total 11)
+2025-11-13 23:47:09,630 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=M;O=D (total 12)
+2025-11-13 23:47:10,173 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=S;O=D (total 13)
+2025-11-13 23:47:10,713 INFO: Crawled: http://localhost/testwebsite/vulnauth/?C=D;O=D (total 14)
+2025-11-13 23:47:11,304 INFO: Crawled: http://localhost/testwebsite/?C=N;O=D (total 15)
+2025-11-13 23:47:11,875 INFO: Crawled: http://localhost/testwebsite/?C=M;O=A (total 16)
+2025-11-13 23:47:12,458 INFO: Crawled: http://localhost/testwebsite/?C=S;O=A (total 17)
+2025-11-13 23:47:13,041 INFO: Crawled: http://localhost/testwebsite/?C=D;O=A (total 18)
+2025-11-13 23:47:13,573 INFO: Crawled: http://localhost/ (total 19)
+2025-11-13 23:47:14,123 INFO: Crawled: http://localhost/testwebsite/auth_user.sql (total 20)
+2025-11-13 23:47:14,672 INFO: Crawled: http://localhost/testwebsite/authv2/ (total 21)
+2025-11-13 23:47:15,257 INFO: Crawled: http://localhost/testwebsite/?C=N;O=A (total 22)
+2025-11-13 23:47:15,852 INFO: Crawled: http://localhost/testwebsite/?C=M;O=D (total 23)
+2025-11-13 23:47:16,426 INFO: Crawled: http://localhost/testwebsite/?C=S;O=D (total 24)
+2025-11-13 23:47:17,011 INFO: Crawled: http://localhost/testwebsite/?C=D;O=D (total 25)
+2025-11-13 23:47:17,528 INFO: Crawled: http://localhost/dashboard/index.html (total 26)
+2025-11-13 23:47:18,038 INFO: Crawled: http://localhost/dashboard/faq.html (total 27)
+2025-11-13 23:47:18,547 INFO: Crawled: http://localhost/dashboard/howto.html (total 28)
+2025-11-13 23:47:19,097 INFO: Crawled: http://localhost/dashboard/phpinfo.php (total 29)
+2025-11-13 23:47:20,583 INFO: Crawled: http://localhost/phpmyadmin/ (total 30)
+2025-11-13 23:47:21,605 INFO: Crawled: http://localhost/dashboard/stylesheets/normalize.css (total 31)
+2025-11-13 23:47:22,127 INFO: Crawled: http://localhost/dashboard/stylesheets/all.css (total 32)
+2025-11-13 23:47:22,636 INFO: Crawled: http://localhost/dashboard/images/favicon.png (total 33)
+2025-11-13 23:47:23,177 INFO: Crawled: http://localhost/testwebsite/authv2/?C=N;O=D (total 34)
+2025-11-13 23:47:23,706 INFO: Crawled: http://localhost/testwebsite/authv2/?C=M;O=A (total 35)
+2025-11-13 23:47:24,241 INFO: Crawled: http://localhost/testwebsite/authv2/?C=S;O=A (total 36)
+2025-11-13 23:47:24,771 INFO: Crawled: http://localhost/testwebsite/authv2/?C=D;O=A (total 37)
+2025-11-13 23:47:25,288 INFO: Crawled: http://localhost/testwebsite/authv2/config.php (total 38)
+2025-11-13 23:47:25,828 INFO: Crawled: http://localhost/testwebsite/authv2/login.php (total 39)
+2025-11-13 23:47:26,350 INFO: Crawled: http://localhost/testwebsite/authv2/logout.php (total 40)
+2025-11-13 23:47:26,884 INFO: Crawled: http://localhost/testwebsite/authv2/register.php (total 41)
+2025-11-13 23:47:27,412 INFO: Crawled: http://localhost/testwebsite/authv2/welcome.php (total 42)
+2025-11-13 23:47:27,920 INFO: Crawled: http://localhost/dashboard/docs/backup-restore-mysql.html (total 43)
+2025-11-13 23:47:28,437 INFO: Crawled: http://localhost/dashboard/docs/transfer-files-ftp.html (total 44)
+2025-11-13 23:47:28,950 INFO: Crawled: http://localhost/dashboard/docs/configure-vhosts.html (total 45)
+2025-11-13 23:47:29,451 INFO: Crawled: http://localhost/dashboard/docs/configure-wildcard-subdomains.html (total 46)
+2025-11-13 23:47:29,956 INFO: Crawled: http://localhost/dashboard/docs/deploy-git-app.html (total 47)
+2025-11-13 23:47:30,475 INFO: Crawled: http://localhost/dashboard/docs/reset-mysql-password.html (total 48)
+2025-11-13 23:47:30,994 INFO: Crawled: http://localhost/dashboard/docs/send-mail.html (total 49)
+2025-11-13 23:47:31,512 INFO: Crawled: http://localhost/dashboard/docs/use-sqlite.html (total 50)
+2025-11-13 23:47:32,028 INFO: Crawled: http://localhost/dashboard/docs/activate-use-xdebug.html (total 51)
+2025-11-13 23:47:32,545 INFO: Crawled: http://localhost/dashboard/docs/create-framework-project-zf1.html (total 52)
+2025-11-13 23:47:33,054 INFO: Crawled: http://localhost/dashboard/docs/create-framework-project-zf2.html (total 53)
+2025-11-13 23:47:33,578 INFO: Crawled: http://localhost/dashboard/docs/troubleshoot-apache.html (total 54)
+2025-11-13 23:47:34,084 INFO: Crawled: http://localhost/dashboard/docs/change-mysql-temp-dir.html (total 55)
+2025-11-13 23:47:34,597 INFO: Crawled: http://localhost/dashboard/docs/increase-php-file-upload-limit.html (total 56)
+2025-11-13 23:47:35,106 INFO: Crawled: http://localhost/dashboard/docs/access-phpmyadmin-remotely.html (total 57)
+2025-11-13 23:47:35,607 INFO: Crawled: http://localhost/dashboard/docs/auto-start-xampp.html (total 58)
+2025-11-13 23:47:36,125 INFO: Crawled: http://localhost/dashboard/docs/use-different-php-version.html (total 59)
+2025-11-13 23:47:36,639 INFO: Crawled: http://localhost/dashboard/docs/use-php-fcgi.html (total 60)
+2025-11-13 23:47:37,161 INFO: Crawled: http://localhost/dashboard/docs/configure-use-tomcat.html (total 61)
+2025-11-13 23:47:38,302 INFO: Crawled: http://localhost/phpmyadmin/index.php?lang=en_GB (total 62)
+2025-11-13 23:47:39,744 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/&lang=en_GB (total 63)
+2025-11-13 23:47:41,646 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/logout&lang=en_GB (total 64)
+2025-11-13 23:47:42,200 INFO: Crawled: http://localhost/phpmyadmin/doc/html/index.html (total 65)
+2025-11-13 23:47:43,047 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fmariadb.com%2Fkb%2Fen%2Fdocumentation%2F (total 66)
+2025-11-13 23:47:44,395 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/databases&lang=en_GB (total 67)
+2025-11-13 23:47:45,845 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=auth_user&lang=en_GB (total 68)
+2025-11-13 23:47:47,340 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=auth_user&lang=en_GB (total 69)
+2025-11-13 23:47:48,768 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=information_schema&lang=en_GB (total 70)
+2025-11-13 23:47:51,070 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=information_schema&lang=en_GB (total 71)
+2025-11-13 23:47:52,648 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=mysql&lang=en_GB (total 72)
+2025-11-13 23:47:54,481 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=mysql&lang=en_GB (total 73)
+2025-11-13 23:47:55,794 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=performance_schema&lang=en_GB (total 74)
+2025-11-13 23:47:57,781 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=performance_schema&lang=en_GB (total 75)
+2025-11-13 23:47:59,129 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=phpmyadmin&lang=en_GB (total 76)
+2025-11-13 23:48:00,620 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=phpmyadmin&lang=en_GB (total 77)
+2025-11-13 23:48:01,969 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=test&lang=en_GB (total 78)
+2025-11-13 23:48:03,260 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=test&lang=en_GB (total 79)
+2025-11-13 23:48:03,899 INFO: Crawled: http://localhost/phpmyadmin/doc/html/config.html (total 80)
+2025-11-13 23:48:05,109 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/sql&lang=en_GB (total 81)
+2025-11-13 23:48:06,332 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/status&lang=en_GB (total 82)
+2025-11-13 23:48:07,568 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/privileges&viewing_mode=server&lang=en_GB (total 83)
+2025-11-13 23:48:09,141 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/export&lang=en_GB (total 84)
+2025-11-13 23:48:10,374 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/import&lang=en_GB (total 85)
+2025-11-13 23:48:11,499 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/preferences/manage&lang=en_GB (total 86)
+2025-11-13 23:48:12,699 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/replication&lang=en_GB (total 87)
+2025-11-13 23:48:14,198 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/variables&lang=en_GB (total 88)
+2025-11-13 23:48:15,398 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/collations&lang=en_GB (total 89)
+2025-11-13 23:48:16,565 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/engines&lang=en_GB (total 90)
+2025-11-13 23:48:17,748 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/plugins&lang=en_GB (total 91)
+2025-11-13 23:48:19,582 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F8.0%2Fen%2Fcharset-connection.html (total 92)
+2025-11-13 23:48:20,143 INFO: Crawled: http://localhost/phpmyadmin/doc/html/faq.html (total 93)
+2025-11-13 23:48:20,721 INFO: Crawled: http://localhost/phpmyadmin/doc/html/setup.html (total 94)
+2025-11-13 23:48:21,586 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fbook.mysqli.php (total 95)
+2025-11-13 23:48:22,445 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fbook.curl.php (total 96)
+2025-11-13 23:48:23,297 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fbook.mbstring.php (total 97)
+2025-11-13 23:48:24,129 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2F (total 98)
+2025-11-13 23:48:24,964 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2Fcontribute%2F (total 99)
+2025-11-13 23:48:25,796 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2Fsupport%2F (total 100)
+2025-11-13 23:48:26,798 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/changelog&lang=en_GB (total 101)
+2025-11-13 23:48:27,779 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/license&lang=en_GB (total 102)
+2025-11-13 23:48:28,635 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2Fthemes%2F (total 103)
+2025-11-13 23:48:29,830 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=%2F&server=1&lang=en_GB (total 104)
+2025-11-13 23:48:32,530 INFO: Crawled: http://localhost/phpmyadmin/favicon.ico (total 105)
+2025-11-13 23:48:33,044 INFO: Crawled: http://localhost/phpmyadmin/themes/pmahomme/jquery/jquery-ui.css (total 106)
+2025-11-13 23:48:33,561 INFO: Crawled: http://localhost/phpmyadmin/js/vendor/codemirror/lib/codemirror.css?v=5.2.1 (total 107)
+2025-11-13 23:48:34,078 INFO: Crawled: http://localhost/phpmyadmin/js/vendor/codemirror/addon/hint/show-hint.css?v=5.2.1 (total 108)
+2025-11-13 23:48:34,594 INFO: Crawled: http://localhost/phpmyadmin/js/vendor/codemirror/addon/lint/lint.css?v=5.2.1 (total 109)
+2025-11-13 23:48:35,112 INFO: Crawled: http://localhost/phpmyadmin/themes/pmahomme/css/theme.css?v=5.2.1 (total 110)
+2025-11-13 23:48:35,645 INFO: Crawled: http://localhost/testwebsite/authv2/?C=N;O=A (total 111)
+2025-11-13 23:48:36,184 INFO: Crawled: http://localhost/testwebsite/authv2/?C=M;O=D (total 112)
+2025-11-13 23:48:36,729 INFO: Crawled: http://localhost/testwebsite/authv2/?C=S;O=D (total 113)
+2025-11-13 23:48:37,264 INFO: Crawled: http://localhost/testwebsite/authv2/?C=D;O=D (total 114)
+2025-11-13 23:48:37,816 INFO: Crawled: http://localhost/dashboard/docs/backup-restore-mysql.pdf (total 115)
+2025-11-13 23:48:38,871 INFO: Crawled: http://localhost/dashboard/docs/transfer-files-ftp.pdf (total 116)
+2025-11-13 23:48:39,970 INFO: Crawled: http://localhost/dashboard/docs/configure-vhosts.pdf (total 117)
+2025-11-13 23:48:41,071 INFO: Crawled: http://localhost/dashboard/docs/configure-wildcard-subdomains.pdf (total 118)
+2025-11-13 23:48:41,679 INFO: Crawled: http://localhost/dashboard/docs/deploy-git-app.pdf (total 119)
+2025-11-13 23:48:42,774 INFO: Crawled: http://localhost/dashboard/docs/reset-mysql-password.pdf (total 120)
+2025-11-13 23:48:43,367 INFO: Crawled: http://localhost/dashboard/docs/send-mail.pdf (total 121)
+2025-11-13 23:48:44,975 INFO: Crawled: http://localhost/dashboard/docs/use-sqlite.pdf (total 122)
+2025-11-13 23:48:46,077 INFO: Crawled: http://localhost/dashboard/docs/activate-use-xdebug.pdf (total 123)
+2025-11-13 23:48:47,199 INFO: Crawled: http://localhost/dashboard/docs/create-framework-project-zf1.pdf (total 124)
+2025-11-13 23:48:48,849 INFO: Crawled: http://localhost/dashboard/docs/create-framework-project-zf2.pdf (total 125)
+2025-11-13 23:48:49,609 INFO: Crawled: http://localhost/dashboard/docs/troubleshoot-apache.pdf (total 126)
+2025-11-13 23:48:50,163 INFO: Crawled: http://localhost (total 127)
+2025-11-13 23:48:50,793 INFO: Crawled: http://localhost/dashboard/docs/change-mysql-temp-dir.pdf (total 128)
+2025-11-13 23:48:51,419 INFO: Crawled: http://localhost/dashboard/docs/increase-php-file-upload-limit.pdf (total 129)
+2025-11-13 23:48:51,989 INFO: Crawled: http://localhost/dashboard/docs/access-phpmyadmin-remotely.pdf (total 130)
+2025-11-13 23:48:52,552 INFO: Crawled: http://localhost/dashboard/docs/auto-start-xampp.pdf (total 131)
+2025-11-13 23:48:53,123 INFO: Crawled: http://localhost/dashboard/docs/use-different-php-version.pdf (total 132)
+2025-11-13 23:48:53,702 INFO: Crawled: http://localhost/dashboard/docs/use-php-fcgi.pdf (total 133)
+2025-11-13 23:48:54,295 INFO: Crawled: http://localhost/dashboard/docs/configure-use-tomcat.pdf (total 134)
+2025-11-13 23:48:55,620 INFO: Crawled: http://localhost/phpmyadmin/index.php (total 135)
+2025-11-13 23:48:57,030 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/ (total 136)
+2025-11-13 23:48:58,993 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/logout (total 137)
+2025-11-13 23:49:00,286 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/databases (total 138)
+2025-11-13 23:49:01,825 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=auth_user (total 139)
+2025-11-13 23:49:03,280 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=auth_user (total 140)
+2025-11-13 23:49:04,612 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=information_schema (total 141)
+2025-11-13 23:49:07,124 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=information_schema (total 142)
+2025-11-13 23:49:08,573 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=mysql (total 143)
+2025-11-13 23:49:10,416 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=mysql (total 144)
+2025-11-13 23:49:11,867 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=performance_schema (total 145)
+2025-11-13 23:49:13,923 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=performance_schema (total 146)
+2025-11-13 23:49:15,328 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=phpmyadmin (total 147)
+2025-11-13 23:49:17,081 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=phpmyadmin (total 148)
+2025-11-13 23:49:18,498 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/operations&db=test (total 149)
+2025-11-13 23:49:19,896 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/structure&db=test (total 150)
+2025-11-13 23:49:21,386 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/sql (total 151)
+2025-11-13 23:49:22,707 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/status (total 152)
+2025-11-13 23:49:24,128 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/privileges&viewing_mode=server (total 153)
+2025-11-13 23:49:25,937 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/export (total 154)
+2025-11-13 23:49:27,329 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/import (total 155)
+2025-11-13 23:49:28,535 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/preferences/manage (total 156)
+2025-11-13 23:49:29,848 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/replication (total 157)
+2025-11-13 23:49:32,326 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/variables (total 158)
+2025-11-13 23:49:33,972 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/collations (total 159)
+2025-11-13 23:49:35,239 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/engines (total 160)
+2025-11-13 23:49:36,544 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/plugins (total 161)
+2025-11-13 23:49:38,743 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/changelog (total 162)
+2025-11-13 23:49:39,709 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/license (total 163)
+2025-11-13 23:49:41,065 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=%2F&server=1 (total 164)
+2025-11-13 23:49:44,538 INFO: Crawled: http://localhost/phpmyadmin/doc/html/genindex.html (total 165)
+2025-11-13 23:49:45,081 INFO: Crawled: http://localhost/phpmyadmin/doc/html/intro.html (total 166)
+2025-11-13 23:49:45,624 INFO: Crawled: http://localhost/phpmyadmin/doc/html/require.html (total 167)
+2025-11-13 23:49:46,172 INFO: Crawled: http://localhost/phpmyadmin/doc/html/user.html (total 168)
+2025-11-13 23:49:46,709 INFO: Crawled: http://localhost/phpmyadmin/doc/html/settings.html (total 169)
+2025-11-13 23:49:47,247 INFO: Crawled: http://localhost/phpmyadmin/doc/html/two_factor.html (total 170)
+2025-11-13 23:49:47,796 INFO: Crawled: http://localhost/phpmyadmin/doc/html/transformations.html (total 171)
+2025-11-13 23:49:48,338 INFO: Crawled: http://localhost/phpmyadmin/doc/html/bookmarks.html (total 172)
+2025-11-13 23:49:48,881 INFO: Crawled: http://localhost/phpmyadmin/doc/html/privileges.html (total 173)
+2025-11-13 23:49:49,419 INFO: Crawled: http://localhost/phpmyadmin/doc/html/relations.html (total 174)
+2025-11-13 23:49:49,987 INFO: Crawled: http://localhost/phpmyadmin/doc/html/charts.html (total 175)
+2025-11-13 23:49:50,581 INFO: Crawled: http://localhost/phpmyadmin/doc/html/import_export.html (total 176)
+2025-11-13 23:49:51,125 INFO: Crawled: http://localhost/phpmyadmin/doc/html/themes.html (total 177)
+2025-11-13 23:49:51,667 INFO: Crawled: http://localhost/phpmyadmin/doc/html/other.html (total 178)
+2025-11-13 23:49:52,193 INFO: Crawled: http://localhost/phpmyadmin/doc/html/developers.html (total 179)
+2025-11-13 23:49:52,742 INFO: Crawled: http://localhost/phpmyadmin/doc/html/security.html (total 180)
+2025-11-13 23:49:53,286 INFO: Crawled: http://localhost/phpmyadmin/doc/html/vendors.html (total 181)
+2025-11-13 23:49:53,824 INFO: Crawled: http://localhost/phpmyadmin/doc/html/copyright.html (total 182)
+2025-11-13 23:49:54,523 INFO: Crawled: http://localhost/phpmyadmin/doc/html/credits.html (total 183)
+2025-11-13 23:49:55,133 INFO: Crawled: http://localhost/phpmyadmin/doc/html/glossary.html (total 184)
+2025-11-13 23:49:55,656 INFO: Crawled: http://localhost/phpmyadmin/doc/html/search.html (total 185)
+2025-11-13 23:49:56,177 INFO: Crawled: http://localhost/phpmyadmin/doc/html/_sources/index.rst.txt (total 186)
+2025-11-13 23:49:56,696 INFO: Crawled: http://localhost/phpmyadmin/doc/html/_static/pygments.css (total 187)
+2025-11-13 23:49:57,217 INFO: Crawled: http://localhost/phpmyadmin/doc/html/_static/classic.css (total 188)
+2025-11-13 23:49:58,081 INFO: Crawled: http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F8.0%2Fen%2Fcreate-database.html (total 189)
+2025-11-13 23:49:59,418 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/databases&statistics=0&pos=0&sort_by=SCHEMA_NAME&sort_order=desc (total 190)
+2025-11-13 23:50:00,818 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/databases&statistics=0&pos=0&sort_by=DEFAULT_COLLATION_NAME&sort_order=asc (total 191)
+2025-11-13 23:50:02,340 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/privileges&db=auth_user&checkprivsdb=auth_user (total 192)
+2025-11-13 23:50:03,991 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/privileges&db=information_schema&checkprivsdb=information_schema (total 193)
+2025-11-13 23:50:05,410 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/privileges&db=mysql&checkprivsdb=mysql (total 194)
+2025-11-13 23:50:06,775 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/privileges&db=performance_schema&checkprivsdb=performance_schema (total 195)
+2025-11-13 23:50:08,176 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/privileges&db=phpmyadmin&checkprivsdb=phpmyadmin (total 196)
+2025-11-13 23:50:09,550 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/server/privileges&db=test&checkprivsdb=test (total 197)
+2025-11-13 23:50:10,965 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=%2Fserver%2Fdatabases&server=1 (total 198)
+2025-11-13 23:50:13,483 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/sql&db=auth_user (total 199)
+2025-11-13 23:50:14,933 INFO: Crawled: http://localhost/phpmyadmin/index.php?route=/database/search&db=auth_user (total 200)
+2025-11-13 23:53:15,492 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:53:15,492 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:53:15,492 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:53:15,492 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:53:15,492 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:53:15,492 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:53:15,492 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:53:15,492 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:53:17,003 INFO: Testing reflected XSS on pages without parameters...
+2025-11-13 23:53:17,003 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-13 23:53:17,003 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-13 23:53:17,014 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T182317Z.json', 'csv': 'reports\\edu_scan_report_20251113T182317Z.csv', 'html': 'reports\\edu_scan_report_20251113T182317Z.html', 'pdf': 'reports\\edu_scan_report_20251113T182317Z.pdf'}
+2025-11-13 23:53:18,631 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:53:18,631 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:53:18,631 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:53:18,631 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:53:18,632 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:53:18,632 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:53:18,632 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:53:18,632 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:53:25,947 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 1)
+2025-11-13 23:53:26,464 INFO: Crawled: http://localhost/testwebsite/vulnauth/register.php (total 2)
+2025-11-13 23:53:27,031 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 3)
+2025-11-13 23:53:30,711 INFO: Testing reflected XSS on pages without parameters...
+2025-11-13 23:53:51,124 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>alert(1)</script>
+2025-11-13 23:53:51,643 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><img src=x onerror=alert(1)>
+2025-11-13 23:53:52,189 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><svg/onload=alert(1)>
+2025-11-13 23:53:53,252 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><iframe/src=javascript:alert(1)>
+2025-11-13 23:53:53,783 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><body onload=alert(1)>
+2025-11-13 23:53:54,301 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>confirm(1)</script>
+2025-11-13 23:53:54,817 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>prompt(1)</script>
+2025-11-13 23:53:55,351 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><scr<script>ipt>alert(1)</scr<script>ipt>
+2025-11-13 23:53:55,859 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><img src=x onerror="this.src='x';alert(1)">
+2025-11-13 23:53:56,385 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x=<script>alert(document.domain)</script>
+2025-11-13 23:53:56,899 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><svg><script>alert(1)</script>
+2025-11-13 23:53:57,426 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><details/open ontoggle=alert(1)>
+2025-11-13 23:53:57,944 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><a href="javascript:alert(1)">click</a>
+2025-11-13 23:53:58,454 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x=</script><script>alert(1)</script>
+2025-11-13 23:53:58,963 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><video src onerror=alert(1)>
+2025-11-13 23:53:59,502 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><audio src onerror=alert(1)>
+2025-11-13 23:54:00,018 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><marquee onstart=alert(1)>
+2025-11-13 23:54:00,535 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><math><mtext><mglyph onload=alert(1)>
+2025-11-13 23:54:00,535 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-13 23:54:05,852 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-13 23:54:09,328 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T182409Z.json', 'csv': 'reports\\edu_scan_report_20251113T182409Z.csv', 'html': 'reports\\edu_scan_report_20251113T182409Z.html', 'pdf': 'reports\\edu_scan_report_20251113T182409Z.pdf'}
+2025-11-13 23:55:01,252 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-13 23:55:01,252 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-13 23:55:01,252 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-13 23:55:01,252 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-13 23:55:01,252 INFO: Loaded 14 payloads from rce.txt
+2025-11-13 23:55:01,252 INFO: Loaded 25 payloads from sqli.txt
+2025-11-13 23:55:01,268 INFO: Loaded 11 payloads from ssti.txt
+2025-11-13 23:55:01,268 INFO: Loaded 19 payloads from xss.txt
+2025-11-13 23:55:10,218 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 1)
+2025-11-13 23:55:10,741 INFO: Crawled: http://localhost/testwebsite/vulnauth/register.php (total 2)
+2025-11-13 23:55:11,314 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 3)
+2025-11-13 23:55:14,976 INFO: Testing reflected XSS on pages without parameters...
+2025-11-13 23:55:35,254 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>alert(1)</script>
+2025-11-13 23:55:35,779 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><img src=x onerror=alert(1)>
+2025-11-13 23:55:36,288 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><svg/onload=alert(1)>
+2025-11-13 23:55:37,354 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><iframe/src=javascript:alert(1)>
+2025-11-13 23:55:37,879 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><body onload=alert(1)>
+2025-11-13 23:55:38,413 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>confirm(1)</script>
+2025-11-13 23:55:38,930 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>prompt(1)</script>
+2025-11-13 23:55:39,466 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><scr<script>ipt>alert(1)</scr<script>ipt>
+2025-11-13 23:55:39,980 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><img src=x onerror="this.src='x';alert(1)">
+2025-11-13 23:55:40,484 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x=<script>alert(document.domain)</script>
+2025-11-13 23:55:40,995 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><svg><script>alert(1)</script>
+2025-11-13 23:55:41,507 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><details/open ontoggle=alert(1)>
+2025-11-13 23:55:42,046 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><a href="javascript:alert(1)">click</a>
+2025-11-13 23:55:42,565 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x=</script><script>alert(1)</script>
+2025-11-13 23:55:43,083 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><video src onerror=alert(1)>
+2025-11-13 23:55:43,612 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><audio src onerror=alert(1)>
+2025-11-13 23:55:44,126 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><marquee onstart=alert(1)>
+2025-11-13 23:55:44,651 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><math><mtext><mglyph onload=alert(1)>
+2025-11-13 23:55:44,652 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-13 23:55:56,386 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-13 23:55:59,851 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251113T182559Z.json', 'csv': 'reports\\edu_scan_report_20251113T182559Z.csv', 'html': 'reports\\edu_scan_report_20251113T182559Z.html', 'pdf': 'reports\\edu_scan_report_20251113T182559Z.pdf'}
+2025-11-21 22:02:06,584 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-21 22:02:06,584 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-21 22:02:06,584 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-21 22:02:06,584 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-21 22:02:06,584 INFO: Loaded 14 payloads from rce.txt
+2025-11-21 22:02:06,584 INFO: Loaded 25 payloads from sqli.txt
+2025-11-21 22:02:06,584 INFO: Loaded 11 payloads from ssti.txt
+2025-11-21 22:02:06,584 INFO: Loaded 19 payloads from xss.txt
+2025-11-21 22:02:13,496 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 1)
+2025-11-21 22:02:14,015 INFO: Crawled: http://localhost/testwebsite/vulnauth/register.php (total 2)
+2025-11-21 22:02:14,594 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 3)
+2025-11-21 22:02:18,202 INFO: Testing reflected XSS on pages without parameters...
+2025-11-21 22:02:38,442 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>alert(1)</script>
+2025-11-21 22:02:38,955 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><img src=x onerror=alert(1)>
+2025-11-21 22:02:39,495 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><svg/onload=alert(1)>
+2025-11-21 22:02:40,594 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><iframe/src=javascript:alert(1)>
+2025-11-21 22:02:41,110 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><body onload=alert(1)>
+2025-11-21 22:02:41,628 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>confirm(1)</script>
+2025-11-21 22:02:42,172 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>prompt(1)</script>
+2025-11-21 22:02:42,699 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><scr<script>ipt>alert(1)</scr<script>ipt>
+2025-11-21 22:02:43,226 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><img src=x onerror="this.src='x';alert(1)">
+2025-11-21 22:02:43,745 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x=<script>alert(document.domain)</script>
+2025-11-21 22:02:44,265 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><svg><script>alert(1)</script>
+2025-11-21 22:02:44,786 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><details/open ontoggle=alert(1)>
+2025-11-21 22:02:45,316 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><a href="javascript:alert(1)">click</a>
+2025-11-21 22:02:45,856 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x=</script><script>alert(1)</script>
+2025-11-21 22:02:46,392 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><video src onerror=alert(1)>
+2025-11-21 22:02:46,922 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><audio src onerror=alert(1)>
+2025-11-21 22:02:47,448 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><marquee onstart=alert(1)>
+2025-11-21 22:02:47,959 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><math><mtext><mglyph onload=alert(1)>
+2025-11-21 22:02:47,959 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-21 22:03:20,917 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-21 22:03:25,056 INFO: Reports generated: {'json': 'reports\\edu_scan_report_20251121T163324Z.json', 'csv': 'reports\\edu_scan_report_20251121T163324Z.csv', 'html': 'reports\\edu_scan_report_20251121T163324Z.html', 'pdf': 'reports\\edu_scan_report_20251121T163324Z.pdf'}
+2025-11-21 22:31:47,026 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-21 22:31:47,027 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-21 22:31:47,027 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-21 22:31:47,027 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-21 22:31:47,027 INFO: Loaded 14 payloads from rce.txt
+2025-11-21 22:31:47,027 INFO: Loaded 25 payloads from sqli.txt
+2025-11-21 22:31:47,027 INFO: Loaded 11 payloads from ssti.txt
+2025-11-21 22:31:47,027 INFO: Loaded 19 payloads from xss.txt
+2025-11-22 09:20:39,890 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-22 09:20:39,890 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-22 09:20:39,890 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-22 09:20:39,890 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-22 09:20:39,890 INFO: Loaded 14 payloads from rce.txt
+2025-11-22 09:20:39,890 INFO: Loaded 25 payloads from sqli.txt
+2025-11-22 09:20:39,901 INFO: Loaded 11 payloads from ssti.txt
+2025-11-22 09:20:39,901 INFO: Loaded 19 payloads from xss.txt
+2025-11-25 11:46:46,664 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-25 11:46:46,664 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-25 11:46:46,664 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-25 11:46:46,664 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-25 11:46:46,664 INFO: Loaded 14 payloads from rce.txt
+2025-11-25 11:46:46,664 INFO: Loaded 25 payloads from sqli.txt
+2025-11-25 11:46:46,664 INFO: Loaded 11 payloads from ssti.txt
+2025-11-25 11:46:46,664 INFO: Loaded 19 payloads from xss.txt
+2025-11-25 11:51:15,339 INFO: Loaded 13 payloads from fuzz_common.txt
+2025-11-25 11:51:15,339 INFO: Loaded 8 payloads from headers_attack.txt
+2025-11-25 11:51:15,339 INFO: Loaded 9 payloads from lfi_rfi.txt
+2025-11-25 11:51:15,339 INFO: Loaded 9 payloads from open_redirect.txt
+2025-11-25 11:51:15,339 INFO: Loaded 14 payloads from rce.txt
+2025-11-25 11:51:15,339 INFO: Loaded 25 payloads from sqli.txt
+2025-11-25 11:51:15,339 INFO: Loaded 11 payloads from ssti.txt
+2025-11-25 11:51:15,339 INFO: Loaded 19 payloads from xss.txt
+2025-11-25 11:51:26,739 INFO: Crawled: http://localhost/testwebsite/vulnauth/login.php (total 1)
+2025-11-25 11:51:27,252 INFO: Crawled: http://localhost/testwebsite/vulnauth/register.php (total 2)
+2025-11-25 11:51:27,801 INFO: Crawled: http://localhost/testwebsite/vulnauth/welcome.php (total 3)
+2025-11-25 11:51:31,534 INFO: Testing reflected XSS on pages without parameters...
+2025-11-25 11:51:51,879 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>alert(1)</script>
+2025-11-25 11:51:52,406 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><img src=x onerror=alert(1)>
+2025-11-25 11:51:52,929 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><svg/onload=alert(1)>
+2025-11-25 11:51:53,976 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><iframe/src=javascript:alert(1)>
+2025-11-25 11:51:54,507 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><body onload=alert(1)>
+2025-11-25 11:51:55,035 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>confirm(1)</script>
+2025-11-25 11:51:55,559 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>prompt(1)</script>
+2025-11-25 11:51:56,085 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><scr<script>ipt>alert(1)</scr<script>ipt>
+2025-11-25 11:51:56,602 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><img src=x onerror="this.src='x';alert(1)">
+2025-11-25 11:51:57,124 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x=<script>alert(document.domain)</script>
+2025-11-25 11:51:57,646 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><svg><script>alert(1)</script>
+2025-11-25 11:51:58,175 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><details/open ontoggle=alert(1)>
+2025-11-25 11:51:58,706 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><a href="javascript:alert(1)">click</a>
+2025-11-25 11:51:59,241 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x=</script><script>alert(1)</script>
+2025-11-25 11:51:59,771 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><video src onerror=alert(1)>
+2025-11-25 11:52:00,309 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><audio src onerror=alert(1)>
+2025-11-25 11:52:00,842 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><marquee onstart=alert(1)>
+2025-11-25 11:52:01,374 INFO: [XSS-REFLECT-AUTO] payload reflected @ http://localhost/testwebsite/vulnauth/welcome.php?x="><math><mtext><mglyph onload=alert(1)>
+2025-11-25 11:52:01,376 INFO: Testing POST-based SQL injection across ALL pages...
+2025-11-25 11:52:06,465 INFO: Starting stored-XSS checks (this will submit data to forms).
+2025-11-25 11:52:09,847 INFO: Reports generated: {'json': 'reports\\scan_report_20251125T062209Z.json', 'csv': 'reports\\scan_report_20251125T062209Z.csv', 'html': 'reports\\scan_report_20251125T062209Z.html', 'pdf': 'reports\\scan_report_20251125T062209Z.pdf'}

